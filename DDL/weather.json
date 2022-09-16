@@ -1,0 +1,16 @@
+
+{
+  "timestamp": "2022-09-14 06:43:35",
+  "altitude": "11.6",
+  "country": "ES",
+  "latitude": "39.544",
+  "longitude": "2.596",
+  "wind_speed": 8.9,
+  "windgust_speed": 10,
+  "wind_direction": 257,
+  "rain_daily":0,
+  "rain_monthly":0,
+  "humidity":63,
+  "humidex":35.4,
+  "id":1
+}
