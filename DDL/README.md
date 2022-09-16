@@ -3,4 +3,4 @@ Entidades
 - Lecturas
 - Sensores
 - Barcos
-- Meteo
+- Estación metereológica
