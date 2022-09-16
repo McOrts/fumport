@@ -1,0 +1,47 @@
+{
+  "timestamp": "2022-09-14 06:43:35",
+  "vessels_location": [
+   {
+      "name": "GNV BRIDGE",
+      "from": "Valencia",
+      "to": "Valencia",
+      "arrival": "16/09/2022 6:16",
+      "departure": "16/09/2022 11:30",
+      "location": "M. 2ª ALIN. PONIENTE NORTE (del 18 al 7)",
+      "Consignatario": "TRANSPORTES Y CONSIGNACIONES MARITIMAS BALEAR SAU",
+      "gt": 32.581,
+      "stopover": 3202,
+      "canopy": "ITALIA",
+      "length": 203,
+      "draft": 7
+   },
+    {
+      "name": "MSC MERAVIGLIA",
+      "from": "CIVITAVECCHIA",
+      "to": "BARCELONA",
+      "arrival": "16/09/2022 7:43",
+      "departure": "16/09/2022 22:00",
+      "location": "M. 2ª ALIN. PONIENTE SUR (del 18 al 1)",
+      "Consignatario": "TRANSPORTES Y CONSIGNACIONES MARITIMAS BALEAR SAU",
+      "gt": 137.936,
+      "stopover": 477,
+      "canopy": "MALTA",
+      "length": 316,
+      "draft": 9
+    },
+    {
+      "name": "SILVER DAWN",
+      "from": "Valencia",
+      "to": "PALAMOS",
+      "arrival": "16/09/2022 8:34",
+      "departure": "16/09/2022 18:00",
+      "location": "AMPLIACION MUELLE PONIENTE NORTE (del 19 al 2)",
+      "Consignatario": "A PEREZ Y CIA SL",
+      "gt": 40.844,
+      "stopover": 1362,
+      "canopy": "BAHAMAS",
+      "length": 213,
+      "draft": 7
+    }
+  ]
+}
