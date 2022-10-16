@@ -1,72 +1,106 @@
-[
-  {
-    "location": {
-      "altitude": "11.6",
-      "country": "ES",
-      "latitude": "39.544",
-      "longitude": "2.596",
-      "exact_location": 0,
-      "indoor": 0,
-      "id": 63338
-    },
-    "timestamp": "2022-09-14 06:43:35",
-    "sampling_rate": null,
-    "sensor": {
-      "pin": "1",
-      "sensor_type": {
-        "name": "SDS011",
-        "manufacturer": "Nova Fitness",
-        "id": 14
-      },
-      "id": 74808
-    },
-    "id": 12162346693,
-    "sensordatavalues": [
-      {
-        "value": "4.65",
-        "value_type": "P1",
-        "id": 27116193915
-      },
-      {
-        "value": "1.90",
-        "value_type": "P2",
-        "id": 27116193990
-      }
+{
+    "sensors": [
+        {
+            "id": 74808,
+            "altitude": "11.6",
+            "country": "ES",
+            "latitude": "39.544",
+            "longitude": "2.596",
+            "name": "McOrts03",
+            "distance2port": 2930,
+            "wind_angle_max": 272,
+            "wind_angle_min": 252,
+            "zone": "Cas català",
+            "source": "MQTT"
+        },
+        {
+            "id": 72964,
+            "altitude": "51.1",
+            "country": "ES",
+            "latitude": "39.55338446606",
+            "longitude": "2.61948475041",
+            "name": "Unknown01",
+            "distance2port": 982,
+            "wind_angle_max": 330,
+            "wind_angle_min": 284,
+            "zone": "Portopí",
+            "source": "API"
+        },
+        {
+            "id": 74670,
+            "altitude": "13.7",
+            "country": "ES",
+            "latitude": "39.564",
+            "longitude": "2.628",
+            "name": "Unknown02",
+            "distance2port": 1770,
+            "wind_angle_max": 10,
+            "wind_angle_min": 340,
+            "zone": "El Terreno",
+            "source": "API"
+        },
+        {
+            "id": 68449,
+            "altitude": "31.5",
+            "country": "ES",
+            "latitude": "39.57052011993",
+            "longitude": "2.65284479792",
+            "name": "Canamunt1",
+            "distance2port": 3060,
+            "wind_angle_max": 26,
+            "wind_angle_min": 56,
+            "zone": "Canamunt",
+            "source": "MQTT"
+        },
+        {
+            "id": 68451,
+            "altitude": "24.8",
+            "country": "ES",
+            "latitude": "39.56940319892",
+            "longitude": "2.65431618687",
+            "name": "Canamunt2",
+            "distance2port": 3260,
+            "wind_angle_max": 26,
+            "wind_angle_min": 56,
+            "zone": "Canamunt",
+            "source": "MQTT"
+        },
+        {
+            "id": 74660,
+            "altitude": "16.5",
+            "latitude": "39.566",
+            "longitude": "2.654",
+            "name": "Unknown03",
+            "distance2port": 2900,
+            "wind_angle_max": 26,
+            "wind_angle_min": 56,
+            "zone": "Parc de la Mar",
+            "source": "API"
+        },
+        {
+            "id": 74349,
+            "altitude": "4.7",
+            "country": "ES",
+            "latitude": "39.55581818787",
+            "longitude": "2.68565833569",
+            "name": "McOrts02",
+            "distance2port": 4850,
+            "wind_angle_max": 70,
+            "wind_angle_min": 90,
+            "zone": "La Gruta",
+            "source": "MQTT"
+        },
+        {
+            "id": 68453,
+            "altitude": "9.2",
+            "country": "ES",
+            "latitude": "39.53555593270",
+            "longitude": "2.71826756010",
+            "name": "McOrts01",
+            "distance2port": 7800,
+            "wind_angle_max": 96,
+            "wind_angle_min": 108,
+            "zone": "C'an pastilla"
+        }
     ]
-  },
-  {
-    "location": {
-      "altitude": "11.6",
-      "country": "ES",
-      "latitude": "39.544",
-      "longitude": "2.596",
-      "exact_location": 0,
-      "indoor": 0,
-      "id": 63338
-    },
-    "timestamp": "2022-09-14 06:41:05",
-    "sampling_rate": null,
-    "sensor": {
-      "pin": "1",
-      "sensor_type": {
-        "name": "SDS011",
-        "manufacturer": "Nova Fitness",
-        "id": 14
-      },
-      "id": 74808
-    },
-    "id": 12162321406,
-    "sensordatavalues": [
-      {
-        "value": "3.88",
-        "value_type": "P1",
-        "id": 27116135440
-      },
-      {
-        "value": "1.95",
-        "value_type": "P2",
-        "id": 27116135452
-      }
-    ]
-  }
-]
+}
