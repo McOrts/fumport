@@ -1,0 +1,6099 @@
+[
+    {
+        "id": "9a88b218bcdc0b95",
+        "type": "tab",
+        "label": "Home",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eedab9219893e73e",
+        "type": "tab",
+        "label": "Form",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d4e727584e18a1cb",
+        "type": "tab",
+        "label": "Readings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1eb2925cd16908e4",
+        "type": "tab",
+        "label": "Weather Station",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bcba3d054e58be9c",
+        "type": "tab",
+        "label": "Forecasting",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "253351a39d168f06",
+        "type": "tab",
+        "label": "Vessels",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4ecb1660b0460e17",
+        "type": "tab",
+        "label": "ETL",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cf5158d38960fc7b",
+        "type": "tab",
+        "label": "Telegram",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e823547481c4a50f",
+        "type": "tab",
+        "label": "Twitter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "892785e6c025eea1",
+        "type": "tab",
+        "label": "email",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4f630d9f0c3b08b5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Verdana,Verdana,Geneva,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Verdana,Verdana,Geneva,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "dark"
+            }
+        },
+        "site": {
+            "name": "Fum al Port",
+            "hideToolbar": "false",
+            "allowSwipe": "mouse",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 40,
+                "sy": 40,
+                "gx": 7,
+                "gy": 7,
+                "cx": 1,
+                "cy": 1,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "57d5a7045753184a",
+        "type": "ui_group",
+        "name": "Alarmas",
+        "tab": "4861ba36.77fc94",
+        "order": 2,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "21c409ec098aede4",
+        "type": "ui_tab",
+        "name": "Meteorología",
+        "icon": "wi-wu-partlycloudy",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5a229f1a21cdf6e1",
+        "type": "ui_link",
+        "name": "Mapa de sensores",
+        "link": "https://maps.sensor.community/#13/39.5646/2.6545",
+        "icon": "map",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "e15e12918f77cb7f",
+        "type": "telegram bot",
+        "botname": "fumport_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "e3e9df19f35e97a1",
+        "type": "ui_group",
+        "name": "Estación",
+        "tab": "21c409ec098aede4",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d886477915fc7be",
+        "type": "influxdb",
+        "hostname": "192.168.1.30",
+        "port": "8086",
+        "protocol": "http",
+        "database": "FumPort",
+        "name": "IoT-Anywhere",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "fc75d06364f1cbb7",
+        "type": "twitter-credentials",
+        "screen_name": "FumPort"
+    },
+    {
+        "id": "d1622cb680378ab8",
+        "type": "mqtt-broker",
+        "name": "IoT Anywhere",
+        "broker": "192.168.1.30",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3e0c15f0.73db5a",
+        "type": "ui_group",
+        "name": "Mapa de sensores",
+        "tab": "4861ba36.77fc94",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "1e640612.03c83a",
+        "type": "ui_group",
+        "name": "Redes sociales",
+        "tab": "cc84086d12896f1c",
+        "order": 3,
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4861ba36.77fc94",
+        "type": "ui_tab",
+        "name": "Información actual",
+        "icon": "report_problem",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cc84086d12896f1c",
+        "type": "ui_tab",
+        "name": "Redes Sociales",
+        "icon": "group",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb40f53421f214a6",
+        "type": "ui_group",
+        "name": "Este es un proyecto de Ciencia Ciudadana",
+        "tab": "4861ba36.77fc94",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "5a44016c9871c81c",
+        "type": "ui_group",
+        "name": "Formulario",
+        "tab": "a41a42796139a2ed",
+        "order": 4,
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a41a42796139a2ed",
+        "type": "ui_tab",
+        "name": "Participación",
+        "icon": "person_add",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d684ae17cb21aab8",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "4861ba36.77fc94",
+        "order": 4,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "19b346e2eef37d78",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "fb40f53421f214a6",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "446bb4b345810ec4",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "fb40f53421f214a6",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cb2cf06a88a746f3",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "de4ae7fd9ca2fb15",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b576f04f2efa6914",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bb06fa475079f7c2",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5fbe5ce8ce9d0b4d",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3829768fc5c12ce7",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dcc8bb6505ee6f5a",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "59b2420103da670e",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "d684ae17cb21aab8",
+        "order": 3,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "625491ea70287a3c",
+        "type": "ui_template",
+        "z": "9a88b218bcdc0b95",
+        "group": "d684ae17cb21aab8",
+        "name": "Google Analytics",
+        "order": 2,
+        "width": 1,
+        "height": 1,
+        "format": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-FPP461GWZF\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-FPP461GWZF');\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 410,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b5130ec423dde59",
+        "type": "inject",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "625491ea70287a3c"
+            ]
+        ]
+    },
+    {
+        "id": "c3109c86.ca574",
+        "type": "inject",
+        "z": "9a88b218bcdc0b95",
+        "name": "Hours gap",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "HoursGap",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "8b83f5a8.af5b58"
+            ]
+        ]
+    },
+    {
+        "id": "8b83f5a8.af5b58",
+        "type": "change",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hours-gap",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad42624.ab87ea",
+        "type": "ui_iframe",
+        "z": "9a88b218bcdc0b95",
+        "group": "3e0c15f0.73db5a",
+        "name": "Mapa",
+        "order": 1,
+        "width": 9,
+        "height": 10,
+        "url": "https://maps.sensor.community/#12/39.5481/2.6449",
+        "origin": "*",
+        "scale": "100",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "638ae5df3e989b0f",
+        "type": "influxdb in",
+        "z": "9a88b218bcdc0b95",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 690,
+        "y": 580,
+        "wires": [
+            [
+                "224c81b09042b7a7"
+            ]
+        ]
+    },
+    {
+        "id": "36bf7bccb3b9b7cd",
+        "type": "inject",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "90a03b0d0699f442",
+                "10291d1f.0a5d13"
+            ]
+        ]
+    },
+    {
+        "id": "d72522224c082da7",
+        "type": "debug",
+        "z": "9a88b218bcdc0b95",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ef328b2aa8714561",
+        "type": "function",
+        "z": "9a88b218bcdc0b95",
+        "name": "SELECT COUNT(pm25) FROM \"alarms\"",
+        "func": "msg.query = \"SELECT COUNT(pm25) FROM \\\"alarms\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 580,
+        "wires": [
+            [
+                "638ae5df3e989b0f"
+            ]
+        ]
+    },
+    {
+        "id": "f85822c7bd88c628",
+        "type": "comment",
+        "z": "9a88b218bcdc0b95",
+        "name": "Total Alarms",
+        "info": "",
+        "x": 110,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "224c81b09042b7a7",
+        "type": "ui_text",
+        "z": "9a88b218bcdc0b95",
+        "group": "57d5a7045753184a",
+        "order": 1,
+        "width": 3,
+        "height": 2,
+        "name": "",
+        "label": "Total",
+        "format": "{{payload[0].count}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 990,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9aa0a18db1b47794",
+        "type": "influxdb in",
+        "z": "9a88b218bcdc0b95",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 830,
+        "y": 640,
+        "wires": [
+            [
+                "d72522224c082da7"
+            ]
+        ]
+    },
+    {
+        "id": "90a03b0d0699f442",
+        "type": "function",
+        "z": "9a88b218bcdc0b95",
+        "name": "SELECT count(\"pm25\") FROM \"alarms\" GROUP BY \"zone\"",
+        "func": "msg.query = \"SELECT count(\\\"pm25\\\") FROM \\\"alarms\\\" GROUP BY \\\"zone\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 640,
+        "wires": [
+            [
+                "9aa0a18db1b47794"
+            ]
+        ]
+    },
+    {
+        "id": "d8d7a9a0b3f575f6",
+        "type": "inject",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 580,
+        "wires": [
+            [
+                "ef328b2aa8714561"
+            ]
+        ]
+    },
+    {
+        "id": "5a80fc33.7851a4",
+        "type": "inject",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "88a608a6.78cc68",
+                "725ff26f50e108a4",
+                "e81eabe3ee2d4add",
+                "b3637014678c19db",
+                "9fa624e815569cc6",
+                "96ac6984fdccc9f5"
+            ]
+        ]
+    },
+    {
+        "id": "88a608a6.78cc68",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "name": "Logo",
+        "width": 3,
+        "height": 2,
+        "order": 2,
+        "category": "logos",
+        "file": "FumPort_logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 330,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "febfb1104a3f7a83",
+        "type": "comment",
+        "z": "9a88b218bcdc0b95",
+        "name": "Info",
+        "info": "",
+        "x": 90,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "04e726d521e527da",
+        "type": "ui_text",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "order": 5,
+        "width": 4,
+        "height": 5,
+        "name": "",
+        "label": "La información de sensores de calidad de aire construidos y desplegados por residentes se relaciona con datos de entornos portuarios.",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 860,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "672f3147fb9826e1",
+        "type": "ui_text",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "order": 3,
+        "width": 5,
+        "height": 3,
+        "name": "",
+        "label": "Objetivos",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 460,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "725ff26f50e108a4",
+        "type": "change",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "04e726d521e527da"
+            ]
+        ]
+    },
+    {
+        "id": "e81eabe3ee2d4add",
+        "type": "change",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "- Emitir alertas para informar a la ciudania de riesgos a la salud en tiempo real",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "672f3147fb9826e1"
+            ]
+        ]
+    },
+    {
+        "id": "f3481af49840c9d1",
+        "type": "ui_text",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "order": 7,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 450,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b3637014678c19db",
+        "type": "change",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "- Hacer un análisis predictivo para dar avisos de contaminación.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 420,
+        "wires": [
+            [
+                "f3481af49840c9d1"
+            ]
+        ]
+    },
+    {
+        "id": "1a07ed220972d19f",
+        "type": "ui_text",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "order": 6,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 450,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9fa624e815569cc6",
+        "type": "change",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "- Tratar de identificar los focos de la contaminación.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "1a07ed220972d19f"
+            ]
+        ]
+    },
+    {
+        "id": "10291d1f.0a5d13",
+        "type": "function",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "func": "var m={\n    \"series\":[\"X\"],\n    \"data\":[[9,7,5,8]],\n    \"labels\": [\"C'an pastilla\", \"Cas català\", \"La Gruta\", \"Parc de la Mar\"]\n};\nreturn {payload:[m]};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "fe515729.789e58",
+                "d72522224c082da7"
+            ]
+        ]
+    },
+    {
+        "id": "fe515729.789e58",
+        "type": "ui_chart",
+        "z": "9a88b218bcdc0b95",
+        "name": "",
+        "group": "57d5a7045753184a",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "Por barrio",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "30",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1060,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96ac6984fdccc9f5",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "d684ae17cb21aab8",
+        "name": "Sensor",
+        "width": 9,
+        "height": 6,
+        "order": 1,
+        "category": "Sensors",
+        "file": "IMG_1774.jpg",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 340,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af2c3a040ca3ee9a",
+        "type": "comment",
+        "z": "eedab9219893e73e",
+        "name": "Form subscription",
+        "info": "",
+        "x": 130,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "76836903.e5e028",
+        "type": "ui_form",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "label": "",
+        "group": "5a44016c9871c81c",
+        "order": 3,
+        "width": 9,
+        "height": 1,
+        "options": [
+            {
+                "label": "To nombre o alias",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Al usuario Twitter (sin @)",
+                "value": "twitter",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "A la dirección de e-mail",
+                "value": "email",
+                "type": "email",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Me interesa tener un medidor",
+                "value": "sensor",
+                "type": "switch",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Acepto política privacidad",
+                "value": "policy",
+                "type": "checkbox",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "twitter": "",
+            "email": "",
+            "sensor": false,
+            "policy": false
+        },
+        "payload": "",
+        "submit": "Grabar",
+        "cancel": "Cancelar",
+        "topic": "Form",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "2015b3860e7ea862"
+            ]
+        ]
+    },
+    {
+        "id": "aa9672f4a4ac5179",
+        "type": "function",
+        "z": "eedab9219893e73e",
+        "name": "Read zones",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nvar newMsg={};\nnewMsg.payload = \"\";\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    newMsg.payload += msg.payload.sensors[i].zone + \", \"\n}\n\nreturn [newMsg];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be26c69a73ab8bda",
+        "type": "link in",
+        "z": "eedab9219893e73e",
+        "name": "list o fzones",
+        "links": [
+            "f7074c8f7b9ae1bf"
+        ],
+        "x": 165,
+        "y": 120,
+        "wires": [
+            [
+                "aa9672f4a4ac5179"
+            ]
+        ]
+    },
+    {
+        "id": "203434289ca5eda0",
+        "type": "ui_dropdown",
+        "z": "eedab9219893e73e",
+        "name": "Zone",
+        "label": "del barrio",
+        "tooltip": "",
+        "place": "selecciona",
+        "group": "5a44016c9871c81c",
+        "order": 2,
+        "width": 9,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "C'an pastilla",
+                "value": "C'an pastilla",
+                "type": "str"
+            },
+            {
+                "label": "Canamunt",
+                "value": "Canamunt",
+                "type": "str"
+            },
+            {
+                "label": "Cas català",
+                "value": "Cas català",
+                "type": "str"
+            },
+            {
+                "label": "El Terreno",
+                "value": "El Terreno",
+                "type": "str"
+            },
+            {
+                "label": "La Gruta",
+                "value": "La Gruta",
+                "type": "str"
+            },
+            {
+                "label": "Parc de la Mar",
+                "value": "Parc de la Mar",
+                "type": "str"
+            },
+            {
+                "label": "Portopí",
+                "value": "Portopí",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "a39b17e6ee185f5c"
+            ]
+        ]
+    },
+    {
+        "id": "667abe0dd71ef386",
+        "type": "ui_text",
+        "z": "eedab9219893e73e",
+        "group": "5a44016c9871c81c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Title",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 470,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "425da0f604fc481b",
+        "type": "inject",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Subscribirse para recibir avisos y alarmas",
+        "payloadType": "str",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "667abe0dd71ef386"
+            ]
+        ]
+    },
+    {
+        "id": "18606f00e09a2ed8",
+        "type": "change",
+        "z": "eedab9219893e73e",
+        "name": "Clear selection",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "null",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "zone",
+                "pt": "flow",
+                "to": "null",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "203434289ca5eda0"
+            ]
+        ]
+    },
+    {
+        "id": "a39b17e6ee185f5c",
+        "type": "change",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "zone",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c390502540f26504",
+        "type": "ui_text",
+        "z": "eedab9219893e73e",
+        "group": "5a44016c9871c81c",
+        "order": 4,
+        "width": 9,
+        "height": 6,
+        "name": "Politica privacidad",
+        "label": "{{msg.payload}}",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4aff030fdea15de7",
+        "type": "inject",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "En cumplimiento del nuevo Reglamento (UE) 2016/679, de 27 de abril (GDPF), la Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD), y la Ley (SE) 1/1982 de protección civil, derecho al honor, intimidad personal y familiar y a la propia imagen. Acepto que el uso de los datos personales será intransferible y estos serán protegidos por la entidad organizadora con la única finalidad de enviar avisos de información medioambiental del barrio seleccionado.",
+        "payloadType": "str",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "c390502540f26504",
+                "7acde07f1ce2bff8"
+            ]
+        ]
+    },
+    {
+        "id": "81c6d6701b0002da",
+        "type": "ui_ui_control",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "events": "all",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "7b9e4d940e0a4a31"
+            ]
+        ]
+    },
+    {
+        "id": "02e8778e01fb05e8",
+        "type": "ui_toast",
+        "z": "eedab9219893e73e",
+        "position": "prompt",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Politica privacidad",
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c642e3f8b8f651e8",
+        "type": "influxdb out",
+        "z": "eedab9219893e73e",
+        "influxdb": "7d886477915fc7be",
+        "name": "myusers",
+        "measurement": "myusers",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1260,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b7342f03b39f67c1",
+        "type": "function",
+        "z": "eedab9219893e73e",
+        "name": "Compose alarm record",
+        "func": "var measure = {};\n\nif (msg.payload.twitter == \"\") {\n    measure.payload = [{\n        name: msg.payload.name\n    },\n    {\n        zone: flow.get(\"zone\"),\n        email: msg.payload.email,\n        sensor: msg.payload.sensor,\n        policy: msg.payload.policy\n    }];\n} else if (msg.payload.email == \"\") {\n    measure.payload = [{\n        name: msg.payload.name\n    },\n    {\n        zone: flow.get(\"zone\"),\n        twitter: msg.payload.twitter,\n        sensor: msg.payload.sensor,\n        policy: msg.payload.policy\n    }];\n} else {\n    measure.payload = [{\n        name: msg.payload.name\n    },\n    {\n        zone: flow.get(\"zone\"),\n        twitter: msg.payload.twitter,\n        email: msg.payload.email,\n        sensor: msg.payload.sensor,\n        policy: msg.payload.policy\n    }];\n}\nreturn [measure];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 300,
+        "wires": [
+            [
+                "6876bd4945e083e1",
+                "18606f00e09a2ed8",
+                "c642e3f8b8f651e8"
+            ]
+        ]
+    },
+    {
+        "id": "b3e63d7e05c8638f",
+        "type": "switch",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "property": "payload.policy",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 220,
+        "wires": [
+            [
+                "381353fe2695bb13"
+            ],
+            [
+                "b7342f03b39f67c1"
+            ]
+        ]
+    },
+    {
+        "id": "7b9e4d940e0a4a31",
+        "type": "switch",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "connect",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "change",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "18606f00e09a2ed8"
+            ],
+            [
+                "18606f00e09a2ed8"
+            ]
+        ]
+    },
+    {
+        "id": "82f33413c9186e1a",
+        "type": "ui_toast",
+        "z": "eedab9219893e73e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Barrio",
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2015b3860e7ea862",
+        "type": "switch",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "property": "zone",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "26c65746a5b1b105"
+            ],
+            [
+                "b3e63d7e05c8638f"
+            ]
+        ]
+    },
+    {
+        "id": "26c65746a5b1b105",
+        "type": "change",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Selecciona barrio",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 160,
+        "wires": [
+            [
+                "82f33413c9186e1a"
+            ]
+        ]
+    },
+    {
+        "id": "381353fe2695bb13",
+        "type": "change",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Debes aceptar la política de privacidad",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 200,
+        "wires": [
+            [
+                "02e8778e01fb05e8"
+            ]
+        ]
+    },
+    {
+        "id": "dbd6beb65674e3a4",
+        "type": "ui_toast",
+        "z": "eedab9219893e73e",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1210,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6876bd4945e083e1",
+        "type": "change",
+        "z": "eedab9219893e73e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Usuario registrado",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 360,
+        "wires": [
+            [
+                "dbd6beb65674e3a4"
+            ]
+        ]
+    },
+    {
+        "id": "7acde07f1ce2bff8",
+        "type": "ui_text",
+        "z": "eedab9219893e73e",
+        "group": "5a44016c9871c81c",
+        "order": 5,
+        "width": 9,
+        "height": "2",
+        "name": "Un-register",
+        "label": "Para borrar tu registro, envía un correo a: ",
+        "format": "fumport@gmail.com",
+        "layout": "col-center",
+        "className": "",
+        "x": 490,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "edc114b1.b4d3e8",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "> 25 pm",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "25",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 180,
+        "y": 760,
+        "wires": [
+            [
+                "30d8f6856ecb95b4"
+            ]
+        ]
+    },
+    {
+        "id": "b7f5dde0.09657",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Compose alert message",
+        "func": "msg.payload = msg.icon + \"Alerta: contaminación \" + msg.prefix + \" (\" + msg.payload + \" PM2.5 µg/m³) detectada en \" + msg.topic;\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 620,
+        "wires": [
+            [
+                "864349942ebe0658",
+                "0dd8f996ed40bf89",
+                "1688427cae116437"
+            ]
+        ],
+        "outputLabels": [
+            "Sunset"
+        ]
+    },
+    {
+        "id": "781a8da1f2e59ae3",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "Inject JSON of sensors catalogue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payloadType": "json",
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "03a591ed46164871",
+                "52b356a78672061e"
+            ]
+        ]
+    },
+    {
+        "id": "32db769f984c46c9",
+        "type": "ui_text",
+        "z": "d4e727584e18a1cb",
+        "group": "57d5a7045753184a",
+        "order": 6,
+        "width": 4,
+        "height": 2,
+        "name": "",
+        "label": "de partículas de 2,5nm :",
+        "format": "{{msg.topic}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1050,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e390316cb8f7e9f7",
+        "type": "http request",
+        "z": "d4e727584e18a1cb",
+        "name": "SensorCommunity v1",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.sensor.community/airrohr/v1/sensor/{{{payload}}}/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": true,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1160,
+        "y": 380,
+        "wires": [
+            [
+                "e072360ffda73eda",
+                "ba362b5cc4a1e315"
+            ]
+        ]
+    },
+    {
+        "id": "52b356a78672061e",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Read JSON of sensors catalogue",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    newMsg.payload = msg.payload.sensors[i].id\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.id = msg.payload.sensors[i].id\n    newMsg.source = msg.payload.sensors[i].source\n\n    node.send(newMsg);    \n    await delay(1000);\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 380,
+        "wires": [
+            [
+                "5174b6799849dd93"
+            ]
+        ]
+    },
+    {
+        "id": "0f5dda98c41c3e94",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "To number",
+        "func": "msg.payload = Number(msg.payload);\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 500,
+        "wires": [
+            [
+                "edc114b1.b4d3e8",
+                "e79e3ca5c4aedf18",
+                "ce7759c917465664"
+            ]
+        ]
+    },
+    {
+        "id": "e9d50becda945d8a",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "PM2.5 Sensor SDS011",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].sensordatavalues[1].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "0f5dda98c41c3e94"
+            ]
+        ]
+    },
+    {
+        "id": "3c6bea5326c023cd",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "Reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 130,
+        "y": 560,
+        "wires": [
+            [
+                "32db769f984c46c9",
+                "0a5b9ef176667973"
+            ]
+        ]
+    },
+    {
+        "id": "4ae39090021d038c",
+        "type": "comment",
+        "z": "d4e727584e18a1cb",
+        "name": "Sensor readings throught API request",
+        "info": "",
+        "x": 210,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "150f5e36e94f4bd5",
+        "type": "comment",
+        "z": "d4e727584e18a1cb",
+        "name": "AQI 2.5 pm analysis",
+        "info": "",
+        "x": 150,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "832417af.a24228",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "5319cd20.c90484",
+            "6a084c68.22d114",
+            "52830d7f.add964",
+            "b821095c.ea1448",
+            "7d0d3b5e.cb2174",
+            "be1a98f6.af7658",
+            "de3c09e4.2150d8",
+            "6ad621a3.a5879",
+            "127556c.99272a9",
+            "42075480.25b54c"
+        ],
+        "x": 795,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "42075480.25b54c",
+        "type": "link in",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "832417af.a24228",
+            "fe03168c.97a3e8"
+        ],
+        "x": 895,
+        "y": 800,
+        "wires": [
+            [
+                "da706811.f05728"
+            ]
+        ]
+    },
+    {
+        "id": "30d8f6856ecb95b4",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "AQi",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "400",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "75",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "25",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 6,
+        "x": 370,
+        "y": 760,
+        "wires": [
+            [
+                "c469faa9ee615675",
+                "f5d6063585755aef"
+            ],
+            [
+                "c4c1dad7d64c6f7d",
+                "ac4967fcda30400e"
+            ],
+            [
+                "cc63e86ac02609f7",
+                "b9422f830fd24061"
+            ],
+            [
+                "ccab908dbc88f4bf",
+                "f1b54a803e7c046a"
+            ],
+            [
+                "7acc0d113ae96f28",
+                "024704b8fd31fe65"
+            ],
+            [
+                "2cc489a302eb177e",
+                "d54569e91bd408f2"
+            ]
+        ]
+    },
+    {
+        "id": "2cc489a302eb177e",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":0,\"g\":255,\"b\":168}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7acc0d113ae96f28",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":0,\"g\":169,\"b\":255}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 900,
+        "wires": [
+            [
+                "832417af.a24228"
+            ]
+        ]
+    },
+    {
+        "id": "ccab908dbc88f4bf",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":0,\"g\":0,\"b\":255}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 820,
+        "wires": [
+            [
+                "832417af.a24228"
+            ]
+        ]
+    },
+    {
+        "id": "cc63e86ac02609f7",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":204,\"g\":0,\"b\":255}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 740,
+        "wires": [
+            [
+                "832417af.a24228"
+            ]
+        ]
+    },
+    {
+        "id": "c4c1dad7d64c6f7d",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":255,\"g\":0,\"b\":107}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 660,
+        "wires": [
+            [
+                "832417af.a24228"
+            ]
+        ]
+    },
+    {
+        "id": "c469faa9ee615675",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":255,\"g\":0,\"b\":1}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 580,
+        "wires": [
+            [
+                "832417af.a24228"
+            ]
+        ]
+    },
+    {
+        "id": "2a3c849eb2ca7573",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "La Gruta",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 150,
+        "y": 840,
+        "wires": [
+            [
+                "30d8f6856ecb95b4"
+            ]
+        ]
+    },
+    {
+        "id": "f5d6063585755aef",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "peligrosa",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 620,
+        "wires": [
+            [
+                "4fcf8035b57744b0"
+            ]
+        ]
+    },
+    {
+        "id": "da706811.f05728",
+        "type": "ui_iro-color-picker",
+        "z": "d4e727584e18a1cb",
+        "group": "57d5a7045753184a",
+        "order": 8,
+        "width": 4,
+        "height": 5,
+        "name": "hue slider",
+        "label": "Peligroso___ Muy_insano_ Insano_____ Sensibles___ Moderado___ Bueno______ ",
+        "placement": "left",
+        "hAlign": "flex-end",
+        "vAlign": "flex-start",
+        "layoutDirection": "horizontal",
+        "widgetIndent": "3",
+        "buttonWidth": "",
+        "pickerType": "widget",
+        "popupWidth": "",
+        "popupHeight": "",
+        "pickerSize": "",
+        "backgroundDim": "",
+        "backgroundColor": "#000000",
+        "backgroundVariable": true,
+        "components": [
+            {
+                "options": {
+                    "borderColor": "#333333",
+                    "borderWidth": 1,
+                    "sliderType": "hue",
+                    "minTemperature": 3000,
+                    "maxTemperature": 6000
+                },
+                "componentId": "slider"
+            }
+        ],
+        "outFormat": "rgbString",
+        "dynOutput": "input:end",
+        "outputConfirmed": true,
+        "outputLimit": "1",
+        "passthru": false,
+        "topic": "iro.js color picker",
+        "topicType": "str",
+        "iroColorValue": "#000000",
+        "x": 1000,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fcf8035b57744b0",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "5319cd20.c90484",
+            "6a084c68.22d114",
+            "52830d7f.add964",
+            "b821095c.ea1448",
+            "7d0d3b5e.cb2174",
+            "be1a98f6.af7658",
+            "de3c09e4.2150d8",
+            "6ad621a3.a5879",
+            "127556c.99272a9",
+            "9436f97c3aedf920"
+        ],
+        "x": 805,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "9436f97c3aedf920",
+        "type": "link in",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "fe03168c.97a3e8",
+            "4fcf8035b57744b0"
+        ],
+        "x": 885,
+        "y": 620,
+        "wires": [
+            [
+                "32db769f984c46c9",
+                "2c0151dc85a367fe",
+                "4802208739830ef9",
+                "65c7a897037e24fe"
+            ]
+        ]
+    },
+    {
+        "id": "ac4967fcda30400e",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "muy insana",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 700,
+        "wires": [
+            [
+                "4fcf8035b57744b0"
+            ]
+        ]
+    },
+    {
+        "id": "b9422f830fd24061",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "insana",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 780,
+        "wires": [
+            [
+                "4fcf8035b57744b0"
+            ]
+        ]
+    },
+    {
+        "id": "f1b54a803e7c046a",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "peligrosa población sensible",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 860,
+        "wires": [
+            [
+                "4fcf8035b57744b0"
+            ]
+        ]
+    },
+    {
+        "id": "024704b8fd31fe65",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "moderada",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 940,
+        "wires": [
+            [
+                "4fcf8035b57744b0"
+            ]
+        ]
+    },
+    {
+        "id": "0dd8f996ed40bf89",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "Telegram out",
+        "mode": "link",
+        "links": [
+            "fa5a411f.3ecff"
+        ],
+        "x": 1255,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "298a9afcbd3cd616",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "> 80 pm",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "100",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 180,
+        "y": 1400,
+        "wires": [
+            [
+                "20cfed3e8f92e62e"
+            ]
+        ]
+    },
+    {
+        "id": "1ec33451f253afc7",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Compose alert message",
+        "func": "msg.payload = msg.icon + \"Alerta: contaminación \" + msg.prefix + \" (\" + msg.payload + \" PM10 µg/m³) detectada en \" + msg.topic;\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1260,
+        "wires": [
+            [
+                "f222f308ac636076",
+                "530257cc6310e55f",
+                "864349942ebe0658"
+            ]
+        ],
+        "outputLabels": [
+            "Sunset"
+        ]
+    },
+    {
+        "id": "0a5b9ef176667973",
+        "type": "ui_text",
+        "z": "d4e727584e18a1cb",
+        "group": "57d5a7045753184a",
+        "order": 4,
+        "width": 4,
+        "height": 2,
+        "name": "",
+        "label": "de partículas de 10nm :",
+        "format": "{{msg.topic}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1050,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "f7ceef8d8c0b6d18",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "To number",
+        "func": "msg.payload = Number(msg.payload);\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1140,
+        "wires": [
+            [
+                "298a9afcbd3cd616",
+                "52cb13b7b61233e6",
+                "840eb5eb842f9df7"
+            ]
+        ]
+    },
+    {
+        "id": "7f8a707f0331d8de",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "PM10 Sensor SDS011",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0].sensordatavalues[0].value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 1140,
+        "wires": [
+            [
+                "f7ceef8d8c0b6d18"
+            ]
+        ]
+    },
+    {
+        "id": "d08271824efb18d1",
+        "type": "comment",
+        "z": "d4e727584e18a1cb",
+        "name": "AQI 10 pm analysis",
+        "info": "",
+        "x": 130,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "6a84edc7c161d818",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "5319cd20.c90484",
+            "6a084c68.22d114",
+            "52830d7f.add964",
+            "b821095c.ea1448",
+            "7d0d3b5e.cb2174",
+            "be1a98f6.af7658",
+            "de3c09e4.2150d8",
+            "6ad621a3.a5879",
+            "127556c.99272a9",
+            "8d942972063266e8"
+        ],
+        "x": 795,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "8d942972063266e8",
+        "type": "link in",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "6a84edc7c161d818",
+            "fe03168c.97a3e8"
+        ],
+        "x": 895,
+        "y": 1440,
+        "wires": [
+            [
+                "a0892f6b1e0c0fa2"
+            ]
+        ]
+    },
+    {
+        "id": "20cfed3e8f92e62e",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "AQi",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1000",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "800",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "600",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "400",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "100",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 6,
+        "x": 370,
+        "y": 1400,
+        "wires": [
+            [
+                "45bf60008ecd9062",
+                "d516b88cdec4731c"
+            ],
+            [
+                "c573fc3ecc99cfcb",
+                "48ba2226bd357c9c"
+            ],
+            [
+                "23838558336243ec",
+                "22e09d21b0727aeb"
+            ],
+            [
+                "67d2f3e604422216",
+                "fa22c76058de3609"
+            ],
+            [
+                "e0404ce281777421",
+                "7f547d10c648fb8d"
+            ],
+            [
+                "b42d86aa2c4823ac",
+                "6760dc30938d4b35"
+            ]
+        ]
+    },
+    {
+        "id": "b42d86aa2c4823ac",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":0,\"g\":255,\"b\":168}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0404ce281777421",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":0,\"g\":169,\"b\":255}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1540,
+        "wires": [
+            [
+                "6a84edc7c161d818"
+            ]
+        ]
+    },
+    {
+        "id": "67d2f3e604422216",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":0,\"g\":0,\"b\":255}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1460,
+        "wires": [
+            [
+                "6a84edc7c161d818"
+            ]
+        ]
+    },
+    {
+        "id": "23838558336243ec",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":204,\"g\":0,\"b\":255}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1380,
+        "wires": [
+            [
+                "6a84edc7c161d818"
+            ]
+        ]
+    },
+    {
+        "id": "c573fc3ecc99cfcb",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":255,\"g\":0,\"b\":107}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1300,
+        "wires": [
+            [
+                "6a84edc7c161d818"
+            ]
+        ]
+    },
+    {
+        "id": "45bf60008ecd9062",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"r\":255,\"g\":0,\"b\":1}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1220,
+        "wires": [
+            [
+                "6a84edc7c161d818"
+            ]
+        ]
+    },
+    {
+        "id": "0dee8b21decc28eb",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "La Gruta",
+        "payload": "109",
+        "payloadType": "num",
+        "x": 190,
+        "y": 1500,
+        "wires": [
+            [
+                "20cfed3e8f92e62e"
+            ]
+        ]
+    },
+    {
+        "id": "d516b88cdec4731c",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "peligrosa",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1260,
+        "wires": [
+            [
+                "56a38afe13a12a8e"
+            ]
+        ]
+    },
+    {
+        "id": "56a38afe13a12a8e",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "5319cd20.c90484",
+            "6a084c68.22d114",
+            "52830d7f.add964",
+            "b821095c.ea1448",
+            "7d0d3b5e.cb2174",
+            "be1a98f6.af7658",
+            "de3c09e4.2150d8",
+            "6ad621a3.a5879",
+            "127556c.99272a9",
+            "66bfe79390f27f94"
+        ],
+        "x": 805,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "66bfe79390f27f94",
+        "type": "link in",
+        "z": "d4e727584e18a1cb",
+        "name": "color",
+        "links": [
+            "fe03168c.97a3e8",
+            "56a38afe13a12a8e"
+        ],
+        "x": 885,
+        "y": 1260,
+        "wires": [
+            [
+                "0a5b9ef176667973",
+                "7f3e17e7e6e8dc55",
+                "2ad7dac6152c9a52",
+                "4802208739830ef9"
+            ]
+        ]
+    },
+    {
+        "id": "48ba2226bd357c9c",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "muy insana",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1340,
+        "wires": [
+            [
+                "56a38afe13a12a8e"
+            ]
+        ]
+    },
+    {
+        "id": "22e09d21b0727aeb",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "insana",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1420,
+        "wires": [
+            [
+                "56a38afe13a12a8e"
+            ]
+        ]
+    },
+    {
+        "id": "fa22c76058de3609",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "peligrosa población sensible",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1500,
+        "wires": [
+            [
+                "56a38afe13a12a8e"
+            ]
+        ]
+    },
+    {
+        "id": "7f547d10c648fb8d",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "moderada",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1580,
+        "wires": [
+            [
+                "56a38afe13a12a8e"
+            ]
+        ]
+    },
+    {
+        "id": "a0892f6b1e0c0fa2",
+        "type": "ui_iro-color-picker",
+        "z": "d4e727584e18a1cb",
+        "group": "57d5a7045753184a",
+        "order": 10,
+        "width": 4,
+        "height": 5,
+        "name": "hue slider",
+        "label": "Peligroso___ Muy_insano_ Insano_____ Sensibles___ Moderado___ Bueno______ ",
+        "placement": "left",
+        "hAlign": "flex-end",
+        "vAlign": "flex-start",
+        "layoutDirection": "horizontal",
+        "widgetIndent": "3",
+        "buttonWidth": "",
+        "pickerType": "widget",
+        "popupWidth": "",
+        "popupHeight": "",
+        "pickerSize": "",
+        "backgroundDim": "",
+        "backgroundColor": "#000000",
+        "backgroundVariable": true,
+        "components": [
+            {
+                "options": {
+                    "borderColor": "#333333",
+                    "borderWidth": 1,
+                    "sliderType": "hue",
+                    "minTemperature": 3000,
+                    "maxTemperature": 6000
+                },
+                "componentId": "slider"
+            }
+        ],
+        "outFormat": "rgbString",
+        "dynOutput": "input:end",
+        "outputConfirmed": true,
+        "outputLimit": "1",
+        "passthru": false,
+        "topic": "iro.js color picker",
+        "topicType": "str",
+        "iroColorValue": "#000000",
+        "x": 1000,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d54569e91bd408f2",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "bueno",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6760dc30938d4b35",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "prefix",
+                "pt": "msg",
+                "to": "bueno",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7074c8f7b9ae1bf",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "sensors",
+        "mode": "link",
+        "links": [
+            "be26c69a73ab8bda",
+            "c11559a7590c6e28"
+        ],
+        "x": 695,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "03a591ed46164871",
+        "type": "delay",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "30",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "f7074c8f7b9ae1bf"
+            ]
+        ]
+    },
+    {
+        "id": "e79e3ca5c4aedf18",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Update global readings",
+        "func": "if (msg.payload != 0) {\n    var readings_pm25 = global.get('readings_pm25');\n    readings_pm25[msg.id] = msg.payload;\n    global.set('readings_pm25', readings_pm25);\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce7759c917465664",
+        "type": "debug",
+        "z": "d4e727584e18a1cb",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8a04b841bb2d9e0f",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Sensors Catalogue to global readings",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nvar readings_pm25 = {};\nvar readings_pm10 = {};\nvar sensors = {};\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm25[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm10[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    sensors[msg.payload.sensors[i].id] = msg.payload.sensors[i].zone;\n}\n\nreadings_pm25.wind_direction = 0;\nreadings_pm25.wind_speed = 0;\nreadings_pm25.humidity = 0;\nreadings_pm25.temperature = 0;\nreadings_pm25.rain = false;\n\nreadings_pm10.wind_direction = 0;\nreadings_pm10.wind_speed = 0;\nreadings_pm10.humidity = 0;\nreadings_pm10.temperature = 0;\nreadings_pm10.rain = false;\n\nglobal.set('readings_pm25', readings_pm25);\nglobal.set('readings_pm10', readings_pm10);\nglobal.set('sensors',sensors);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "840eb5eb842f9df7",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Update global readings",
+        "func": "if (msg.payload != 0) {\n    var readings_pm10 = global.get('readings_pm10');\n    readings_pm10[msg.id] = msg.payload;\n    global.set('readings_pm10', readings_pm10);\n}\n\nreturn readings_pm10;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52cb13b7b61233e6",
+        "type": "debug",
+        "z": "d4e727584e18a1cb",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "742cbe325a6ebf6a",
+        "type": "debug",
+        "z": "d4e727584e18a1cb",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1688427cae116437",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "Twitter out",
+        "mode": "link",
+        "links": [
+            "87e2263d707b5a1c",
+            "f3f5d9e147efb1b2",
+            "6b0386d8931674c6",
+            "1af1a5e912539bc0"
+        ],
+        "x": 1255,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2c0151dc85a367fe",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "☣️",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "☣️",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 560,
+        "wires": [
+            [
+                "b7f5dde0.09657"
+            ]
+        ]
+    },
+    {
+        "id": "65c7a897037e24fe",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Compose alarm record",
+        "func": "var measure = {};\nmeasure.payload = [{\n    pm25: msg.payload,\n},\n{\n    zone: msg.topic\n}];\nreturn [measure];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 660,
+        "wires": [
+            [
+                "bfa025901058a0aa",
+                "742cbe325a6ebf6a"
+            ]
+        ]
+    },
+    {
+        "id": "7f3e17e7e6e8dc55",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "☣️",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "☣️",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 1200,
+        "wires": [
+            [
+                "1ec33451f253afc7"
+            ]
+        ]
+    },
+    {
+        "id": "bfa025901058a0aa",
+        "type": "influxdb out",
+        "z": "d4e727584e18a1cb",
+        "influxdb": "7d886477915fc7be",
+        "name": "alarms",
+        "measurement": "alarms",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1210,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "2ad7dac6152c9a52",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Compose alarm record",
+        "func": "var measure = {};\nmeasure.payload = [{\n    pm10: msg.payload,\n},\n{\n    zone: msg.topic\n}];\nreturn [measure];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1300,
+        "wires": [
+            [
+                "bfa025901058a0aa"
+            ]
+        ]
+    },
+    {
+        "id": "f222f308ac636076",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "Twitter out",
+        "mode": "link",
+        "links": [
+            "87e2263d707b5a1c",
+            "f3f5d9e147efb1b2",
+            "6b0386d8931674c6",
+            "1af1a5e912539bc0"
+        ],
+        "x": 1235,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "530257cc6310e55f",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "Telegram out",
+        "mode": "link",
+        "links": [
+            "fa5a411f.3ecff"
+        ],
+        "x": 1235,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "e072360ffda73eda",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "TimeOut",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "TimeoutError",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1160,
+        "y": 440,
+        "wires": [
+            [
+                "599adb277b764c14"
+            ],
+            [
+                "e9d50becda945d8a",
+                "7f8a707f0331d8de"
+            ]
+        ]
+    },
+    {
+        "id": "599adb277b764c14",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "API error",
+        "mode": "link",
+        "links": [
+            "86d8d1e99109e95c"
+        ],
+        "x": 1285,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e6850a7f825b5b34",
+        "type": "comment",
+        "z": "d4e727584e18a1cb",
+        "name": "Sensor readings throught MQTT",
+        "info": "",
+        "x": 190,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6f4ff0e388e1e406",
+        "type": "mqtt in",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "topic": "/AQI/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1622cb680378ab8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "eed5b133520aa38c",
+                "f79129bc88622c1a"
+            ]
+        ]
+    },
+    {
+        "id": "eed5b133520aa38c",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Update global readings",
+        "func": "var readings_pm25 = global.get('readings_pm25');\nreadings_pm25[msg.payload.id] = msg.payload.pm25;\nglobal.set('readings_pm25', readings_pm25);\n\nvar readings_pm10 = global.get('readings_pm10');\nreadings_pm10[msg.payload.id] = msg.payload.pm10;\nglobal.set('readings_pm10', readings_pm10);\n\nreturn readings_pm25;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73dca3fcd027cdae",
+        "type": "comment",
+        "z": "d4e727584e18a1cb",
+        "name": "Create Global context from Sensor catalogue ",
+        "info": "",
+        "x": 230,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "320bdc8a82fae3cc",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "Inject JSON of sensors catalogue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "8a04b841bb2d9e0f"
+            ]
+        ]
+    },
+    {
+        "id": "5174b6799849dd93",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "If source=API",
+        "property": "source",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "API",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "e390316cb8f7e9f7"
+            ]
+        ]
+    },
+    {
+        "id": "484c3ce49daa412c",
+        "type": "ui_text",
+        "z": "d4e727584e18a1cb",
+        "group": "57d5a7045753184a",
+        "order": 3,
+        "width": 3,
+        "height": 2,
+        "name": "",
+        "label": "Ultima",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1010,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "4802208739830ef9",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "DateTime",
+        "func": "var today = new Date();\nvar date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();\nvar time = (today.getHours() + global.get('hours-gap')) + \":\" + today.getMinutes() + \":\" + today.getSeconds();\nmsg.payload = date + ' ' + time;\nreturn [msg];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 920,
+        "wires": [
+            [
+                "484c3ce49daa412c"
+            ]
+        ]
+    },
+    {
+        "id": "f79129bc88622c1a",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Standarize payload",
+        "func": "var sensors = global.get('sensors');\n\nvar msg_pm25 = {};\nmsg_pm25.payload = msg.payload.pm25;\nmsg_pm25.topic = sensors[msg.payload.id];\nmsg_pm25.id = msg.payload.id;\nmsg_pm25.source = \"MQTT\";\n\nvar msg_pm10 = {};\nmsg_pm10.payload = msg.payload.pm10;\nmsg_pm10.topic = sensors[msg.payload.id];\nmsg_pm10.id = msg.payload.id;\nmsg_pm10.source = \"MQTT\";\n\nreturn [msg_pm25, msg_pm10];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "edc114b1.b4d3e8"
+            ],
+            [
+                "298a9afcbd3cd616"
+            ]
+        ]
+    },
+    {
+        "id": "864349942ebe0658",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "notification",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1320,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0acd83d0277a9b64",
+        "type": "influxdb out",
+        "z": "d4e727584e18a1cb",
+        "influxdb": "7d886477915fc7be",
+        "name": "pm25",
+        "measurement": "pm25",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1210,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ba362b5cc4a1e315",
+        "type": "delay",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 220,
+        "wires": [
+            [
+                "4cf2a63ec74a6523",
+                "f6766ff9a981fe3b"
+            ]
+        ]
+    },
+    {
+        "id": "4cf2a63ec74a6523",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "readings_pm25",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 220,
+        "wires": [
+            [
+                "0acd83d0277a9b64"
+            ]
+        ]
+    },
+    {
+        "id": "6ee75032b3d06c92",
+        "type": "influxdb out",
+        "z": "d4e727584e18a1cb",
+        "influxdb": "7d886477915fc7be",
+        "name": "pm10",
+        "measurement": "pm10",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1210,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f6766ff9a981fe3b",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "readings_pm10",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 260,
+        "wires": [
+            [
+                "6ee75032b3d06c92"
+            ]
+        ]
+    },
+    {
+        "id": "11ce0d83eda5bd05",
+        "type": "comment",
+        "z": "d4e727584e18a1cb",
+        "name": "Sensor writings InfluxDB",
+        "info": "",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "3d75beaab8257083",
+        "type": "inject",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "723fe3417d5cdefc"
+            ]
+        ]
+    },
+    {
+        "id": "723fe3417d5cdefc",
+        "type": "http request",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://rcnp.oceandrivers.com/api/v1.0/getWeatherDisplay/rcnp/?period=latesthour",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "774b52bb33411b61"
+            ]
+        ]
+    },
+    {
+        "id": "323d1794653ce8d1",
+        "type": "debug",
+        "z": "1eb2925cd16908e4",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "774b52bb33411b61",
+        "type": "json",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "1e34d1e46be34c11",
+                "e42dcfc6607a8f08",
+                "576b05e9cf022d85",
+                "a5fa9c449116c856",
+                "2bdb9aeb77ba02ce"
+            ]
+        ]
+    },
+    {
+        "id": "b82d63fb46a61304",
+        "type": "ui_gauge",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "group": "e3e9df19f35e97a1",
+        "order": 1,
+        "width": "3",
+        "height": "5",
+        "gtype": "gage",
+        "title": "Velocidad del viento",
+        "label": "Kn",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 880,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "aa1bc1a0.1e576",
+        "type": "function",
+        "z": "1eb2925cd16908e4",
+        "name": "To number / Topic / readings",
+        "func": "msg.payload = Number(msg.payload);\nmsg.topic = \"wind_speed\";\n\n//var readings = global.get('readings');\n//readings.wind_speed = msg.payload;\n//global.set('readings', readings);\n\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "b82d63fb46a61304",
+                "079612641670a685"
+            ]
+        ]
+    },
+    {
+        "id": "4e0a6d30cec94e43",
+        "type": "ui_gauge",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "group": "e3e9df19f35e97a1",
+        "order": 3,
+        "width": "3",
+        "height": "5",
+        "gtype": "compass",
+        "title": "Dirección del viento",
+        "label": "º",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 870,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "cb665269cea5f46c",
+        "type": "function",
+        "z": "1eb2925cd16908e4",
+        "name": "To number / Topic",
+        "func": "msg.payload = Number(msg.payload);\nmsg.topic = \"wind_direction\";\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "4e0a6d30cec94e43",
+                "59daefb01edd4573",
+                "0ebf57544d44fec2"
+            ]
+        ]
+    },
+    {
+        "id": "079612641670a685",
+        "type": "ui_chart",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "group": "e3e9df19f35e97a1",
+        "order": 2,
+        "width": "6",
+        "height": "5",
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#9467bd",
+            "#3a07f2",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "167fc5f31fc980ba",
+        "type": "ui_switch",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "label": "¿Llueve?",
+        "tooltip": "",
+        "group": "e3e9df19f35e97a1",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 840,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eeb63e126b23890e",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "167fc5f31fc980ba",
+                "6b8e9dcc0717b958"
+            ]
+        ]
+    },
+    {
+        "id": "59daefb01edd4573",
+        "type": "ui_chart",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "group": "e3e9df19f35e97a1",
+        "order": 4,
+        "width": "6",
+        "height": "5",
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "360",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#3c24ee",
+            "#3a07f2",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8f29c0206c5472f",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "wind_direction_last",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8daf669862085934",
+        "type": "comment",
+        "z": "1eb2925cd16908e4",
+        "name": "Similar (+/- 15º) wind direction last 10 min.",
+        "info": "",
+        "x": 200,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "eed62dd73b80db05",
+        "type": "inject",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "80",
+        "payloadType": "num",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "b8f29c0206c5472f"
+            ]
+        ]
+    },
+    {
+        "id": "0ebf57544d44fec2",
+        "type": "function",
+        "z": "1eb2925cd16908e4",
+        "name": "Similar wind direction",
+        "func": "var wind_direction_now = msg.payload + 180;\nvar wind_direction = { payload: msg.payload};\n\nvar wind_direction_last = global.get(\"wind_direction_last\") + 180;\nvar same_wind_direction = {};\n\nif (wind_direction_last >= wind_direction_now - 15 && wind_direction_last <= wind_direction_now + 15 ) {\n    same_wind_direction.payload = true;\n} else {\n    same_wind_direction.payload = false;\n}\nreturn [wind_direction, same_wind_direction];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 460,
+        "wires": [
+            [
+                "b8f29c0206c5472f"
+            ],
+            [
+                "362d68fce48a6ae0"
+            ]
+        ]
+    },
+    {
+        "id": "362d68fce48a6ae0",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "same_wind_direction",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dd056d6a36607ec",
+        "type": "inject",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 500,
+        "wires": [
+            [
+                "362d68fce48a6ae0"
+            ]
+        ]
+    },
+    {
+        "id": "6b8e9dcc0717b958",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "its_raining",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "884c5f57563fc6ae",
+        "type": "comment",
+        "z": "1eb2925cd16908e4",
+        "name": "Read RCNP weather station",
+        "info": "",
+        "x": 160,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "f04b0f859d0041e4",
+        "type": "inject",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"TEMPERATURE\":{\"0\":24,\"1\":24,\"2\":24,\"3\":24.1,\"4\":24.1,\"5\":24.1,\"6\":24.2,\"7\":24.2,\"8\":24.2,\"9\":24.2,\"10\":24.2,\"11\":24.2,\"12\":24.2,\"13\":24.2,\"14\":24.1,\"15\":24.2,\"16\":24.1,\"17\":24.1,\"18\":24.1,\"19\":24.1,\"20\":24.1,\"21\":24.1,\"22\":24.1,\"23\":24.1,\"24\":24.1,\"25\":24.1,\"26\":24.1,\"27\":24.1,\"28\":24.1,\"29\":24.1,\"30\":24.1,\"31\":24.1,\"32\":24.1,\"33\":24,\"34\":24.1,\"35\":24,\"36\":24,\"37\":24,\"38\":24,\"39\":24,\"40\":24,\"41\":23.9,\"42\":23.9,\"43\":23.9,\"44\":23.9,\"45\":23.9,\"46\":23.9,\"47\":23.8,\"48\":23.8,\"49\":23.8,\"50\":23.8,\"51\":23.8,\"52\":23.8,\"53\":23.8,\"54\":23.8,\"55\":23.8,\"56\":23.8,\"57\":23.8,\"58\":23.8,\"59\":23.8},\"TWD\":{\"0\":279,\"1\":266,\"2\":263,\"3\":250,\"4\":253,\"5\":238,\"6\":248,\"7\":237,\"8\":239,\"9\":244,\"10\":253,\"11\":241,\"12\":248,\"13\":244,\"14\":249,\"15\":248,\"16\":247,\"17\":247,\"18\":250,\"19\":250,\"20\":248,\"21\":247,\"22\":251,\"23\":250,\"24\":252,\"25\":250,\"26\":242,\"27\":249,\"28\":253,\"29\":252,\"30\":241,\"31\":245,\"32\":239,\"33\":246,\"34\":247,\"35\":250,\"36\":248,\"37\":252,\"38\":248,\"39\":244,\"40\":245,\"41\":239,\"42\":242,\"43\":244,\"44\":246,\"45\":251,\"46\":248,\"47\":248,\"48\":247,\"49\":251,\"50\":254,\"51\":266,\"52\":263,\"53\":263,\"54\":257,\"55\":252,\"56\":250,\"57\":248,\"58\":249,\"59\":248},\"TWS\":{\"0\":4,\"1\":3,\"2\":4,\"3\":4,\"4\":4,\"5\":5,\"6\":6,\"7\":4,\"8\":4,\"9\":4,\"10\":3,\"11\":5,\"12\":6,\"13\":7,\"14\":6,\"15\":6,\"16\":4,\"17\":5,\"18\":4,\"19\":4,\"20\":5,\"21\":6,\"22\":6,\"23\":5,\"24\":4,\"25\":4,\"26\":5,\"27\":6,\"28\":4,\"29\":4,\"30\":4,\"31\":5,\"32\":4,\"33\":4,\"34\":3,\"35\":4,\"36\":4,\"37\":4,\"38\":3,\"39\":4,\"40\":4,\"41\":4,\"42\":4,\"43\":4,\"44\":4,\"45\":4,\"46\":5,\"47\":4,\"48\":4,\"49\":4,\"50\":4,\"51\":3,\"52\":3,\"53\":2,\"54\":3,\"55\":4,\"56\":3,\"57\":4,\"58\":4,\"59\":4},\"LATEST_DATA\":{\"TWS_GUST_MAX\":{\"TIME_STRING\":\"5-10-2022 4:20_PM:00\",\"VALUE\":\"17.0\"},\"TWD\":220,\"HUMIDEX\":27.2,\"TWS\":4,\"LOCALTIME\":2,\"HUMIDITY_IN\":100,\"WINDCHILL\":23.7,\"TEMP_IN\":48,\"ICON_NOW\":\"1\",\"ICON_FOR\":\"1\",\"TEMPERATURE\":23.7,\"TWS_GUST\":3.5,\"RAIN\":0,\"PRESSURE\":1025.7,\"LONGITUDE\":2.634551,\"PRESSURE_TR\":0.4,\"RAIN_MONTH\":0,\"RAIN_DAY\":0,\"HUMIDITY\":55,\"TIME_STRING\":\"5-10-2022 20:46:58\",\"TIME\":1664995618000,\"LATITUDE\":39.566895,\"WEATHER_DES\":\"Dry/Night_time\"},\"TWS_GUST\":{\"0\":5,\"1\":6,\"2\":6,\"3\":6,\"4\":4,\"5\":8,\"6\":6,\"7\":8,\"8\":5,\"9\":4,\"10\":5,\"11\":8,\"12\":7,\"13\":8,\"14\":6,\"15\":6,\"16\":4,\"17\":7,\"18\":6,\"19\":6,\"20\":6,\"21\":8,\"22\":7,\"23\":6,\"24\":6,\"25\":7,\"26\":7,\"27\":7,\"28\":4,\"29\":6,\"30\":7,\"31\":6,\"32\":7,\"33\":5,\"34\":6,\"35\":4,\"36\":6,\"37\":4,\"38\":6,\"39\":4,\"40\":5,\"41\":5,\"42\":4,\"43\":4,\"44\":4,\"45\":6,\"46\":6,\"47\":4,\"48\":6,\"49\":6,\"50\":4,\"51\":3,\"52\":3,\"53\":3,\"54\":5,\"55\":4,\"56\":4,\"57\":6,\"58\":4,\"59\":4},\"RAIN\":{\"0\":0,\"1\":0,\"2\":0,\"3\":0,\"4\":0,\"5\":0,\"6\":0,\"7\":0,\"8\":0,\"9\":0,\"10\":0,\"11\":0,\"12\":0,\"13\":0,\"14\":0,\"15\":0,\"16\":0,\"17\":0,\"18\":0,\"19\":0,\"20\":0,\"21\":0,\"22\":0,\"23\":0,\"24\":0,\"25\":0,\"26\":0,\"27\":0,\"28\":0,\"29\":0,\"30\":0,\"31\":0,\"32\":0,\"33\":0,\"34\":0,\"35\":0,\"36\":0,\"37\":0,\"38\":0,\"39\":0,\"40\":0,\"41\":0,\"42\":0,\"43\":0,\"44\":0,\"45\":0,\"46\":0,\"47\":0,\"48\":0,\"49\":0,\"50\":0,\"51\":0,\"52\":0,\"53\":0,\"54\":0,\"55\":0,\"56\":0,\"57\":0,\"58\":0,\"59\":0},\"HUMIDITY\":{\"0\":57,\"1\":57,\"2\":57,\"3\":57,\"4\":58,\"5\":58,\"6\":58,\"7\":58,\"8\":58,\"9\":58,\"10\":58,\"11\":58,\"12\":58,\"13\":58,\"14\":58,\"15\":58,\"16\":58,\"17\":58,\"18\":58,\"19\":58,\"20\":58,\"21\":58,\"22\":58,\"23\":58,\"24\":59,\"25\":59,\"26\":59,\"27\":59,\"28\":59,\"29\":59,\"30\":59,\"31\":59,\"32\":59,\"33\":59,\"34\":59,\"35\":59,\"36\":59,\"37\":59,\"38\":59,\"39\":59,\"40\":59,\"41\":59,\"42\":59,\"43\":59,\"44\":59,\"45\":59,\"46\":59,\"47\":59,\"48\":59,\"49\":59,\"50\":59,\"51\":59,\"52\":59,\"53\":59,\"54\":59,\"55\":59,\"56\":59,\"57\":59,\"58\":59,\"59\":59},\"PRESSURE\":{\"0\":1025.1,\"1\":1025.1,\"2\":1025.1,\"3\":1025.1,\"4\":1025.1,\"5\":1025.1,\"6\":1025.2,\"7\":1025.1,\"8\":1025.1,\"9\":1025.1,\"10\":1025.1,\"11\":1025.1,\"12\":1025.2,\"13\":1025.1,\"14\":1025.1,\"15\":1025.1,\"16\":1025.2,\"17\":1025.2,\"18\":1025.1,\"19\":1025.2,\"20\":1025.1,\"21\":1025.2,\"22\":1025.2,\"23\":1025.2,\"24\":1025.2,\"25\":1025.2,\"26\":1025.2,\"27\":1025.2,\"28\":1025.2,\"29\":1025.2,\"30\":1025.2,\"31\":1025.2,\"32\":1025.2,\"33\":1025.2,\"34\":1025.2,\"35\":1025.3,\"36\":1025.2,\"37\":1025.3,\"38\":1025.3,\"39\":1025.3,\"40\":1025.3,\"41\":1025.2,\"42\":1025.3,\"43\":1025.3,\"44\":1025.3,\"45\":1025.3,\"46\":1025.3,\"47\":1025.3,\"48\":1025.2,\"49\":1025.3,\"50\":1025.3,\"51\":1025.3,\"52\":1025.4,\"53\":1025.3,\"54\":1025.3,\"55\":1025.3,\"56\":1025.3,\"57\":1025.4,\"58\":1025.3,\"59\":1025.4},\"length\":60,\"TIME\":{\"0\":1664992078000,\"1\":1664992138000,\"2\":1664992198000,\"3\":1664992258000,\"4\":1664992318000,\"5\":1664992378000,\"6\":1664992438000,\"7\":1664992498000,\"8\":1664992558000,\"9\":1664992618000,\"10\":1664992678000,\"11\":1664992738000,\"12\":1664992798000,\"13\":1664992858000,\"14\":1664992918000,\"15\":1664992978000,\"16\":1664993038000,\"17\":1664993098000,\"18\":1664993158000,\"19\":1664993218000,\"20\":1664993278000,\"21\":1664993338000,\"22\":1664993398000,\"23\":1664993458000,\"24\":1664993518000,\"25\":1664993578000,\"26\":1664993638000,\"27\":1664993698000,\"28\":1664993758000,\"29\":1664993818000,\"30\":1664993878000,\"31\":1664993938000,\"32\":1664993998000,\"33\":1664994058000,\"34\":1664994118000,\"35\":1664994178000,\"36\":1664994238000,\"37\":1664994298000,\"38\":1664994358000,\"39\":1664994418000,\"40\":1664994478000,\"41\":1664994538000,\"42\":1664994598000,\"43\":1664994658000,\"44\":1664994718000,\"45\":1664994778000,\"46\":1664994838000,\"47\":1664994898000,\"48\":1664994958000,\"49\":1664995018000,\"50\":1664995078000,\"51\":1664995138000,\"52\":1664995198000,\"53\":1664995258000,\"54\":1664995318000,\"55\":1664995378000,\"56\":1664995438000,\"57\":1664995498000,\"58\":1664995558000,\"59\":1664995618000},\"ACTIVE\":\"ON\"}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "1e34d1e46be34c11"
+            ]
+        ]
+    },
+    {
+        "id": "1e34d1e46be34c11",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "readings_pm25.temperature",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.TEMPERATURE)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "readings_pm10.temperature",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.TEMPERATURE)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.LATEST_DATA.TEMPERATURE",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "323d1794653ce8d1"
+            ]
+        ]
+    },
+    {
+        "id": "e42dcfc6607a8f08",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "readings_pm25.humidity",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.HUMIDITY)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "readings_pm10.humidity",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.HUMIDITY)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.LATEST_DATA.HUMIDITY",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "576b05e9cf022d85",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "rain",
+        "rules": [
+            {
+                "t": "set",
+                "p": "readings_pm25.rain",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.RAIN)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "readings_pm10.rain",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.RAIN)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.LATEST_DATA.RAIN",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "eeb63e126b23890e"
+            ]
+        ]
+    },
+    {
+        "id": "a5fa9c449116c856",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "wind_direction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "readings_pm25.wind_direction",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.TWD)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "readings_pm10.wind_direction",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.TWD)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.LATEST_DATA.TWD",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "cb665269cea5f46c"
+            ]
+        ]
+    },
+    {
+        "id": "2bdb9aeb77ba02ce",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "wind_speed",
+        "rules": [
+            {
+                "t": "set",
+                "p": "readings_pm25.wind_speed",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.TWS)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "readings_pm10.wind_speed",
+                "pt": "global",
+                "to": "$number(payload.LATEST_DATA.TWS)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.LATEST_DATA.TWS",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "aa1bc1a0.1e576",
+                "fcf9343dc8b4f89c"
+            ]
+        ]
+    },
+    {
+        "id": "fcf9343dc8b4f89c",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "wind_speed",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c11559a7590c6e28",
+        "type": "link in",
+        "z": "bcba3d054e58be9c",
+        "name": "sensors",
+        "links": [
+            "f7074c8f7b9ae1bf",
+            "9f416fb1d5d205ee"
+        ],
+        "x": 125,
+        "y": 140,
+        "wires": [
+            [
+                "ec211089fdb57a16"
+            ]
+        ]
+    },
+    {
+        "id": "4e45ae898a470822",
+        "type": "function",
+        "z": "bcba3d054e58be9c",
+        "name": "Read JSON of sensors catalogue",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n// opposite wind direcction\nvar wd = global.get(\"wind_direction_last\") + 180;\nif (wd > 360) {\n    wd = wd - 360;\n}\n\nfor (var i = 0; i < Object.keys(msg.payload.sensors[0]).length; i++) {\n    var newMsg = {};\n    if (wd < msg.payload.sensors[i].wind_angle_max && wd > msg.payload.sensors[i].wind_angle_min) {\n        newMsg.payload = true;\n    } else {\n        newMsg.payload = false;\n    }\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.wd = wd;\n    newMsg.max = msg.payload.sensors[i].wind_angle_max;\n    newMsg.min = msg.payload.sensors[i].wind_angle_min;\n    node.send(newMsg);\n    await delay(500);\n}\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 220,
+        "wires": [
+            [
+                "ed4e6dae5c16f05e"
+            ]
+        ]
+    },
+    {
+        "id": "f2fc46ac7f25cc93",
+        "type": "comment",
+        "z": "bcba3d054e58be9c",
+        "name": "Wind direction risck ",
+        "info": "",
+        "x": 190,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ec211089fdb57a16",
+        "type": "switch",
+        "z": "bcba3d054e58be9c",
+        "name": "If it isn't raining",
+        "property": "its_raining",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "4267425ca62c847c"
+            ]
+        ]
+    },
+    {
+        "id": "4267425ca62c847c",
+        "type": "switch",
+        "z": "bcba3d054e58be9c",
+        "name": "If the wind blows same direcction last 10 minutes",
+        "property": "same_wind_direction",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "918233dfe9312d5f"
+            ]
+        ]
+    },
+    {
+        "id": "7b0693b00b1211d0",
+        "type": "debug",
+        "z": "bcba3d054e58be9c",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ed4e6dae5c16f05e",
+        "type": "switch",
+        "z": "bcba3d054e58be9c",
+        "name": "Wind in risk direction",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1060,
+        "y": 220,
+        "wires": [
+            [
+                "4bb20fc6eaa57886"
+            ]
+        ]
+    },
+    {
+        "id": "918233dfe9312d5f",
+        "type": "switch",
+        "z": "bcba3d054e58be9c",
+        "name": "If wind_speed > 10 Kn ",
+        "property": "wind_speed",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "11",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "4e45ae898a470822"
+            ]
+        ]
+    },
+    {
+        "id": "f9aed1dc8c61b277",
+        "type": "function",
+        "z": "bcba3d054e58be9c",
+        "name": "Compose alert message",
+        "func": "msg.payload = msg.icon + \"Aviso: viento fuerte continuo desde zona de cruceros en dirección a \" + msg.topic;\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 300,
+        "wires": [
+            [
+                "7b0693b00b1211d0",
+                "41d807af6908e062",
+                "04b2f8cee2f37cd3"
+            ]
+        ],
+        "outputLabels": [
+            "Sunset"
+        ]
+    },
+    {
+        "id": "41d807af6908e062",
+        "type": "link out",
+        "z": "bcba3d054e58be9c",
+        "name": "Telegram out",
+        "mode": "link",
+        "links": [
+            "fa5a411f.3ecff"
+        ],
+        "x": 1235,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "04b2f8cee2f37cd3",
+        "type": "link out",
+        "z": "bcba3d054e58be9c",
+        "name": "Twitter out",
+        "mode": "link",
+        "links": [
+            "87e2263d707b5a1c",
+            "f3f5d9e147efb1b2",
+            "6b0386d8931674c6",
+            "1af1a5e912539bc0"
+        ],
+        "x": 1235,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5a3c22cc4ccdd539",
+        "type": "function",
+        "z": "bcba3d054e58be9c",
+        "name": "test",
+        "func": "global.set(\"wind_speed\", 20);\nglobal.set(\"wind_direction\", 80);\nglobal.set(\"same_wind_direction\", true);\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "ec211089fdb57a16"
+            ]
+        ]
+    },
+    {
+        "id": "e68149ba2644a137",
+        "type": "inject",
+        "z": "bcba3d054e58be9c",
+        "name": "Inject JSON of sensors catalogue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "5a3c22cc4ccdd539"
+            ]
+        ]
+    },
+    {
+        "id": "4bb20fc6eaa57886",
+        "type": "change",
+        "z": "bcba3d054e58be9c",
+        "name": "⚠️",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "⚠️",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 300,
+        "wires": [
+            [
+                "f9aed1dc8c61b277"
+            ]
+        ]
+    },
+    {
+        "id": "d88dd470.0ac7b8",
+        "type": "inject",
+        "z": "253351a39d168f06",
+        "name": "make request",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "874a3d4e.9b666"
+            ]
+        ]
+    },
+    {
+        "id": "874a3d4e.9b666",
+        "type": "http request",
+        "z": "253351a39d168f06",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://www.portsdebalears.com/es/buques-en-puerto",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "982612e7edcacac9"
+            ]
+        ]
+    },
+    {
+        "id": "7403c68f.21d7c8",
+        "type": "debug",
+        "z": "253351a39d168f06",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "90243cc1.87edc",
+        "type": "html",
+        "z": "253351a39d168f06",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "table.grid_1664220745304,grid_gisgrid.ui-jqgrid-btable",
+        "ret": "text",
+        "as": "single",
+        "x": 650,
+        "y": 100,
+        "wires": [
+            [
+                "7403c68f.21d7c8"
+            ]
+        ]
+    },
+    {
+        "id": "982612e7edcacac9",
+        "type": "scrape",
+        "z": "253351a39d168f06",
+        "name": "",
+        "mapping": "",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "7403c68f.21d7c8"
+            ]
+        ]
+    },
+    {
+        "id": "3f73d2f1d43672ad",
+        "type": "html",
+        "z": "253351a39d168f06",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "",
+        "ret": "html",
+        "as": "single",
+        "x": 610,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66e474f370de58cd",
+        "type": "influxdb in",
+        "z": "4ecb1660b0460e17",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "460866ca64fddabb"
+            ]
+        ]
+    },
+    {
+        "id": "87f8db640ba65efb",
+        "type": "inject",
+        "z": "4ecb1660b0460e17",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "ff69ce486a940405"
+            ]
+        ]
+    },
+    {
+        "id": "460866ca64fddabb",
+        "type": "debug",
+        "z": "4ecb1660b0460e17",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ff69ce486a940405",
+        "type": "function",
+        "z": "4ecb1660b0460e17",
+        "name": "function 1",
+        "func": "var date_query = new Date();\nvar year = date_query.getFullYear();\nvar month = date_query.getMonth();\nmonth += 1;\nmonth = \"0\" + month;\nmonth = month.slice(-2);\nvar day = date_query.getDay();\nday = \"0\" + day;\nday = day.slice(-2);\nmsg.query = \"SELECT * FROM \\\"alarms\\\" WHERE time >= '\" + year + \"-\" + month + \"-\" + day + \"'\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 120,
+        "wires": [
+            [
+                "66e474f370de58cd",
+                "460866ca64fddabb"
+            ]
+        ]
+    },
+    {
+        "id": "d76ec5b8272748fa",
+        "type": "inject",
+        "z": "4ecb1660b0460e17",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 240,
+        "wires": [
+            [
+                "3e31d8171f452319"
+            ]
+        ]
+    },
+    {
+        "id": "3e31d8171f452319",
+        "type": "function",
+        "z": "4ecb1660b0460e17",
+        "name": "Fields and Tags",
+        "func": "msg.payload = [{\n    intValue: '10i',\n    numValue: 12,\n    randomValue: Math.random()*10,\n    strValue: \"message2\"\n},\n{\n    tag1:\"sensor1\",\n    tag2:\"device2\"\n}];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "29c726784d9f6867"
+            ]
+        ]
+    },
+    {
+        "id": "29c726784d9f6867",
+        "type": "influxdb out",
+        "z": "4ecb1660b0460e17",
+        "influxdb": "7d886477915fc7be",
+        "name": "test",
+        "measurement": "test",
+        "precision": "ms",
+        "retentionPolicy": "",
+        "database": "test",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "my-org",
+        "bucket": "test",
+        "x": 410,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "61a758daf9906231",
+        "type": "influxdb out",
+        "z": "4ecb1660b0460e17",
+        "influxdb": "7d886477915fc7be",
+        "name": "sensors",
+        "measurement": "sensors",
+        "precision": "ms",
+        "retentionPolicy": "",
+        "database": "test",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "my-org",
+        "bucket": "test",
+        "x": 780,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "17f76bb80552c0f9",
+        "type": "inject",
+        "z": "4ecb1660b0460e17",
+        "name": "Inject JSON of sensors catalogue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "3409d04f4c7c4714"
+            ]
+        ]
+    },
+    {
+        "id": "3409d04f4c7c4714",
+        "type": "function",
+        "z": "4ecb1660b0460e17",
+        "name": "Read JSON of sensors catalogue",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n\n    newMsg.payload = msg.payload.sensors[i]\n    node.send(newMsg);   \n  \n    await delay(1000);\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "460866ca64fddabb",
+                "61a758daf9906231"
+            ]
+        ]
+    },
+    {
+        "id": "4eeb3adb.a27f94",
+        "type": "debug",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 730,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "301b3fa1.3d193",
+        "type": "telegram sender",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "bot": "e15e12918f77cb7f",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 80,
+        "wires": [
+            [
+                "4eeb3adb.a27f94"
+            ]
+        ]
+    },
+    {
+        "id": "faae7108.c1e79",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Bot",
+        "func": "msg.payload={\n    \"chatId\":403545288,\n    \"type\":\"message\",\n    \"content\":msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "301b3fa1.3d193",
+                "4eeb3adb.a27f94"
+            ]
+        ]
+    },
+    {
+        "id": "48a6291f.8951f8",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Channel",
+        "func": "msg.payload={\n    \"chatId\": -1001677013888,\n    \"type\":\"message\",\n    \"content\":msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "301b3fa1.3d193"
+            ]
+        ]
+    },
+    {
+        "id": "fa5a411f.3ecff",
+        "type": "link in",
+        "z": "cf5158d38960fc7b",
+        "name": "Telegram in Channel",
+        "links": [
+            "0dd8f996ed40bf89",
+            "41d807af6908e062",
+            "530257cc6310e55f"
+        ],
+        "x": 195,
+        "y": 80,
+        "wires": [
+            [
+                "5aa5e82e3a4fe8d1"
+            ]
+        ]
+    },
+    {
+        "id": "911243daf4fc3a15",
+        "type": "inject",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "222",
+        "payloadType": "num",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "4a2ade35b387db23"
+            ]
+        ]
+    },
+    {
+        "id": "1f45a6e3f58c2bea",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Compose alert message",
+        "func": "msg.payload = msg.icon + \"Alerta: contaminación (\" + msg.payload + \" PM2.5 µg/m³) detectada en \" + msg.topic;\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "faae7108.c1e79"
+            ]
+        ],
+        "outputLabels": [
+            "Sunset"
+        ]
+    },
+    {
+        "id": "4a2ade35b387db23",
+        "type": "change",
+        "z": "cf5158d38960fc7b",
+        "name": "☣️",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "☣️",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "1f45a6e3f58c2bea"
+            ]
+        ]
+    },
+    {
+        "id": "7c63019ee0f286c3",
+        "type": "comment",
+        "z": "cf5158d38960fc7b",
+        "name": "Testing",
+        "info": "",
+        "x": 90,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "86d8d1e99109e95c",
+        "type": "link in",
+        "z": "cf5158d38960fc7b",
+        "name": "Telegram in Bot",
+        "links": [
+            "599adb277b764c14",
+            "ff57763cd0510546"
+        ],
+        "x": 195,
+        "y": 120,
+        "wires": [
+            [
+                "faae7108.c1e79"
+            ]
+        ]
+    },
+    {
+        "id": "fb4f662d.f67578",
+        "type": "ui_template",
+        "z": "cf5158d38960fc7b",
+        "group": "1e640612.03c83a",
+        "name": "Telegram",
+        "order": 1,
+        "width": 9,
+        "height": 2,
+        "format": "<div>\n    <img style=\"float: left;\" src=\"https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg\"  width=\"50\" />\n    <a href=\"https://t.me/fumport\"><span>Accede aquí al canal de Telegram para estar informado y recibir avisos automáticos si se detectan anomalias medioambientales.</span></a>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "002f27316c6768b0",
+        "type": "comment",
+        "z": "cf5158d38960fc7b",
+        "name": "Control",
+        "info": "",
+        "x": 90,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "bf4757920e675e69",
+        "type": "debug",
+        "z": "cf5158d38960fc7b",
+        "name": "2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "97452d2ac9f1226e",
+        "type": "telegram command",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "command": "?",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "e15e12918f77cb7f",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "79a14595be86b11b"
+            ]
+        ]
+    },
+    {
+        "id": "79a14595be86b11b",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Help compose",
+        "func": "msg.payload = \"/stop - Bloquea todas las notificaciones. \\r\\n/start - Activa todas las notificaciones. \\r\\n/users - Listado de usuarios registrados.\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "faae7108.c1e79",
+                "bf4757920e675e69"
+            ]
+        ]
+    },
+    {
+        "id": "f34429e0c6f4052c",
+        "type": "telegram command",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "command": "/stop",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "e15e12918f77cb7f",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "0b7d41b11d59e13e"
+            ]
+        ]
+    },
+    {
+        "id": "0b7d41b11d59e13e",
+        "type": "change",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "silence",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "bf4757920e675e69"
+            ]
+        ]
+    },
+    {
+        "id": "0967f21990fab554",
+        "type": "telegram command",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "command": "/start",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "e15e12918f77cb7f",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 90,
+        "y": 480,
+        "wires": [
+            [
+                "4667509e2ef5b9c5"
+            ]
+        ]
+    },
+    {
+        "id": "4667509e2ef5b9c5",
+        "type": "change",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "silence",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "bf4757920e675e69"
+            ]
+        ]
+    },
+    {
+        "id": "1c20192d30f9359a",
+        "type": "telegram command",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "command": "/users",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "e15e12918f77cb7f",
+        "strict": false,
+        "hasresponse": false,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 1,
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "d05a55e9223fee7c"
+            ]
+        ]
+    },
+    {
+        "id": "e009c064d2c758c2",
+        "type": "influxdb in",
+        "z": "cf5158d38960fc7b",
+        "influxdb": "7d886477915fc7be",
+        "name": "myusers",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "5fb9802e41c6683a"
+            ]
+        ]
+    },
+    {
+        "id": "d05a55e9223fee7c",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "select * from myusers",
+        "func": "msg.query = \"SELECT * FROM \\\"myusers\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "e009c064d2c758c2"
+            ]
+        ]
+    },
+    {
+        "id": "5fb9802e41c6683a",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Read users twitter",
+        "func": "var newMsg = {};\nnewMsg.payload = \"\";\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    newMsg.payload = newMsg.payload + msg.payload[i].name + \" \" + msg.payload[i].email + \" \" + msg.payload[i].twitter + \" \" + msg.payload[i].sensor + \"\\r\\n\"\n    node.send(newMsg);\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 520,
+        "wires": [
+            [
+                "bf4757920e675e69",
+                "faae7108.c1e79"
+            ]
+        ]
+    },
+    {
+        "id": "5aa5e82e3a4fe8d1",
+        "type": "switch",
+        "z": "cf5158d38960fc7b",
+        "name": "Not silence",
+        "property": "silence",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "48a6291f.8951f8"
+            ]
+        ]
+    },
+    {
+        "id": "26b80e1a.080592",
+        "type": "twitter out",
+        "z": "e823547481c4a50f",
+        "twitter": "fc75d06364f1cbb7",
+        "name": "Tweet",
+        "x": 510,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "87e2263d707b5a1c",
+        "type": "link in",
+        "z": "e823547481c4a50f",
+        "name": "Twitter",
+        "links": [
+            "04b2f8cee2f37cd3",
+            "1688427cae116437",
+            "f222f308ac636076"
+        ],
+        "x": 175,
+        "y": 140,
+        "wires": [
+            [
+                "8b2b1326d2a4773d",
+                "8f23182efe30bb1f"
+            ]
+        ]
+    },
+    {
+        "id": "27408c8e0f1b62ea",
+        "type": "twitter in",
+        "z": "e823547481c4a50f",
+        "twitter": "fc75d06364f1cbb7",
+        "tags": "@PortsdeBalears",
+        "user": "user",
+        "name": "",
+        "inputs": 0,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "ff57763cd0510546"
+            ]
+        ]
+    },
+    {
+        "id": "f752896770614a9f",
+        "type": "ui_template",
+        "z": "e823547481c4a50f",
+        "group": "1e640612.03c83a",
+        "name": "Twitter",
+        "order": 1,
+        "width": 9,
+        "height": 2,
+        "format": "<div>\n    <img style=\"float: left;\" src=\"https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg\"  width=\"50\" >\n    <a href=\"https://twitter.com/FumPort\"><span>Este es la cuenta de Twitter que donde verás las alertas y avisos así como las actualizaciones del proyecto.</span></a>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff57763cd0510546",
+        "type": "link out",
+        "z": "e823547481c4a50f",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "86d8d1e99109e95c"
+        ],
+        "x": 485,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0748cd44bc737ae9",
+        "type": "influxdb in",
+        "z": "e823547481c4a50f",
+        "influxdb": "7d886477915fc7be",
+        "name": "myusers",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 420,
+        "y": 220,
+        "wires": [
+            [
+                "f317dc52aa129ed5"
+            ]
+        ]
+    },
+    {
+        "id": "3e34f3b57b781ea9",
+        "type": "function",
+        "z": "e823547481c4a50f",
+        "name": "Destination & subject",
+        "func": "var newMsg = {};\nnewMsg.payload = \"D \" + msg.payload + \" \\\"\" + global.get(\"notification\") + \". Màs información en: http://fumport.de-a.org/ui . Escribe a fumport@gmail.com para des-inscribirte. \\\"\"\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 220,
+        "wires": [
+            [
+                "8f23182efe30bb1f"
+            ]
+        ]
+    },
+    {
+        "id": "8b2b1326d2a4773d",
+        "type": "function",
+        "z": "e823547481c4a50f",
+        "name": "select * from myusers",
+        "func": "msg.query = \"SELECT * FROM \\\"myusers\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "0748cd44bc737ae9"
+            ]
+        ]
+    },
+    {
+        "id": "e5cd38f43923d31d",
+        "type": "inject",
+        "z": "e823547481c4a50f",
+        "name": "Test mail-list",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "8b2b1326d2a4773d"
+            ]
+        ]
+    },
+    {
+        "id": "f317dc52aa129ed5",
+        "type": "function",
+        "z": "e823547481c4a50f",
+        "name": "Read users twitter",
+        "func": "const delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    if (msg.payload[i].twitter != null) {\n        var newMsg = {};\n        newMsg.payload = msg.payload[i].twitter\n        node.send(newMsg);\n        await delay(1000);\n    } \n}\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "3e34f3b57b781ea9"
+            ]
+        ]
+    },
+    {
+        "id": "8f23182efe30bb1f",
+        "type": "switch",
+        "z": "e823547481c4a50f",
+        "name": "Not silence",
+        "property": "silence",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "26b80e1a.080592"
+            ]
+        ]
+    },
+    {
+        "id": "e3ab1a993d80e102",
+        "type": "inject",
+        "z": "892785e6c025eea1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "to",
+                "v": "mcorts69@icloud.com",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Asunto",
+        "payload": "Hola test",
+        "payloadType": "str",
+        "x": 1000,
+        "y": 120,
+        "wires": [
+            [
+                "2883c986a9f625b6"
+            ]
+        ]
+    },
+    {
+        "id": "f3f5d9e147efb1b2",
+        "type": "link in",
+        "z": "892785e6c025eea1",
+        "name": "email",
+        "links": [
+            "04b2f8cee2f37cd3",
+            "1688427cae116437",
+            "f222f308ac636076"
+        ],
+        "x": 95,
+        "y": 120,
+        "wires": [
+            [
+                "dcd12f454c37f1dd"
+            ]
+        ]
+    },
+    {
+        "id": "2883c986a9f625b6",
+        "type": "e-mail",
+        "z": "892785e6c025eea1",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1210,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e771284b966fecc9",
+        "type": "influxdb in",
+        "z": "892785e6c025eea1",
+        "influxdb": "7d886477915fc7be",
+        "name": "myusers",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "50be01cff3ccfee3"
+            ]
+        ]
+    },
+    {
+        "id": "1f18b7719cc6ac08",
+        "type": "function",
+        "z": "892785e6c025eea1",
+        "name": "Destination & subject",
+        "func": "var newMsg = {};\nnewMsg.to = msg.payload\nnewMsg.topic = \"Notificaciones Fum Al Port\"\nnewMsg.payload = global.get(\"notification\") + \" \\r\\n  \\r\\n Para no recibir más mensajes, envia un correo a fumport@gmail.com \\r\\n \\r\\n Màs información en: http://fumport.de-a.org/ui\"\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "5b46625fbfb2613e"
+            ]
+        ]
+    },
+    {
+        "id": "dcd12f454c37f1dd",
+        "type": "function",
+        "z": "892785e6c025eea1",
+        "name": "select * from myusers",
+        "func": "msg.query = \"SELECT * FROM \\\"myusers\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "e771284b966fecc9"
+            ]
+        ]
+    },
+    {
+        "id": "f9948b1859051d65",
+        "type": "inject",
+        "z": "892785e6c025eea1",
+        "name": "Test mail-list",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "dcd12f454c37f1dd"
+            ]
+        ]
+    },
+    {
+        "id": "50be01cff3ccfee3",
+        "type": "function",
+        "z": "892785e6c025eea1",
+        "name": "Read users mails",
+        "func": "const delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    if (msg.payload[i].email != null) {\n        var newMsg = {};\n        newMsg.payload = msg.payload[i].email\n        node.send(newMsg);\n        await delay(1000);\n    } \n}\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "1f18b7719cc6ac08"
+            ]
+        ]
+    },
+    {
+        "id": "5b46625fbfb2613e",
+        "type": "switch",
+        "z": "892785e6c025eea1",
+        "name": "Not silence",
+        "property": "silence",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "2883c986a9f625b6"
+            ]
+        ]
+    }
+]
