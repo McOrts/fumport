@@ -25,7 +25,20 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 1,
-  "links": [],
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "external link",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": false,
+      "title": "Fum al Port",
+      "tooltip": "",
+      "type": "link",
+      "url": "http://fumport.de-a.org/ui"
+    }
+  ],
   "liveNow": false,
   "panels": [
     {
@@ -92,7 +105,7 @@
       },
       "gridPos": {
         "h": 11,
-        "w": 12,
+        "w": 15,
         "x": 0,
         "y": 0
       },
@@ -278,7 +291,7 @@
           "tags": []
         },
         {
-          "alias": "Parc de la Ma",
+          "alias": "Parc de la Mar",
           "datasource": {
             "type": "influxdb",
             "uid": "zieDOxmgz"
@@ -460,7 +473,7 @@
       "gridPos": {
         "h": 13,
         "w": 8,
-        "x": 12,
+        "x": 15,
         "y": 0
       },
       "id": 8,
@@ -621,6 +634,307 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
+            "fillOpacity": 100,
+            "gradientMode": "opacity",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "stepBefore",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 15
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 15,
+        "x": 0,
+        "y": 11
+      },
+      "id": 18,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Nº de barcos",
+          "datasource": {
+            "type": "influxdb",
+            "uid": "zieDOxmgz"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "vessels",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "vessels"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Barcos atracados",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "zieDOxmgz"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 3,
+        "x": 15,
+        "y": 13
+      },
+      "id": 14,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.6",
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "zieDOxmgz"
+          },
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            }
+          ],
+          "measurement": "alarms",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "query": "SELECT count(pm25) FROM \"alarms\" ",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table",
+          "select": [
+            [
+              {
+                "params": [
+                  "zone"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "count"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "title": "Alarmas detectadas",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "zieDOxmgz"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "orange",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 5,
+        "x": 18,
+        "y": 13
+      },
+      "id": 16,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.84,
+        "colorByField": "zone",
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "9.1.6",
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "zieDOxmgz"
+          },
+          "query": "SELECT count(\"pm25\") FROM \"alarms\" GROUP BY \"zone\"\n",
+          "rawQuery": true,
+          "refId": "A",
+          "resultFormat": "table"
+        }
+      ],
+      "title": "Alarmas",
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "zieDOxmgz"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
             "fillOpacity": 12,
             "gradientMode": "none",
             "hideFrom": {
@@ -667,9 +981,9 @@
       },
       "gridPos": {
         "h": 9,
-        "w": 12,
+        "w": 15,
         "x": 0,
-        "y": 11
+        "y": 15
       },
       "id": 12,
       "options": {
@@ -853,7 +1167,7 @@
           "tags": []
         },
         {
-          "alias": "Parc de la Ma",
+          "alias": "Parc de la Mar",
           "datasource": {
             "type": "influxdb",
             "uid": "zieDOxmgz"
@@ -1029,6 +1343,7 @@
         "type": "influxdb",
         "uid": "zieDOxmgz"
       },
+      "description": "Más de 200 m de eslora",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1052,12 +1367,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 6,
         "w": 3,
-        "x": 12,
-        "y": 13
+        "x": 15,
+        "y": 18
       },
-      "id": 14,
+      "id": 19,
       "options": {
         "colorMode": "value",
         "graphMode": "area",
@@ -1090,7 +1405,7 @@
           "measurement": "alarms",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT count(pm25) FROM \"alarms\" ",
+          "query": "SELECT vessels FROM vessels ORDER BY DESC LIMIT 1",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "table",
@@ -1111,93 +1426,8 @@
           "tags": []
         }
       ],
-      "title": "Alarmas detectadas",
+      "title": "Barcos en el puerto",
       "type": "stat"
-    },
-    {
-      "datasource": {
-        "type": "influxdb",
-        "uid": "zieDOxmgz"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "orange",
-            "mode": "fixed"
-          },
-          "custom": {
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "fillOpacity": 80,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineWidth": 1,
-            "scaleDistribution": {
-              "type": "linear"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 11,
-        "w": 5,
-        "x": 15,
-        "y": 13
-      },
-      "id": 16,
-      "options": {
-        "barRadius": 0.1,
-        "barWidth": 0.84,
-        "colorByField": "zone",
-        "groupWidth": 0.7,
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": false
-        },
-        "orientation": "horizontal",
-        "showValue": "auto",
-        "stacking": "none",
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        },
-        "xTickLabelRotation": 0,
-        "xTickLabelSpacing": 0
-      },
-      "pluginVersion": "9.1.6",
-      "targets": [
-        {
-          "datasource": {
-            "type": "influxdb",
-            "uid": "zieDOxmgz"
-          },
-          "query": "SELECT count(\"pm25\") FROM \"alarms\" GROUP BY \"zone\"\n",
-          "rawQuery": true,
-          "refId": "A",
-          "resultFormat": "table"
-        }
-      ],
-      "title": "Alarmas",
-      "type": "barchart"
     },
     {
       "datasource": {
@@ -1232,7 +1462,7 @@
         "h": 4,
         "w": 3,
         "x": 0,
-        "y": 20
+        "y": 24
       },
       "id": 6,
       "options": {
@@ -1352,9 +1582,9 @@
       },
       "gridPos": {
         "h": 4,
-        "w": 7,
+        "w": 10,
         "x": 3,
-        "y": 20
+        "y": 24
       },
       "id": 4,
       "options": {
@@ -1458,8 +1688,8 @@
       "gridPos": {
         "h": 4,
         "w": 5,
-        "x": 10,
-        "y": 20
+        "x": 13,
+        "y": 24
       },
       "id": 10,
       "options": {
@@ -1543,6 +1773,6 @@
   "timezone": "",
   "title": "Fum al Port",
   "uid": "2QbwxxiRz",
-  "version": 37,
+  "version": 42,
   "weekStart": ""
 }
