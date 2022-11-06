@@ -1,4 +1,59 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_INFLUXDB_IOT-ANYWHERE",
+      "label": "InfluxDB iot-anywhere",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "influxdb",
+      "pluginName": "InfluxDB"
+    }
+  ],
+  "__elements": {},
+  "__requires": [
+    {
+      "type": "panel",
+      "id": "barchart",
+      "name": "Bar chart",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "fatcloud-windrose-panel",
+      "name": "WindRose",
+      "version": "0.7.1"
+    },
+    {
+      "type": "panel",
+      "id": "gauge",
+      "name": "Gauge",
+      "version": ""
+    },
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "9.1.6"
+    },
+    {
+      "type": "datasource",
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "stat",
+      "name": "Stat",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -24,7 +79,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": null,
   "links": [
     {
       "asDropdown": false,
@@ -44,7 +99,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "description": "",
       "fieldConfig": {
@@ -127,7 +182,7 @@
           "alias": "Canamunt",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -168,7 +223,7 @@
           "alias": "C'an pastilla",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -210,7 +265,7 @@
           "alias": "Portopí",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -252,7 +307,7 @@
           "alias": "La Gruta",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -294,7 +349,7 @@
           "alias": "Parc de la Mar",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -336,7 +391,7 @@
           "alias": "Canamunt",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -378,7 +433,7 @@
           "alias": "El Terreno",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -420,7 +475,7 @@
           "alias": "Cas català",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -468,7 +523,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "gridPos": {
         "h": 13,
@@ -532,7 +587,7 @@
           "alias": "Direcction",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -574,7 +629,7 @@
           "alias": "Speed",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -619,7 +674,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "description": "",
       "fieldConfig": {
@@ -701,7 +756,7 @@
           "alias": "Nº de barcos",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -745,7 +800,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "fieldConfig": {
         "defaults": {
@@ -795,7 +850,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -835,7 +890,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "fieldConfig": {
         "defaults": {
@@ -906,7 +961,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "query": "SELECT count(\"pm25\") FROM \"alarms\" GROUP BY \"zone\"\n",
           "rawQuery": true,
@@ -920,7 +975,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "description": "",
       "fieldConfig": {
@@ -1003,7 +1058,7 @@
           "alias": "Canamunt",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1044,7 +1099,7 @@
           "alias": "C'an pastilla",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1086,7 +1141,7 @@
           "alias": "Portopí",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1128,7 +1183,7 @@
           "alias": "La Gruta",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1170,7 +1225,7 @@
           "alias": "Parc de la Mar",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1212,7 +1267,7 @@
           "alias": "Canamunt",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1254,7 +1309,7 @@
           "alias": "El Terreno",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1296,7 +1351,7 @@
           "alias": "Cas català",
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1341,7 +1396,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "description": "Más de 200 m de eslora",
       "fieldConfig": {
@@ -1392,7 +1447,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1426,13 +1481,13 @@
           "tags": []
         }
       ],
-      "title": "Barcos en el puerto",
+      "title": "Barcos atracados",
       "type": "stat"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "description": "",
       "fieldConfig": {
@@ -1445,8 +1500,7 @@
             "mode": "percentage",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1482,7 +1536,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1526,7 +1580,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1568,8 +1622,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1604,7 +1657,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1642,13 +1695,13 @@
           "tags": []
         }
       ],
-      "title": "Humidity",
+      "title": "Humedad",
       "type": "timeseries"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "zieDOxmgz"
+        "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1677,8 +1730,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           }
@@ -1716,7 +1768,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "zieDOxmgz"
+            "uid": "${DS_INFLUXDB_IOT-ANYWHERE}"
           },
           "groupBy": [
             {
@@ -1773,6 +1825,6 @@
   "timezone": "",
   "title": "Fum al Port",
   "uid": "2QbwxxiRz",
-  "version": 42,
+  "version": 44,
   "weekStart": ""
 }

@@ -292,7 +292,7 @@
         "type": "ui_group",
         "name": "Mapa de sensores",
         "tab": "4861ba36.77fc94",
-        "order": 4,
+        "order": 6,
         "disp": true,
         "width": "9",
         "collapse": true,
@@ -363,7 +363,7 @@
         "type": "ui_group",
         "name": "Sensores",
         "tab": "4861ba36.77fc94",
-        "order": 6,
+        "order": 7,
         "disp": true,
         "width": "9",
         "collapse": true,
@@ -374,91 +374,11 @@
         "type": "ui_group",
         "name": "Barcos en el puerto",
         "tab": "4861ba36.77fc94",
-        "order": 5,
-        "disp": true,
-        "width": "9",
-        "collapse": true,
-        "className": ""
-    },
-    {
-        "id": "7caec6815607d7be",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "fb40f53421f214a6",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "31ea153e39fcee21",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "fb40f53421f214a6",
         "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "ef14ab22d9ad10dd",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "57d5a7045753184a",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "5170b50f78fdba36",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "57d5a7045753184a",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c4d972a4107fbcc1",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "57d5a7045753184a",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "fd25dccb093aed4d",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "57d5a7045753184a",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "815b982da6df9a5e",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "57d5a7045753184a",
-        "order": 12,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c7b6226d514150dd",
-        "type": "ui_spacer",
-        "z": "253351a39d168f06",
-        "name": "spacer",
-        "group": "d684ae17cb21aab8",
-        "order": 3,
-        "width": 8,
-        "height": 1
+        "disp": false,
+        "width": "9",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "7605e0c6.2cdf9",
@@ -474,11 +394,102 @@
         "type": "ui_group",
         "name": "Gráficos",
         "tab": "4861ba36.77fc94",
-        "order": 3,
+        "order": 5,
         "disp": true,
         "width": "9",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "52bca65a0207762a",
+        "type": "ui_group",
+        "name": "Avisos",
+        "tab": "4861ba36.77fc94",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "1eede62b9001d1be",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "fb40f53421f214a6",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fefd00f49cf19c9a",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "fb40f53421f214a6",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b52af7f94c4d43f6",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "357afdd40d057413",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1a93485aa287ab66",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0cb645488105bdc3",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "193a14453c77b7bd",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "57d5a7045753184a",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ab02525422f33bf8",
+        "type": "ui_spacer",
+        "z": "9a88b218bcdc0b95",
+        "name": "spacer",
+        "group": "d684ae17cb21aab8",
+        "order": 4,
+        "width": 8,
+        "height": 1
     },
     {
         "id": "625491ea70287a3c",
@@ -486,7 +497,7 @@
         "z": "9a88b218bcdc0b95",
         "group": "d684ae17cb21aab8",
         "name": "Google Analytics",
-        "order": 2,
+        "order": 3,
         "width": 1,
         "height": 1,
         "format": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-FPP461GWZF\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-FPP461GWZF');\n</script>",
@@ -496,7 +507,7 @@
         "templateScope": "global",
         "className": "",
         "x": 410,
-        "y": 100,
+        "y": 60,
         "wires": [
             []
         ]
@@ -523,7 +534,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 100,
+        "y": 60,
         "wires": [
             [
                 "625491ea70287a3c"
@@ -552,7 +563,7 @@
         "payload": "1",
         "payloadType": "num",
         "x": 130,
-        "y": 140,
+        "y": 100,
         "wires": [
             [
                 "8b83f5a8.af5b58"
@@ -579,7 +590,7 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 140,
+        "y": 100,
         "wires": [
             []
         ]
@@ -593,7 +604,7 @@
         "order": 1,
         "width": 9,
         "height": 10,
-        "url": "https://maps.sensor.community/#12/39.5481/2.6449",
+        "url": "https://maps.sensor.community/#12/39.57/2.6449",
         "origin": "*",
         "scale": "100",
         "x": 110,
@@ -614,7 +625,7 @@
         "retentionPolicy": "",
         "org": "organisation",
         "x": 690,
-        "y": 580,
+        "y": 640,
         "wires": [
             [
                 "224c81b09042b7a7"
@@ -633,7 +644,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 580,
+        "y": 640,
         "wires": [
             [
                 "638ae5df3e989b0f"
@@ -647,7 +658,7 @@
         "name": "Total Alarms",
         "info": "",
         "x": 110,
-        "y": 500,
+        "y": 560,
         "wires": []
     },
     {
@@ -664,7 +675,7 @@
         "layout": "col-center",
         "className": "",
         "x": 990,
-        "y": 580,
+        "y": 640,
         "wires": []
     },
     {
@@ -679,7 +690,7 @@
         "retentionPolicy": "",
         "org": "organisation",
         "x": 830,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "2a0cdf65808e3d34"
@@ -698,7 +709,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "9aa0a18db1b47794"
@@ -723,7 +734,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 580,
+        "y": 640,
         "wires": [
             [
                 "ef328b2aa8714561",
@@ -753,39 +764,21 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 300,
+        "y": 360,
         "wires": [
             [
-                "88a608a6.78cc68",
                 "725ff26f50e108a4",
                 "e81eabe3ee2d4add",
                 "b3637014678c19db",
                 "9fa624e815569cc6",
-                "96ac6984fdccc9f5"
+                "96ac6984fdccc9f5",
+                "ac06c478c74f4fb7",
+                "88a608a6.78cc68",
+                "6f95e04b6df5aaa3",
+                "1c4282f87d17e770",
+                "94e84bf7fe7e73c6",
+                "a57374193d8dc5f5"
             ]
-        ]
-    },
-    {
-        "id": "88a608a6.78cc68",
-        "type": "ui_media",
-        "z": "9a88b218bcdc0b95",
-        "group": "fb40f53421f214a6",
-        "name": "Logo",
-        "width": 3,
-        "height": 2,
-        "order": 2,
-        "category": "logos",
-        "file": "FumPort_logo.png",
-        "layout": "adjust",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": true,
-        "scope": "local",
-        "tooltip": "",
-        "x": 330,
-        "y": 300,
-        "wires": [
-            []
         ]
     },
     {
@@ -795,7 +788,7 @@
         "name": "Info",
         "info": "",
         "x": 90,
-        "y": 260,
+        "y": 300,
         "wires": []
     },
     {
@@ -812,7 +805,7 @@
         "layout": "row-left",
         "className": "",
         "x": 860,
-        "y": 340,
+        "y": 400,
         "wires": []
     },
     {
@@ -829,7 +822,7 @@
         "layout": "col-center",
         "className": "",
         "x": 460,
-        "y": 380,
+        "y": 440,
         "wires": []
     },
     {
@@ -852,7 +845,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 340,
+        "y": 400,
         "wires": [
             [
                 "04e726d521e527da"
@@ -879,7 +872,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 380,
+        "y": 440,
         "wires": [
             [
                 "672f3147fb9826e1"
@@ -900,7 +893,7 @@
         "layout": "col-center",
         "className": "",
         "x": 450,
-        "y": 420,
+        "y": 480,
         "wires": []
     },
     {
@@ -923,7 +916,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 420,
+        "y": 480,
         "wires": [
             [
                 "f3481af49840c9d1"
@@ -944,7 +937,7 @@
         "layout": "col-center",
         "className": "",
         "x": 450,
-        "y": 460,
+        "y": 520,
         "wires": []
     },
     {
@@ -967,7 +960,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 460,
+        "y": 520,
         "wires": [
             [
                 "1a07ed220972d19f"
@@ -1013,7 +1006,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1220,
-        "y": 580,
+        "y": 640,
         "wires": [
             []
         ]
@@ -1023,9 +1016,9 @@
         "type": "ui_media",
         "z": "9a88b218bcdc0b95",
         "group": "d684ae17cb21aab8",
-        "name": "Sensor",
+        "name": "Sensor1",
         "width": 9,
-        "height": 6,
+        "height": 5,
         "order": 1,
         "category": "Sensors",
         "file": "IMG_1774.jpg",
@@ -1036,7 +1029,7 @@
         "scope": "local",
         "tooltip": "",
         "x": 340,
-        "y": 260,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1053,7 +1046,7 @@
         "finalize": "",
         "libs": [],
         "x": 1090,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "fe515729.789e58"
@@ -1066,8 +1059,8 @@
         "z": "9a88b218bcdc0b95",
         "group": "8fa7348dc9ef730f",
         "name": "Grafana",
-        "order": 1,
-        "width": 9,
+        "order": 2,
+        "width": 6,
         "height": 1,
         "format": "<!DOCTYPE html>\n<html>\n<head>\n<style>\na:link {\n  color: green;\n  background-color: transparent;\n  text-decoration: none;\n}\na:visited {\n  color: pink;\n  background-color: transparent;\n  text-decoration: none;\n}\na:hover {\n  color: red;\n  background-color: transparent;\n  text-decoration: underline;\n}\na:active {\n  color: yellow;\n  background-color: transparent;\n  text-decoration: underline;\n}\n</style>\n</head>\n<body>\n<div>\n    <a href=\thttps://snapshots.raintank.io/dashboard/snapshot/5sNzm3wDRCLQQAi8Lc3QjXxB64z4szLO><span>Ver gráficos y estadísticas.</span></a>\n</div>\n</body>\n</html>\n\n\n",
         "storeOutMessages": true,
@@ -1076,6 +1069,121 @@
         "templateScope": "local",
         "className": "",
         "x": 260,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac06c478c74f4fb7",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "d684ae17cb21aab8",
+        "name": "Sensor2",
+        "width": 9,
+        "height": 5,
+        "order": 2,
+        "category": "Sensors",
+        "file": "IMG_3990.jpg",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 520,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88a608a6.78cc68",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "name": "Logo",
+        "width": 3,
+        "height": 2,
+        "order": 2,
+        "category": "logos",
+        "file": "FumPort_logo.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 330,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c4282f87d17e770",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "52bca65a0207762a",
+        "name": "Logo",
+        "width": 3,
+        "height": 2,
+        "order": 3,
+        "category": "logos",
+        "file": "icon_dashing-away.png",
+        "layout": "adjust",
+        "showcontrols": false,
+        "loop": false,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94e84bf7fe7e73c6",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "f6579e9edf3ef0c2",
+        "name": "Logo",
+        "width": 3,
+        "height": 2,
+        "order": 3,
+        "category": "logos",
+        "file": "icon_cruise.png",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": false,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a57374193d8dc5f5",
+        "type": "ui_media",
+        "z": "9a88b218bcdc0b95",
+        "group": "8fa7348dc9ef730f",
+        "name": "Logo",
+        "width": 3,
+        "height": 1,
+        "order": 1,
+        "category": "logos",
+        "file": "icon-dashboard.png",
+        "layout": "center",
+        "showcontrols": false,
+        "loop": false,
+        "onstart": true,
+        "scope": "local",
+        "tooltip": "",
+        "x": 410,
         "y": 200,
         "wires": [
             []
@@ -1124,7 +1232,7 @@
                 "rows": null
             },
             {
-                "label": "Me interesa tener un medidor",
+                "label": "Estoy interesado en un medidor",
                 "value": "sensor",
                 "type": "switch",
                 "required": false,
@@ -1799,11 +1907,11 @@
         "width": 4,
         "height": 2,
         "name": "",
-        "label": "de partículas de 2,5nm :",
+        "label": "Part. 2,5nm en:",
         "format": "{{msg.topic}}",
         "layout": "col-center",
         "className": "",
-        "x": 1090,
+        "x": 1060,
         "y": 740,
         "wires": []
     },
@@ -2174,7 +2282,7 @@
                 "t": "set",
                 "p": "control",
                 "pt": "msg",
-                "to": "{\"label\":\"Peligrosa población sensible\"}",
+                "to": "{\"label\":\"Población sensible\"}",
                 "tot": "json"
             }
         ],
@@ -2296,11 +2404,11 @@
         "width": 4,
         "height": 2,
         "name": "",
-        "label": "de partículas de 10nm :",
+        "label": "Part.10nm en:",
         "format": "{{msg.topic}}",
         "layout": "col-center",
         "className": "",
-        "x": 1070,
+        "x": 1040,
         "y": 1240,
         "wires": []
     },
@@ -2614,7 +2722,7 @@
                 "t": "set",
                 "p": "control",
                 "pt": "msg",
-                "to": "{\"label\":\"Peligrosa población sensible\"}",
+                "to": "{\"label\":\"Población sensible\"}",
                 "tot": "json"
             }
         ],
@@ -3610,7 +3718,7 @@
         "colorNormal": "#fbeb37",
         "colorOff": "#777777",
         "min": 0,
-        "max": "400",
+        "max": "100",
         "segWarn": "",
         "segHigh": "",
         "unit": " µg/m³",
@@ -3618,7 +3726,7 @@
         "channelA": "",
         "channelB": "",
         "decimals": 0,
-        "animations": "off",
+        "animations": "reactive",
         "shape": "3",
         "colorschema": "rainbow",
         "textoptions": "custom",
@@ -4518,12 +4626,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
+        "x": 680,
         "y": 220,
         "wires": [
             [
-                "ed4e6dae5c16f05e",
-                "7b0693b00b1211d0"
+                "ed4e6dae5c16f05e"
             ]
         ]
     },
@@ -4584,23 +4691,6 @@
         ]
     },
     {
-        "id": "7b0693b00b1211d0",
-        "type": "debug",
-        "z": "bcba3d054e58be9c",
-        "name": "debug 6",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1080,
-        "y": 140,
-        "wires": []
-    },
-    {
         "id": "ed4e6dae5c16f05e",
         "type": "switch",
         "z": "bcba3d054e58be9c",
@@ -4615,7 +4705,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1060,
+        "x": 980,
         "y": 220,
         "wires": [
             [
@@ -4653,19 +4743,20 @@
         "type": "function",
         "z": "bcba3d054e58be9c",
         "name": "Compose alert message",
-        "func": "msg.payload = msg.icon + \"Aviso: viento fuerte continuo desde zona de cruceros en dirección a \" + msg.topic;\nreturn [msg];",
+        "func": "msg.payload = msg.icon + \"Aviso: viento fuerte y continuo desde zona de cruceros en dirección a \" + msg.topic;\nreturn [msg];",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
+        "x": 990,
         "y": 300,
         "wires": [
             [
-                "7b0693b00b1211d0",
                 "41d807af6908e062",
-                "04b2f8cee2f37cd3"
+                "04b2f8cee2f37cd3",
+                "b54d7ace812cc164",
+                "8be45e3d7cd22df7"
             ]
         ],
         "outputLabels": [
@@ -4706,14 +4797,14 @@
         "type": "function",
         "z": "bcba3d054e58be9c",
         "name": "test",
-        "func": "global.set(\"wind_speed\", 20);\nglobal.set(\"wind_direction\", 80);\nglobal.set(\"same_wind_direction\", true);\n\nreturn msg",
+        "func": "global.set(\"wind_speed\", 20);\nglobal.set(\"wind_direction\", 335);\nglobal.set(\"same_wind_direction\", true);\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 320,
+        "x": 470,
+        "y": 280,
         "wires": [
             [
                 "ec211089fdb57a16"
@@ -4741,8 +4832,8 @@
         "topic": "sensors",
         "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
         "payloadType": "json",
-        "x": 170,
-        "y": 320,
+        "x": 270,
+        "y": 280,
         "wires": [
             [
                 "5a3c22cc4ccdd539"
@@ -4768,13 +4859,66 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 830,
+        "x": 790,
         "y": 300,
         "wires": [
             [
                 "f9aed1dc8c61b277"
             ]
         ]
+    },
+    {
+        "id": "8be45e3d7cd22df7",
+        "type": "function",
+        "z": "bcba3d054e58be9c",
+        "name": "DateTime",
+        "func": "var today = new Date();\nvar date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();\nvar time = (today.getHours() + global.get('hours-gap')) + \":\" + today.getMinutes() + \":\" + today.getSeconds();\nmsg.payload = date + ' ' + time;\nreturn [msg];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 440,
+        "wires": [
+            [
+                "28d1c55ca598b6ef"
+            ]
+        ]
+    },
+    {
+        "id": "28d1c55ca598b6ef",
+        "type": "ui_text",
+        "z": "bcba3d054e58be9c",
+        "group": "52bca65a0207762a",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1170,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b54d7ace812cc164",
+        "type": "ui_text",
+        "z": "bcba3d054e58be9c",
+        "group": "52bca65a0207762a",
+        "order": 2,
+        "width": 6,
+        "height": 3,
+        "name": "",
+        "label": "Riesgo de propagaciión:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1050,
+        "y": 380,
+        "wires": []
     },
     {
         "id": "d88dd470.0ac7b8",
@@ -5028,8 +5172,8 @@
         "z": "253351a39d168f06",
         "group": "f6579e9edf3ef0c2",
         "order": 1,
-        "width": 2,
-        "height": 2,
+        "width": 3,
+        "height": 1,
         "name": "",
         "label": "Actual",
         "format": "{{payload[0].vessels}}",
@@ -5071,25 +5215,25 @@
         "name": "",
         "group": "f6579e9edf3ef0c2",
         "order": 2,
-        "width": 7,
-        "height": "3",
-        "label": "",
+        "width": 6,
+        "height": 3,
+        "label": "Barcos en el puerto",
         "chartType": "line",
         "legend": "false",
-        "xformat": "HH:mm",
+        "xformat": "HH",
         "interpolate": "step",
         "nodata": "",
         "dot": false,
         "ymin": "1",
         "ymax": "15",
-        "removeOlder": 1,
+        "removeOlder": "2",
         "removeOlderPoints": "",
         "removeOlderUnit": "86400",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#974bce",
+            "#00c5f6",
             "#aec7e8",
             "#ff7f0e",
             "#2ca02c",
@@ -5102,7 +5246,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1050,
+        "x": 1090,
         "y": 120,
         "wires": [
             []
@@ -5608,7 +5752,7 @@
         "type": "function",
         "z": "cf5158d38960fc7b",
         "name": "Help compose",
-        "func": "msg.payload = \"/stop - Bloquea todas las notificaciones. \\r\\n/start - Activa todas las notificaciones. \\r\\n/users - Listado de usuarios registrados. \\r\\n/vessels - Registrar numero de barcos en el puerto.\"\nreturn msg;",
+        "func": "msg.payload = \"/stop - Bloquea todas las notificaciones. \\r\\n/start - Activa todas las notificaciones. \\r\\n/users - Listado de usuarios registrados. \\r\\n/vessels - Registrar número de barcos en el puerto.\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5670,7 +5814,8 @@
         "y": 440,
         "wires": [
             [
-                "bf4757920e675e69"
+                "bf4757920e675e69",
+                "931212327e5c0515"
             ]
         ]
     },
@@ -5721,7 +5866,8 @@
         "y": 480,
         "wires": [
             [
-                "bf4757920e675e69"
+                "bf4757920e675e69",
+                "931212327e5c0515"
             ]
         ]
     },
