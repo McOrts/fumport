@@ -18,14 +18,16 @@ Para abordar este desafío, se desarrolló un proyecto de ciencia ciudadana. Que
 En un primer enfoque, **la solución gira en torno a la actividad en el puerto de Palma de Mallorca**. De manera que se está recopilando y tratando solo la información de este entorno. Detrás de esta iniciativa está el proyecto de la plataforma abierta [Sensor Community](https://sensor.community/es/) de [Open Data Stuttgart](https://github.com/opendata-stuttgart/) que soporta parte de la infraestructura.
 
 ## Arquitectura de solución
-Este proyecto cumple con modelos y estándadres utilizados en soluciones de **Smart City**. Y se ha diseñado una arquitectura basada en uno de los más utilizados ´stacks´ de IoT: MQTT, Node-RED, InfluxDB y Grafana. Todo está desplegado sobre infraestructura Raspberry Pi y corriendo en contenedores Docker.
-![Taller en el Fablab de Mallorca](./img/FumPort_SystemArchutecture.png)
+Este proyecto cumple con modelos y estándadres utilizados en soluciones de **Smart City**. Y se ha diseñado una arquitectura basada en uno de los más utilizados //stacks// de IoT: MQTT, Node-RED, InfluxDB y Grafana. Todo está desplegado sobre infraestructura Raspberry Pi y corriendo en contenedores Docker.
+![Arquufecfura baseline](./img/FumPort_SystemArchutecture.png)
+
+### Sensores 
 
 
 
-
-
-La v1 de la aplicación web es accesible desde: http://fumport.de-a.org/ui y espero que sirva para mostrar todo lo que estamos desarrollando por detrás.
+### Aplicación de usuario
+Se ha desarrollado una aplicaciónweb a fin de disponer de un Lugar donde, a la vez que se informa del proyecto. Se muestran todos la datos recopilados junto con los indices ma's 
+Esa aplicación web es accesible desde: [www.fumport.de-a.org](http://fumport.de-a.org/ui) y consta de los siguientss modulos:
 
 
 ## Análisis de datos
