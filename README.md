@@ -22,13 +22,25 @@ Este proyecto cumple con modelos y estándadres utilizados en soluciones de **Sm
 ![Arquufecfura baseline](./img/FumPort_SystemArchutecture.png)
 
 ### Sensores 
+Se ha partido de los [sensores Airroh](https://github.com/McOrts/taller-iot-sensor_calidad_aire) medioambientales. Aunque sólo se utilizamos la lectura de partículas en suspensión. Estos dispositivos también leen temperatura, humedad y precisión atmosférica. Pero dentro de este proyecto estamos diseñando unos más simples para la detección de partículas de 2,5 nm que son el principal indicador de calidad de aire.
 
+La conectividad se resuelve utilizando una WiFi a su alcance para transmitir las lecturas por UDP tanto a los servidores de Sensor Community como a los de Fum Al Port. 
 
+Por otra parte tenemos información meteorología de una estación situada en el centro del puerto y la posibilidad de utilizar otras micro-estaciones autónomas y conectadas por LoRaWAN.
+
+### Backend 
+
+Una aplicacion Node-RED recoge todos los datos a través de conexiones UDP, llamadas a APIs y colas MQTT. Tanto esta información de observaciones como la predictiva se almacena en una base de basada en series temporales muy utilizada en IoT que es InfluxDB. 
+
+Node-RED además orquesta las llamadas a otros modulos:
+- Python para captura de datos de webs.
+- Pandas para la analítica de datos.
+- Bots de Telegram y Twitter.
 
 ### Aplicación de usuario
-Se ha desarrollado una aplicaciónweb a fin de disponer de un Lugar donde, a la vez que se informa del proyecto. Se muestran todos la datos recopilados junto con los indices ma's 
-Esa aplicación web es accesible desde: [www.fumport.de-a.org](http://fumport.de-a.org/ui) y consta de los siguientss modulos:
 
+Se ha desarrollado una aplicaciónweb a fin de disponer de un Lugar donde a la vez que se informa del proyecto. Se muestran todos la datos recopilados junto con los indices más importantes calculados por los algoritmos.  
+Esa aplicación web es accesible desde: [www.fumport.de-a.org](http://fumport.de-a.org/ui) y consta de los siguientss modulos:     
 
 ## Análisis de datos
 ### Primera fase
