@@ -2,7 +2,7 @@
 
 **La calidad del aire que respiramos tiene un impacto directo en nuestra salud**. No respirar un aire limpio causa una variedad de problemas de salud, incluidas infecciones respiratorias, dolores de cabeza y fatiga. También puede agravar condiciones existentes como el asma y las alergias.
 
-Los focos de contaminación varían a lo largo de la historia de una ciudad, industria, tráfico rodado o tráfico marítimo que es el caso de estudio de este proyecto, ya que puede suponer un impacto significativo en la calidad del aire. 
+Los focos de contaminación varían a lo largo de la historia de una ciudad, y pueden localizarse por ejemplo en industria, tráfico rodado o tráfico marítimo. Este último es el caso de estudio de este proyecto, ya que puede suponer un impacto significativo en la calidad del aire. 
 <img src="./img/AQI.png" width="200" align="right" />
 
 El monitoreo ambiental en ciudades se refiere a las prácticas de seguridad y privacidad utilizadas para proteger a los ciudadanos de los contaminantes transportados por el aire. Esto incluye la recopilación de datos sobre la calidad del aire, la temperatura, la humedad y otros factores ambientales. Estos datos luego se utilizan para evaluar el riesgo de exposición a materiales peligrosos y tomar medidas para mitigar o eliminar esos riesgos.
@@ -10,10 +10,10 @@ El monitoreo ambiental en ciudades se refiere a las prácticas de seguridad y pr
 ## Nuestra solución
 <img src="./img/taller.jpg" width="300" align="right" />
 
-Para abordar este desafío, se desarrolló un proyecto de ciencia ciudadana. Que parte de [talleres de fabricación de sensores de calidad de aire](https://www.meetup.com/makespace-mallorca/events/282643149?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link) realizados en el Fablab de Mallorca y que se son posteriormente desplegados y construidos por los ciudadanos. Esto forma una red de monitoreo ambiental basado en [sensores SDS011](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) que monitorean el ambiente exterior y envían los datos recopilados a una solución en la nube donde se pueden realizar más cálculos. Con el fin de:
+Para abordar este desafío, se desarrolló un proyecto de ciencia ciudadana. Que parte de [talleres de fabricación de sensores de calidad de aire](https://www.meetup.com/makespace-mallorca/events/282643149?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link) realizados en el Fablab de Mallorca y que son posteriormente desplegados y construidos por los ciudadanos. Esto forma una red de monitoreo ambiental basado en [sensores SDS011](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) que monitorean el ambiente exterior y envían los datos recopilados a una solución en la nube donde se pueden realizar más cálculos. Con el fin de:
 
 - **Emitir alertas** para informar a la ciudania de riesgos a la salud en tiempo real.
-- Hacer un **análisis predictivo** para dar avisos de contaminación.
+- Hacer un **análisis predictivo** para dar avisos de contaminación con antelación.
 - Tratar de **identificar los focos** de la contaminación.
 
 En un primer enfoque, **la solución gira en torno a la actividad en el puerto de Palma de Mallorca**. De manera que se está recopilando y tratando solo la información de este entorno. Detrás de esta iniciativa está el proyecto de la plataforma abierta [Sensor Community](https://sensor.community/es/) de [Open Data Stuttgart](https://github.com/opendata-stuttgart/) que soporta parte de la infraestructura.
@@ -29,7 +29,7 @@ Se ha partido de los [sensores Airroh](https://github.com/McOrts/taller-iot-sens
 
 La conectividad se resuelve utilizando una WiFi a su alcance para transmitir las lecturas por UDP tanto a los servidores de Sensor Community como a los de Fum Al Port. 
 
-Por otra parte tenemos información meteorología de una estación situada en el centro del puerto y la posibilidad de utilizar otras micro-estaciones autónomas y conectadas por LoRaWAN.
+Por otra parte tenemos información meteorológica de una estación situada en el centro del puerto y la posibilidad de utilizar otras micro-estaciones autónomas y conectadas por LoRaWAN.
 
 ### Backend 
 
@@ -59,9 +59,9 @@ Esta página recopila todos los indicadores de observación y predicción. Adem�
 Cabe la posibilidad de subscribirse a las alarmas y avisos emitidos por Twitter, Telegram y mail-list. Para ello se puede acceder por la opción de **Participación** desde el menú de hamburguesa. 
 <img src="./img/node-red_app_form.png" width="200" align="right" />
 
-La persona interesada solo tiene que seleccionar el barrio donde reside o del que le interesa saber cuando se ha detectado contaminación o hay avisos de que la vaya a haberla. En los siguientes campos se indica un nombre o alias y sus usuarios de los canales por lo que quiera ser informado.
+La persona interesada solo tiene que seleccionar el barrio donde reside o del que le interesa saber cuándo se ha detectado contaminación o si hay avisos de que vaya a haberla. En los siguientes campos se indica un nombre o alias y sus usuarios de los canales por lo que quiera ser informado.
 
-También se ha reservado una casilla para indicar si se está interesado en instalar un sensor de calidad del aire. Si se marca. Nos pondremos en contacto para ayudarle en esta tarea.
+También se ha reservado una casilla para indicar si se está interesado en instalar un sensor de calidad del aire. Si se marca, nos pondremos en contacto para ayudarle en esta tarea.
 
 ## Análisis de datos
 ### Primera fase
@@ -71,7 +71,7 @@ Se ha puesto especial interés en una buena visualización de datos. Para ello h
 
 La visualización de los datos es necesaria tanto para detectar errores, caídas de servicio o valores inusuales como para diseñar la analítica de datos que se puede hacer partiendo de correlaciones que aparecen. En nuestro caso sería la presencia de barcos y la detección de contaminantes.
 
-Inicialmente se ha desarrollado una analítica básica de un algoritmo de avisos de riesgo propagación de contaminación. Es una casada de condiciones *and*:
+Inicialmente se ha desarrollado una analítica básica de un algoritmo de avisos de riesgo propagación de contaminación. Es una cascada de condiciones *and*:
 
 > + Si no está lloviendo
 >   + Y el viento lleva soplando en la misma dirección más de 10 minutos
@@ -86,7 +86,7 @@ Análisis de las curvas de detección y propagación para distinguir entre:
 - Nube de contaminante propagándose por la ciudad: originado por un foco importante de contaminación.
 <img src="./img/Isolated_vs_dashing-away.png" width="500" align="center" />
 
-Nuestro objetivo final es implementar un algoritmo que, en base a una red de sensores suficientemente densa y la correlación de los factores de: atraques, meteorología y contaminación. Pueda identificar con un grado de certidumbre, el origen de la contaminación.
+Nuestro objetivo final es implementar un algoritmo que, en base a una red de sensores suficientemente densa y la correlación de los factores de atraques, meteorología y contaminación, pueda identificar con un grado de certidumbre aceptable, el origen de la contaminación.
 
 ## Operación
 ### Avisos y alertas automáticos
@@ -96,7 +96,7 @@ La solución incluye dos bots que son controlados automáticamente por Node-RED 
 
 Tanto la cuenta de Twitter como el canal de Telegram son públicos y cualquier persona puede subscribirse.
 
-Por otra parte existe la cuenta de Gmail: fumport@gmail.com que es sobre la que se hace el envío de mail-list a los usuarios inscritos.
+Por otra parte, existe la cuenta de Gmail: fumport@gmail.com que es sobre la que se hace el envío de mail-list a los usuarios inscritos.
 
 ### Control desde Telegram
 <img src="./img/telegram_ops.png" width="200" align="right" />
