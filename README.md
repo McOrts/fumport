@@ -35,12 +35,23 @@ Una aplicacion Node-RED recoge todos los datos a través de conexiones UDP, llam
 Node-RED además orquesta las llamadas a otros modulos:
 - Python para captura de datos de webs.
 - Pandas para la analítica de datos.
+- 
 - Bots de Telegram y Twitter.
 
 ### Aplicación de usuario
 
+<img src="./img/node-red_app_menu.png" width="200" align="left" />
+
 Se ha desarrollado una aplicaciónweb a fin de disponer de un Lugar donde a la vez que se informa del proyecto. Se muestran todos la datos recopilados junto con los indices más importantes calculados por los algoritmos.  
-Esa aplicación web es accesible desde: [www.fumport.de-a.org](http://fumport.de-a.org/ui) y consta de los siguientss modulos:     
+Esa aplicación web es accesible desde: [www.fumport.de-a.org](http://fumport.de-a.org/ui) y consta de los siguientes módulos:
+
+#### Información actualizada 
+<img src="./img/node-red_app_home.png" width="300" align="right" />
+
+
+#### Formulario de participación 
+<img src="./img/node-red_app_form.png" width="300" align="right" />
+
 
 ## Análisis de datos
 ### Primera fase
