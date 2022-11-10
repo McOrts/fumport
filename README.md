@@ -125,8 +125,8 @@ Por otra parte la plataforma Sensor Community ofrece un REST API que permite tan
 Finalmente hay un archivo con el volcado de todas las lecturas a nivel mundial por día: https://archive.sensor.community/
 
 ## Agradecimientos 
-- Guillermo M. €Guillermo-rn por su magia con el Data Mining que es la guinda del proyecto.
-- Martí @Gonellarro por su incansable búsquera y captura de información de la posición de los barcos.
+- Guillermo M. [@Guillermo-rn](https://github.com/Guillermo-rn) por su magia con el Data Mining que es la guinda del proyecto.
+- Martí [@Gonellarro](https://github.com/Gonellarro) por su incansable búsquera y captura de información de la posición de los barcos.
 - [Associació de Veïnes de Canamunt](http://www.canamunt.org/)
 - [Sensor.Community](https://sensor.community/)
 
