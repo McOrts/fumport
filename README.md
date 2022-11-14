@@ -10,7 +10,7 @@ El monitoreo ambiental en ciudades se refiere a las prácticas de seguridad y pr
 ## Nuestra solución
 <img src="./img/taller.jpg" width="300" align="right" />
 
-Para abordar este desafío, se desarrolló un proyecto de ciencia ciudadana. Que parte de [talleres de fabricación de sensores de calidad de aire](https://www.meetup.com/makespace-mallorca/events/282643149?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link) realizados en el Fablab de Mallorca y que son posteriormente desplegados y construidos por los ciudadanos. Esto forma una red de monitoreo ambiental basado en [sensores SDS011](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) que monitorean el ambiente exterior y envían los datos recopilados a una solución en la nube donde se pueden realizar más cálculos. Con el fin de:
+ Para abordar este desafío, se desarrolló un proyecto de ciencia ciudadana con el apoyo de la [AVV Canamunt](https://es-la.facebook.com/avvcanamunt/). Que parte de [talleres de fabricación de sensores de calidad de aire](https://www.meetup.com/makespace-mallorca/events/282643149?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link) realizados en el Fablab de Mallorca y que son posteriormente desplegados y construidos por los ciudadanos. Esto forma una red de monitoreo ambiental basado en [sensores SDS011](http://www.aliexpress.com/wholesale?groupsort=1&SortType=price_asc&SearchText=sds011) que monitorean el ambiente exterior y envían los datos recopilados a una solución en la nube donde se pueden realizar más cálculos. Con el fin de:
 
 - **Emitir alertas** para informar a la ciudania de riesgos a la salud en tiempo real.
 - Hacer un **análisis predictivo** para dar avisos de contaminación con antelación.
@@ -127,7 +127,7 @@ Finalmente hay un archivo con el volcado de todas las lecturas a nivel mundial p
 ## Agradecimientos 
 - Guillermo M. [@Guillermo-rn](https://github.com/Guillermo-rn) por su magia con el Data Mining que es la guinda del proyecto.
 - Martí [@Gonellarro](https://github.com/Gonellarro) por su incansable búsquera y captura de información de la posición de los barcos.
-- [Associació de Veïnes de Canamunt](http://www.canamunt.org/)
+- [Associació de Veïnes de Canamunt](https://es-la.facebook.com/avvcanamunt/)
 - [Sensor.Community](https://sensor.community/)
 
 > Y gracias a todos los que **participan en construir y desplegar sensores** dando a conocer datos ambientales y ayudado a que los que pueden hacer de nuestra ciudad un lugar mejor para vivir.
