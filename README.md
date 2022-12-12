@@ -80,6 +80,9 @@ Inicialmente se ha desarrollado una analítica básica de un algoritmo de avisos
  
 ![mapa](./img/MapWindRose.png)
 
+#### Actividad, saturación y capacidad del puerto
+
+
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
 - Contaminación aislada: posiblemente de origen próximo al sensor. Humo de barbacoa, contaminación de tráfico rodado. 
