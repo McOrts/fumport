@@ -50,7 +50,7 @@
     {
         "id": "4ecb1660b0460e17",
         "type": "tab",
-        "label": "ETL",
+        "label": "Master Data",
         "disabled": false,
         "info": "",
         "env": []
@@ -87,7 +87,7 @@
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
-                "baseFont": "Verdana,Verdana,Geneva,sans-serif",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
                 "edited": true,
                 "reset": false
             },
@@ -146,7 +146,7 @@
                     "edited": false
                 },
                 "base-font": {
-                    "value": "Verdana,Verdana,Geneva,sans-serif"
+                    "value": "Arial,Arial,Helvetica,sans-serif"
                 }
             },
             "angularTheme": {
@@ -181,7 +181,7 @@
         "type": "ui_group",
         "name": "Alarmas",
         "tab": "4861ba36.77fc94",
-        "order": 2,
+        "order": 5,
         "disp": true,
         "width": "9",
         "collapse": true,
@@ -292,7 +292,7 @@
         "type": "ui_group",
         "name": "Mapa de sensores",
         "tab": "4861ba36.77fc94",
-        "order": 6,
+        "order": 4,
         "disp": true,
         "width": "9",
         "collapse": true,
@@ -363,7 +363,7 @@
         "type": "ui_group",
         "name": "Sensores",
         "tab": "4861ba36.77fc94",
-        "order": 7,
+        "order": 8,
         "disp": true,
         "width": "9",
         "collapse": true,
@@ -372,29 +372,20 @@
     {
         "id": "f6579e9edf3ef0c2",
         "type": "ui_group",
-        "name": "Barcos en el puerto",
+        "name": "Barcos y contaminación",
         "tab": "4861ba36.77fc94",
-        "order": 4,
+        "order": 3,
         "disp": false,
         "width": "9",
         "collapse": false,
         "className": ""
     },
     {
-        "id": "7605e0c6.2cdf9",
-        "type": "ui_tab",
-        "name": "Grafana",
-        "icon": "dashboard",
-        "order": 37,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "8fa7348dc9ef730f",
         "type": "ui_group",
-        "name": "Gráficos",
+        "name": "Barcos en el puerto",
         "tab": "4861ba36.77fc94",
-        "order": 5,
+        "order": 2,
         "disp": true,
         "width": "9",
         "collapse": false,
@@ -405,26 +396,27 @@
         "type": "ui_group",
         "name": "Avisos",
         "tab": "4861ba36.77fc94",
-        "order": 3,
+        "order": 6,
         "disp": true,
         "width": "9",
         "collapse": true,
         "className": ""
     },
     {
-        "id": "1eede62b9001d1be",
-        "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
-        "name": "spacer",
-        "group": "fb40f53421f214a6",
-        "order": 1,
-        "width": 1,
-        "height": 1
+        "id": "083395d199aca29c",
+        "type": "ui_group",
+        "name": "Gráficos",
+        "tab": "4861ba36.77fc94",
+        "order": 7,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "fefd00f49cf19c9a",
+        "id": "a71d89e7392e7f52",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "fb40f53421f214a6",
         "order": 4,
@@ -432,9 +424,19 @@
         "height": 1
     },
     {
-        "id": "b52af7f94c4d43f6",
+        "id": "fbcc0a362c9357f8",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
+        "name": "spacer",
+        "group": "8fa7348dc9ef730f",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c1bb7f1df8a0d29c",
+        "type": "ui_spacer",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 5,
@@ -442,9 +444,9 @@
         "height": 1
     },
     {
-        "id": "357afdd40d057413",
+        "id": "c9930b7d44f61df6",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 7,
@@ -452,9 +454,9 @@
         "height": 1
     },
     {
-        "id": "1a93485aa287ab66",
+        "id": "f9a3b4a79b9b2777",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 9,
@@ -462,9 +464,9 @@
         "height": 1
     },
     {
-        "id": "0cb645488105bdc3",
+        "id": "843e323e4267067f",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 11,
@@ -472,9 +474,9 @@
         "height": 1
     },
     {
-        "id": "193a14453c77b7bd",
+        "id": "eaf4571a5ec504b6",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 12,
@@ -482,9 +484,9 @@
         "height": 1
     },
     {
-        "id": "ab02525422f33bf8",
+        "id": "97512826b5fb164b",
         "type": "ui_spacer",
-        "z": "9a88b218bcdc0b95",
+        "z": "253351a39d168f06",
         "name": "spacer",
         "group": "d684ae17cb21aab8",
         "order": 4,
@@ -607,8 +609,8 @@
         "url": "https://maps.sensor.community/#12/39.57/2.6449",
         "origin": "*",
         "scale": "100",
-        "x": 110,
-        "y": 200,
+        "x": 670,
+        "y": 60,
         "wires": [
             []
         ]
@@ -733,8 +735,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 640,
+        "x": 130,
+        "y": 700,
         "wires": [
             [
                 "ef328b2aa8714561",
@@ -774,10 +776,9 @@
                 "96ac6984fdccc9f5",
                 "ac06c478c74f4fb7",
                 "88a608a6.78cc68",
-                "6f95e04b6df5aaa3",
                 "1c4282f87d17e770",
                 "94e84bf7fe7e73c6",
-                "a57374193d8dc5f5"
+                "1e786d1dc797884e"
             ]
         ]
     },
@@ -798,7 +799,7 @@
         "group": "fb40f53421f214a6",
         "order": 5,
         "width": 4,
-        "height": 5,
+        "height": 4,
         "name": "",
         "label": "La información de sensores de calidad de aire construidos y desplegados por residentes se relaciona con datos de entornos portuarios.",
         "format": "{{msg.payload}}",
@@ -815,7 +816,7 @@
         "group": "fb40f53421f214a6",
         "order": 3,
         "width": 5,
-        "height": 3,
+        "height": 2,
         "name": "",
         "label": "Objetivos",
         "format": "{{msg.payload}}",
@@ -1005,8 +1006,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1220,
-        "y": 640,
+        "x": 1260,
+        "y": 700,
         "wires": [
             []
         ]
@@ -1028,8 +1029,8 @@
         "onstart": true,
         "scope": "local",
         "tooltip": "",
-        "x": 340,
-        "y": 320,
+        "x": 300,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1039,39 +1040,18 @@
         "type": "function",
         "z": "9a88b218bcdc0b95",
         "name": "JSON to JS Objet",
-        "func": "flow.set('total_zones', msg.payload.length);\nvar data4bars = {\n    \"series\": [\"X\"],\n    \"data\": [[0,0,0,0,0,0]],\n    \"labels\": [\"C'an pastilla\", \"Canamunt\", \"Cas català\", \"La Gruta\", \"Parc de la Mar\", \"Portopí\"]\n};\n\nfor (var i = 0; i < flow.get('total_zones'); i++) {\n    data4bars.data[0][i] = msg.payload[i].count;    \n}\n\n//for (var i = 0; i < flow.get('total_zones'); i++) {\n//    data4bars.labels[0][i] = msg.payload[i].zone;\n//}\nreturn { payload: [data4bars] };\n",
+        "func": "flow.set('total_zones', msg.payload.length);\nvar data4bars = {\n    \"series\": [\"X\"],\n    \"data\": [[0,0,0,0,0,0,0]],\n    \"labels\": [\"C'an pastilla\", \"Canamunt\", \"Cas català\", \"La Gruta\", \"Parc de la Mar\", \"Pere Garau\", \"Portopí\"]\n};\n\nfor (var i = 0; i < flow.get('total_zones'); i++) {\n    data4bars.data[0][i] = msg.payload[i].count;    \n}\n\n//for (var i = 0; i < flow.get('total_zones'); i++) {\n//    data4bars.labels[0][i] = msg.payload[i].zone;\n//}\nreturn { payload: [data4bars] };\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
+        "x": 1070,
         "y": 700,
         "wires": [
             [
                 "fe515729.789e58"
             ]
-        ]
-    },
-    {
-        "id": "6f95e04b6df5aaa3",
-        "type": "ui_template",
-        "z": "9a88b218bcdc0b95",
-        "group": "8fa7348dc9ef730f",
-        "name": "Grafana",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "format": "<!DOCTYPE html>\n<html>\n<head>\n<style>\na:link {\n  color: green;\n  background-color: transparent;\n  text-decoration: none;\n}\na:visited {\n  color: pink;\n  background-color: transparent;\n  text-decoration: none;\n}\na:hover {\n  color: red;\n  background-color: transparent;\n  text-decoration: underline;\n}\na:active {\n  color: yellow;\n  background-color: transparent;\n  text-decoration: underline;\n}\n</style>\n</head>\n<body>\n<div>\n    <a href=\thttps://snapshots.raintank.io/dashboard/snapshot/5sNzm3wDRCLQQAi8Lc3QjXxB64z4szLO><span>Ver gráficos y estadísticas.</span></a>\n</div>\n</body>\n</html>\n\n\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 260,
-        "y": 200,
-        "wires": [
-            []
         ]
     },
     {
@@ -1091,8 +1071,8 @@
         "onstart": true,
         "scope": "local",
         "tooltip": "",
-        "x": 520,
-        "y": 320,
+        "x": 440,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1137,8 +1117,8 @@
         "onstart": true,
         "scope": "local",
         "tooltip": "",
-        "x": 250,
-        "y": 240,
+        "x": 470,
+        "y": 340,
         "wires": [
             []
         ]
@@ -1147,11 +1127,11 @@
         "id": "94e84bf7fe7e73c6",
         "type": "ui_media",
         "z": "9a88b218bcdc0b95",
-        "group": "f6579e9edf3ef0c2",
+        "group": "8fa7348dc9ef730f",
         "name": "Logo",
-        "width": 3,
-        "height": 2,
-        "order": 3,
+        "width": 2,
+        "height": 1,
+        "order": 1,
         "category": "logos",
         "file": "icon_cruise.png",
         "layout": "center",
@@ -1159,31 +1139,115 @@
         "loop": false,
         "onstart": true,
         "scope": "local",
-        "tooltip": "",
-        "x": 410,
-        "y": 240,
+        "tooltip": "Barcos",
+        "x": 610,
+        "y": 340,
         "wires": [
             []
         ]
     },
     {
-        "id": "a57374193d8dc5f5",
+        "id": "7db57965.76d468",
+        "type": "ui_button",
+        "z": "9a88b218bcdc0b95",
+        "name": "Grafana redirect",
+        "group": "083395d199aca29c",
+        "order": 1,
+        "width": 2,
+        "height": 4,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "multiline_chart",
+        "payload": "grafana",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "ece06122.7e762"
+            ]
+        ]
+    },
+    {
+        "id": "5e1f0081.6dc3c",
+        "type": "ui_template",
+        "z": "9a88b218bcdc0b95",
+        "group": "fb40f53421f214a6",
+        "name": "window redirect",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(data) {\n        if (data == \"grafana\") {\n          window.location.href = \"https://snapshots.raintank.io/dashboard/snapshot/X6w0tIEXQupvVvzLoRHoeeYgp3ULD35K\";\n        } \n        if (data == \"GitHub\") {\n          //window.open(\"https://github.com/node-red\");\n          window.location.href = \"https://github.com/node-red\";\n        } \n    });\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ece06122.7e762",
+        "type": "trigger",
+        "z": "9a88b218bcdc0b95",
+        "name": "reset msg",
+        "op1": "",
+        "op2": "empty",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "5e1f0081.6dc3c"
+            ]
+        ]
+    },
+    {
+        "id": "781dd368610c7d8f",
+        "type": "comment",
+        "z": "9a88b218bcdc0b95",
+        "name": "Charts",
+        "info": "",
+        "x": 90,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1e786d1dc797884e",
         "type": "ui_media",
         "z": "9a88b218bcdc0b95",
-        "group": "8fa7348dc9ef730f",
-        "name": "Logo",
-        "width": 3,
-        "height": 1,
-        "order": 1,
-        "category": "logos",
-        "file": "icon-dashboard.png",
-        "layout": "center",
+        "group": "083395d199aca29c",
+        "name": "Grafana",
+        "width": 7,
+        "height": 4,
+        "order": 2,
+        "category": "Others",
+        "file": "Grafana_Dashboard_mini.png",
+        "layout": "adjust",
         "showcontrols": false,
-        "loop": false,
+        "loop": true,
         "onstart": true,
         "scope": "local",
         "tooltip": "",
-        "x": 410,
+        "x": 680,
         "y": 200,
         "wires": [
             []
@@ -1349,6 +1413,11 @@
             {
                 "label": "Portopí",
                 "value": "Portopí",
+                "type": "str"
+            },
+            {
+                "label": "Pere Garau",
+                "value": "Pere Garau",
                 "type": "str"
             }
         ],
@@ -1887,14 +1956,15 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
         "payloadType": "json",
         "x": 220,
         "y": 380,
         "wires": [
             [
                 "03a591ed46164871",
-                "52b356a78672061e"
+                "52b356a78672061e",
+                "1629b27fe90249b5"
             ]
         ]
     },
@@ -1945,7 +2015,7 @@
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "Read JSON of sensors catalogue",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    newMsg.payload = msg.payload.sensors[i].id\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.id = msg.payload.sensors[i].id\n    newMsg.source = msg.payload.sensors[i].source\n\n    node.send(newMsg);    \n    await delay(1000);\n}\n\nreturn null;\n",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    newMsg.payload = msg.payload.sensors[i].id\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.id = msg.payload.sensors[i].id\n    newMsg.source = msg.payload.sensors[i].source\n\n    node.send(newMsg);    \n    await delay(1000);\n}\n\nreturn null;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1971,12 +2041,11 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "edc114b1.b4d3e8",
-                "e79e3ca5c4aedf18",
-                "ce7759c917465664"
+                "e79e3ca5c4aedf18"
             ]
         ]
     },
@@ -2000,7 +2069,7 @@
         "to": "",
         "reg": false,
         "x": 210,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "0f5dda98c41c3e94"
@@ -2282,7 +2351,7 @@
                 "t": "set",
                 "p": "control",
                 "pt": "msg",
-                "to": "{\"label\":\"Población sensible\"}",
+                "to": "{\"label\":\"Poblac. sensible\"}",
                 "tot": "json"
             }
         ],
@@ -2388,7 +2457,8 @@
             [
                 "f222f308ac636076",
                 "530257cc6310e55f",
-                "864349942ebe0658"
+                "864349942ebe0658",
+                "ef4b4f17e12249d3"
             ]
         ],
         "outputLabels": [
@@ -2542,16 +2612,26 @@
             {
                 "p": "topic",
                 "vt": "str"
+            },
+            {
+                "p": "id",
+                "v": "68453",
+                "vt": "num"
+            },
+            {
+                "p": "source",
+                "v": "MQTT",
+                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "La Gruta",
-        "payload": "109",
+        "topic": "C'an pastilla",
+        "payload": "467.15",
         "payloadType": "num",
-        "x": 190,
+        "x": 210,
         "y": 1360,
         "wires": [
             [
@@ -2722,7 +2802,7 @@
                 "t": "set",
                 "p": "control",
                 "pt": "msg",
-                "to": "{\"label\":\"Población sensible\"}",
+                "to": "{\"label\":\"Poblac. sensible\"}",
                 "tot": "json"
             }
         ],
@@ -2888,40 +2968,23 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 480,
+        "y": 540,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "ce7759c917465664",
-        "type": "debug",
-        "z": "d4e727584e18a1cb",
-        "name": "debug 8",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 500,
-        "wires": []
     },
     {
         "id": "8a04b841bb2d9e0f",
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "Sensors Catalogue to global readings",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nvar readings_pm25 = {};\nvar readings_pm10 = {};\nvar sensors = {};\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm25[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm10[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    sensors[msg.payload.sensors[i].id] = msg.payload.sensors[i].zone;\n}\n\nreadings_pm25.wind_direction = 0;\nreadings_pm25.wind_speed = 0;\nreadings_pm25.humidity = 0;\nreadings_pm25.temperature = 0;\nreadings_pm25.rain = false;\n\nreadings_pm10.wind_direction = 0;\nreadings_pm10.wind_speed = 0;\nreadings_pm10.humidity = 0;\nreadings_pm10.temperature = 0;\nreadings_pm10.rain = false;\n\nglobal.set('readings_pm25', readings_pm25);\nglobal.set('readings_pm10', readings_pm10);\nglobal.set('sensors',sensors);\n\nreturn msg;\n",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nvar readings_pm25 = {};\nvar readings_pm10 = {};\nvar sensors = {};\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm25[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm10[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    sensors[msg.payload.sensors[i].id] = msg.payload.sensors[i].zone;\n}\n\nreadings_pm25.wind_direction = 0;\nreadings_pm25.wind_speed = 0;\nreadings_pm25.humidity = 0;\nreadings_pm25.temperature = 0;\nreadings_pm25.rain = false;\n\nreadings_pm10.wind_direction = 0;\nreadings_pm10.wind_speed = 0;\nreadings_pm10.humidity = 0;\nreadings_pm10.temperature = 0;\nreadings_pm10.rain = false;\n\nglobal.set('readings_pm25', readings_pm25);\nglobal.set('readings_pm10', readings_pm10);\nglobal.set('sensors',sensors);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
+        "x": 890,
         "y": 80,
         "wires": [
             []
@@ -2959,23 +3022,6 @@
         "statusType": "auto",
         "x": 980,
         "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "742cbe325a6ebf6a",
-        "type": "debug",
-        "z": "d4e727584e18a1cb",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1300,
-        "y": 520,
         "wires": []
     },
     {
@@ -3017,7 +3063,6 @@
         "y": 560,
         "wires": [
             [
-                "742cbe325a6ebf6a",
                 "d1da34e80ed6f1d0"
             ]
         ]
@@ -3117,7 +3162,7 @@
             "6b0386d8931674c6",
             "1af1a5e912539bc0"
         ],
-        "x": 1235,
+        "x": 1255,
         "y": 1140,
         "wires": []
     },
@@ -3130,7 +3175,7 @@
         "links": [
             "fa5a411f.3ecff"
         ],
-        "x": 1235,
+        "x": 1255,
         "y": 1100,
         "wires": []
     },
@@ -3155,7 +3200,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1160,
-        "y": 420,
+        "y": 440,
         "wires": [
             [
                 "599adb277b764c14"
@@ -3237,35 +3282,6 @@
         "x": 230,
         "y": 40,
         "wires": []
-    },
-    {
-        "id": "320bdc8a82fae3cc",
-        "type": "inject",
-        "z": "d4e727584e18a1cb",
-        "name": "Inject JSON of sensors catalogue",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
-        "payloadType": "json",
-        "x": 210,
-        "y": 80,
-        "wires": [
-            [
-                "8a04b841bb2d9e0f"
-            ]
-        ]
     },
     {
         "id": "5174b6799849dd93",
@@ -3369,7 +3385,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1340,
+        "x": 1360,
         "y": 840,
         "wires": [
             []
@@ -3497,7 +3513,7 @@
         "z": "d4e727584e18a1cb",
         "name": "Sensor writings InfluxDB",
         "info": "",
-        "x": 770,
+        "x": 870,
         "y": 160,
         "wires": []
     },
@@ -3522,7 +3538,7 @@
         "y": 560,
         "wires": [
             [
-                "b7f5dde0.09657"
+                "379e28ef1716508f"
             ]
         ]
     },
@@ -3572,7 +3588,7 @@
         "y": 1060,
         "wires": [
             [
-                "1ec33451f253afc7"
+                "a2b6f9398643c936"
             ]
         ]
     },
@@ -3599,36 +3615,6 @@
         "y": 1200,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "f541cb2aea163b3c",
-        "type": "inject",
-        "z": "d4e727584e18a1cb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "control",
-                "v": "Hola",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1000",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1420,
-        "wires": [
-            [
-                "7f547d10c648fb8d"
-            ]
         ]
     },
     {
@@ -3672,36 +3658,6 @@
         "x": 1010,
         "y": 1280,
         "wires": []
-    },
-    {
-        "id": "a5ee6b555ace2735",
-        "type": "inject",
-        "z": "d4e727584e18a1cb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "control",
-                "v": "Hola",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "100",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1460,
-        "wires": [
-            [
-                "7f547d10c648fb8d"
-            ]
-        ]
     },
     {
         "id": "b0548634913dac32",
@@ -3826,6 +3782,264 @@
             [
                 "b0548634913dac32",
                 "32db769f984c46c9"
+            ]
+        ]
+    },
+    {
+        "id": "1629b27fe90249b5",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "PM 2.5 average calculation",
+        "func": "var average_pm25 = 0;\nvar total_pm25 = 0;\nvar readings_pm25 = global.get('readings_pm25');\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    total_pm25 += readings_pm25[msg.payload.sensors[i].id];\n}\n\naverage_pm25 = total_pm25 / flow.get('total_sensors');\nmsg.payload = average_pm25;\nmsg.topic = 'Contaminación media';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 480,
+        "wires": [
+            [
+                "6ca5245613efd9cd"
+            ]
+        ]
+    },
+    {
+        "id": "6ca5245613efd9cd",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "average pm25",
+        "mode": "link",
+        "links": [
+            "a70262105bca8aab"
+        ],
+        "x": 845,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ef4b4f17e12249d3",
+        "type": "debug",
+        "z": "d4e727584e18a1cb",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "a2b6f9398643c936",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "Not global.silence_id",
+        "property": "id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "silence_id",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "silence_id",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1360,
+        "y": 1060,
+        "wires": [
+            [
+                "1ec33451f253afc7"
+            ],
+            [
+                "cb7dc04286c8a78f"
+            ]
+        ]
+    },
+    {
+        "id": "379e28ef1716508f",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "Not global.silence_id",
+        "property": "id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "silence_id",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "silence_id",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1400,
+        "y": 560,
+        "wires": [
+            [
+                "b7f5dde0.09657"
+            ],
+            [
+                "cb7dc04286c8a78f"
+            ]
+        ]
+    },
+    {
+        "id": "7959aca61c46282c",
+        "type": "link out",
+        "z": "d4e727584e18a1cb",
+        "name": "Telegram out",
+        "mode": "link",
+        "links": [
+            "86d8d1e99109e95c"
+        ],
+        "x": 1485,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cb7dc04286c8a78f",
+        "type": "function",
+        "z": "d4e727584e18a1cb",
+        "name": "Compose alert message",
+        "func": "msg.payload = msg.icon + \"Sensor id:\" + msg.id + \" (\" + msg.payload + \")\" + msg.topic;\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 500,
+        "wires": [
+            [
+                "7959aca61c46282c"
+            ]
+        ],
+        "outputLabels": [
+            "Sunset"
+        ]
+    },
+    {
+        "id": "d14f6c09e4e106a8",
+        "type": "switch",
+        "z": "d4e727584e18a1cb",
+        "name": "Global variables are empty",
+        "property": "sensors",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "bf70be1323445c84"
+            ]
+        ]
+    },
+    {
+        "id": "42ebb1426edb2b39",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "On start-up",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "d14f6c09e4e106a8"
+            ]
+        ]
+    },
+    {
+        "id": "bf70be1323445c84",
+        "type": "change",
+        "z": "d4e727584e18a1cb",
+        "name": "JSON Sensors catalogue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "8a04b841bb2d9e0f"
+            ]
+        ]
+    },
+    {
+        "id": "640633aab3b4ccce",
+        "type": "inject",
+        "z": "d4e727584e18a1cb",
+        "name": "Manual",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "bf70be1323445c84"
             ]
         ]
     },
@@ -4620,7 +4834,7 @@
         "type": "function",
         "z": "bcba3d054e58be9c",
         "name": "Read JSON of sensors catalogue",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-3);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n// opposite wind direcction\nvar wd = global.get(\"wind_direction_last\") + 180;\nif (wd > 360) {\n    wd = wd - 360;\n}\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    if (wd < msg.payload.sensors[i].wind_angle_max && wd > msg.payload.sensors[i].wind_angle_min) {\n        newMsg.payload = true;\n    } else {\n        newMsg.payload = false;\n    }\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.wd = wd;\n    newMsg.max = msg.payload.sensors[i].wind_angle_max;\n    newMsg.min = msg.payload.sensors[i].wind_angle_min;\n    node.send(newMsg);\n    await delay(500);\n}\nreturn null;\n",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n// opposite wind direcction\nvar wd = global.get(\"wind_direction_last\") + 180;\nif (wd > 360) {\n    wd = wd - 360;\n}\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    if (wd < msg.payload.sensors[i].wind_angle_max && wd > msg.payload.sensors[i].wind_angle_min) {\n        newMsg.payload = true;\n    } else {\n        newMsg.payload = false;\n    }\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.wd = wd;\n    newMsg.max = msg.payload.sensors[i].wind_angle_max;\n    newMsg.min = msg.payload.sensors[i].wind_angle_min;\n    node.send(newMsg);\n    await delay(500);\n}\nreturn null;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4717,13 +4931,13 @@
         "id": "918233dfe9312d5f",
         "type": "switch",
         "z": "bcba3d054e58be9c",
-        "name": "If wind_speed > 5 Kn ",
+        "name": "If wind_speed > 10 Kn ",
         "property": "wind_speed",
         "propertyType": "global",
         "rules": [
             {
                 "t": "gte",
-                "v": "5",
+                "v": "10",
                 "vt": "num"
             }
         ],
@@ -4796,14 +5010,14 @@
         "id": "5a3c22cc4ccdd539",
         "type": "function",
         "z": "bcba3d054e58be9c",
-        "name": "test",
-        "func": "global.set(\"wind_speed\", 20);\nglobal.set(\"wind_direction\", 335);\nglobal.set(\"same_wind_direction\", true);\n\nreturn msg",
+        "name": "test OK",
+        "func": "global.set(\"wind_speed\", 20);\nglobal.set(\"wind_direction_last\", 120);\nglobal.set(\"same_wind_direction\", true);\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 480,
         "y": 280,
         "wires": [
             [
@@ -4830,7 +5044,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
         "payloadType": "json",
         "x": 270,
         "y": 280,
@@ -4912,219 +5126,12 @@
         "width": 6,
         "height": 3,
         "name": "",
-        "label": "Riesgo de propagaciión:",
+        "label": "Riesgo de propagación:",
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
         "x": 1050,
         "y": 380,
-        "wires": []
-    },
-    {
-        "id": "d88dd470.0ac7b8",
-        "type": "inject",
-        "z": "253351a39d168f06",
-        "name": "make request",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 130,
-        "y": 320,
-        "wires": [
-            [
-                "874a3d4e.9b666"
-            ]
-        ]
-    },
-    {
-        "id": "874a3d4e.9b666",
-        "type": "http request",
-        "z": "253351a39d168f06",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://www.myshiptracking.com/ports/port-of-palma-de-mallorca-in-es-spain-id-333",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 310,
-        "y": 320,
-        "wires": [
-            [
-                "90243cc1.87edc",
-                "7403c68f.21d7c8",
-                "982612e7edcacac9"
-            ]
-        ]
-    },
-    {
-        "id": "7403c68f.21d7c8",
-        "type": "debug",
-        "z": "253351a39d168f06",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "90243cc1.87edc",
-        "type": "html",
-        "z": "253351a39d168f06",
-        "name": "",
-        "property": "payload",
-        "outproperty": "payload",
-        "tag": "table table-sm my-2",
-        "ret": "text",
-        "as": "single",
-        "x": 540,
-        "y": 320,
-        "wires": [
-            [
-                "7403c68f.21d7c8"
-            ]
-        ]
-    },
-    {
-        "id": "a2b07ec9.73957",
-        "type": "inject",
-        "z": "253351a39d168f06",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 440,
-        "wires": [
-            [
-                "ca3e73c1.fc47d"
-            ]
-        ]
-    },
-    {
-        "id": "ca3e73c1.fc47d",
-        "type": "http request",
-        "z": "253351a39d168f06",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "http://duco001/boxinfo.html",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 370,
-        "y": 440,
-        "wires": [
-            [
-                "ad4f898b.d61258",
-                "979c94ca.eea358"
-            ]
-        ]
-    },
-    {
-        "id": "ad4f898b.d61258",
-        "type": "debug",
-        "z": "253351a39d168f06",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "3cac8f4.795947",
-        "type": "debug",
-        "z": "253351a39d168f06",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "979c94ca.eea358",
-        "type": "html",
-        "z": "253351a39d168f06",
-        "name": "",
-        "property": "payload",
-        "outproperty": "payload",
-        "tag": "div.boxinfotable1>table>tbody>tr>td",
-        "ret": "text",
-        "as": "single",
-        "x": 680,
-        "y": 500,
-        "wires": [
-            [
-                "3cac8f4.795947"
-            ]
-        ]
-    },
-    {
-        "id": "982612e7edcacac9",
-        "type": "scrape",
-        "z": "253351a39d168f06",
-        "name": "",
-        "mapping": "P",
-        "x": 470,
-        "y": 400,
-        "wires": [
-            [
-                "7403c68f.21d7c8"
-            ]
-        ]
-    },
-    {
-        "id": "ad1727534de180bf",
-        "type": "comment",
-        "z": "253351a39d168f06",
-        "name": "Test",
-        "info": "",
-        "x": 90,
-        "y": 280,
         "wires": []
     },
     {
@@ -5138,11 +5145,10 @@
         "precision": "",
         "retentionPolicy": "",
         "org": "organisation",
-        "x": 830,
-        "y": 80,
+        "x": 650,
+        "y": 420,
         "wires": [
             [
-                "c7494ec9cce96df6",
                 "8a7293dc28e2d412"
             ]
         ]
@@ -5158,53 +5164,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 80,
+        "x": 300,
+        "y": 420,
         "wires": [
             [
                 "2b9729224442b3fb"
-            ]
-        ]
-    },
-    {
-        "id": "c7494ec9cce96df6",
-        "type": "ui_text",
-        "z": "253351a39d168f06",
-        "group": "f6579e9edf3ef0c2",
-        "order": 1,
-        "width": 3,
-        "height": 1,
-        "name": "",
-        "label": "Actual",
-        "format": "{{payload[0].vessels}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 1050,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "b9b204f1ad0030b1",
-        "type": "inject",
-        "z": "253351a39d168f06",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "900",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 80,
-        "wires": [
-            [
-                "ecc748f492732c17"
             ]
         ]
     },
@@ -5214,12 +5178,12 @@
         "z": "253351a39d168f06",
         "name": "",
         "group": "f6579e9edf3ef0c2",
-        "order": 2,
-        "width": 6,
-        "height": 3,
-        "label": "Barcos en el puerto",
+        "order": 1,
+        "width": 9,
+        "height": 5,
+        "label": "",
         "chartType": "line",
-        "legend": "false",
+        "legend": "true",
         "xformat": "HH",
         "interpolate": "step",
         "nodata": "",
@@ -5233,8 +5197,8 @@
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#00c5f6",
-            "#aec7e8",
+            "#fb7f36",
+            "#31c6f2",
             "#ff7f0e",
             "#2ca02c",
             "#98df8a",
@@ -5246,8 +5210,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1090,
-        "y": 120,
+        "x": 890,
+        "y": 460,
         "wires": [
             []
         ]
@@ -5271,13 +5235,1076 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 860,
-        "y": 120,
+        "x": 460,
+        "y": 460,
+        "wires": [
+            [
+                "42f279bb1fb8c7ba"
+            ]
+        ]
+    },
+    {
+        "id": "2545c0a8dd58137f",
+        "type": "inject",
+        "z": "253351a39d168f06",
+        "name": "Inject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "720",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "41732b36f6ead29c",
+                "64e21d4b5f4bf545",
+                "cf914247b774b41e",
+                "9dc039f8a63f0d41",
+                "24ae203f785a560c",
+                "963d451d9148df22"
+            ]
+        ]
+    },
+    {
+        "id": "527af6915c65425d",
+        "type": "csv",
+        "z": "253351a39d168f06",
+        "name": "",
+        "sep": ";",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "dc60ecef9fc6fc56"
+            ]
+        ]
+    },
+    {
+        "id": "41732b36f6ead29c",
+        "type": "file in",
+        "z": "253351a39d168f06",
+        "name": "Read File",
+        "filename": "/data/resultat_333_6_511.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "527af6915c65425d"
+            ]
+        ]
+    },
+    {
+        "id": "7743d3ffca03e1c1",
+        "type": "influxdb out",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "measurement": "vessels_333",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1030,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f995b0002eaaa399",
+        "type": "csv",
+        "z": "253351a39d168f06",
+        "name": "",
+        "sep": ";",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "2ff52682f8f16523"
+            ]
+        ]
+    },
+    {
+        "id": "64e21d4b5f4bf545",
+        "type": "file in",
+        "z": "253351a39d168f06",
+        "name": "Read File",
+        "filename": "/data/resultat_333_7_511.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "f995b0002eaaa399"
+            ]
+        ]
+    },
+    {
+        "id": "31544073c027b292",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Compose InfluxDB object",
+        "func": "var total_vessels = msg.payload.length;\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nvar yesterday = new Date();\nyesterday.setDate(yesterday.getDate() - 1);\nvar yesterday_day = yesterday.getFullYear() + '-' + (\"0\" + (yesterday.getMonth() + 1)).slice(-2) + \"-\" + (\"0\" + yesterday.getDate()).slice(-2);\n\nvar today = new Date();\nvar current_day = today.getFullYear() + '-' + (\"0\" + (today.getMonth() + 1)).slice(-2) + \"-\" + (\"0\" + today.getDate()).slice(-2);\nvar current_hour = today.getHours() + ':' + (\"0\" + today.getMinutes()).slice(-2) + ':00';\n\nfor (var i = 0; i < total_vessels; i++) {\n    if (msg.payload[i].col4 > 0 && (msg.payload[i].col2 == current_day || msg.payload[i].col2 == yesterday_day )) {\n        var measure = {};\n        measure.payload = [{\n            name: msg.payload[i].col1\n        },\n        {\n            arrive_day: msg.payload[i].col2,\n            arrive_hour: msg.payload[i].col3,\n            length: msg.payload[i].col4,\n            scan_day: current_day,\n            scan_hour: current_hour,\n            type: msg.topic\n        }];\n        node.send(measure);\n    }\n    await delay(500);\n}\n\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 180,
+        "wires": [
+            [
+                "7743d3ffca03e1c1",
+                "f2b57147078f6177",
+                "ad0e4a5345f97571"
+            ]
+        ]
+    },
+    {
+        "id": "2ff52682f8f16523",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "Cargo",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cargo",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 180,
+        "wires": [
+            [
+                "fd6d179017173b59"
+            ]
+        ]
+    },
+    {
+        "id": "94e7993e83f96388",
+        "type": "csv",
+        "z": "253351a39d168f06",
+        "name": "",
+        "sep": ";",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "7a12a34e7cea2510"
+            ]
+        ]
+    },
+    {
+        "id": "cf914247b774b41e",
+        "type": "file in",
+        "z": "253351a39d168f06",
+        "name": "Read File",
+        "filename": "/data/resultat_333_8_511.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "94e7993e83f96388"
+            ]
+        ]
+    },
+    {
+        "id": "7a12a34e7cea2510",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "Petrol",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "petrol",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "bda57d18c9db849f"
+            ]
+        ]
+    },
+    {
+        "id": "fd6d179017173b59",
+        "type": "delay",
+        "z": "253351a39d168f06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 180,
+        "wires": [
+            [
+                "31544073c027b292"
+            ]
+        ]
+    },
+    {
+        "id": "bda57d18c9db849f",
+        "type": "delay",
+        "z": "253351a39d168f06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "31544073c027b292"
+            ]
+        ]
+    },
+    {
+        "id": "9dc039f8a63f0d41",
+        "type": "delay",
+        "z": "253351a39d168f06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 260,
+        "wires": [
+            [
+                "8ff36ff9fd99a9bf"
+            ]
+        ]
+    },
+    {
+        "id": "62c993a09e510849",
+        "type": "delay",
+        "z": "253351a39d168f06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 140,
+        "wires": [
+            [
+                "31544073c027b292"
+            ]
+        ]
+    },
+    {
+        "id": "11d921769881fd8c",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Compose vessels record",
+        "func": "var measure = {};\nmeasure.payload = [{\n    vessels: Number(flow.get('total_vessels')),\n},\n{\n    port: 'Palma'\n}];\nreturn [measure];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 300,
+        "wires": [
+            [
+                "5485307d896ad70b",
+                "ed672912e6e159cd",
+                "ad0e4a5345f97571"
+            ]
+        ]
+    },
+    {
+        "id": "5485307d896ad70b",
+        "type": "influxdb out",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "vessels",
+        "measurement": "vessels",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 960,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f2b57147078f6177",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Count vessels ",
+        "func": "flow.set('total_vessels', flow.get('total_vessels') + 1);\nmsg.payload = msg.payload[1].length;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42f279bb1fb8c7ba",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Barcos en el puerto",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 460,
+        "wires": [
+            [
+                "dd51315eef54bcb1",
+                "1f0f73a7d51ddd03"
+            ]
+        ]
+    },
+    {
+        "id": "a70262105bca8aab",
+        "type": "link in",
+        "z": "253351a39d168f06",
+        "name": "vessels",
+        "links": [
+            "6ca5245613efd9cd"
+        ],
+        "x": 775,
+        "y": 500,
         "wires": [
             [
                 "dd51315eef54bcb1"
             ]
         ]
+    },
+    {
+        "id": "473807257479f528",
+        "type": "influxdb in",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 890,
+        "y": 580,
+        "wires": [
+            [
+                "a46344e753eed2a8"
+            ]
+        ]
+    },
+    {
+        "id": "017d581f1591de5e",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "SELECT count(\"name\") FROM \"vessels_333\" WHERE scan_day = '' AND scan_hour = '' GROUP BY \"type\"",
+        "func": "msg.query = \"SELECT count(\\\"name\\\") FROM \\\"vessels_333\\\" WHERE scan_day = '\" + msg.payload[0].scan_day + \"' AND scan_hour='\" + msg.payload[0].scan_hour + \"' GROUP BY \\\"type\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 580,
+        "wires": [
+            [
+                "473807257479f528"
+            ]
+        ]
+    },
+    {
+        "id": "a46344e753eed2a8",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "JSON to JS Objet",
+        "func": "flow.set('total_types', msg.payload.length);\nvar data4bars = {\n    \"series\": [\"X\"],\n    \"data\": [[0,0,0]],\n    \"labels\": []\n};\n\nfor (var i = 0; i < flow.get('total_types'); i++) {\n    data4bars.data[0][i] = msg.payload[i].count;\n    data4bars.labels[i] = msg.payload[i].type;\n}\n\nreturn { payload: [data4bars] };\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 580,
+        "wires": [
+            [
+                "2f64b59cf9ca189b"
+            ]
+        ]
+    },
+    {
+        "id": "2f64b59cf9ca189b",
+        "type": "ui_chart",
+        "z": "253351a39d168f06",
+        "name": "",
+        "group": "8fa7348dc9ef730f",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "label": "Tipos",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "0",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24ae203f785a560c",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "SELECT vessels FROM vessels ORDER BY DESC LIMIT 1",
+        "func": "msg.query = \"SELECT vessels FROM \\\"vessels\\\" ORDER BY DESC LIMIT 1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "1a9c904a3d660d7c"
+            ]
+        ]
+    },
+    {
+        "id": "1a9c904a3d660d7c",
+        "type": "influxdb in",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 810,
+        "y": 80,
+        "wires": [
+            [
+                "e52945ad4dc8afe5"
+            ]
+        ]
+    },
+    {
+        "id": "e52945ad4dc8afe5",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pre_total_vessels",
+                "pt": "flow",
+                "to": "payload[0].vessels",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc60ecef9fc6fc56",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "Passenger",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "passenger",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 140,
+        "wires": [
+            [
+                "62c993a09e510849"
+            ]
+        ]
+    },
+    {
+        "id": "8ff36ff9fd99a9bf",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "fix outlier total_vesels=0",
+        "func": "if (flow.get('total_vessels') == 0 && (flow.get('pre_total_vessels') > 3)) {\n    flow.set('total_vessels', flow.get('pre_total_vessels'));\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 260,
+        "wires": [
+            [
+                "11d921769881fd8c"
+            ]
+        ]
+    },
+    {
+        "id": "963d451d9148df22",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "total_vessels = 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "total_vessels",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aebfe9b359144cc0",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "select * from vessels_333 order by desc limit 1",
+        "func": "msg.query = \"SELECT * FROM \\\"vessels_333\\\" ORDER BY DESC LIMIT 1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 520,
+        "wires": [
+            [
+                "cd44f21b234efbf9"
+            ]
+        ]
+    },
+    {
+        "id": "cd44f21b234efbf9",
+        "type": "influxdb in",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 550,
+        "y": 520,
+        "wires": [
+            [
+                "87befdb95b55b201",
+                "017d581f1591de5e"
+            ]
+        ]
+    },
+    {
+        "id": "87befdb95b55b201",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "select * from vessels_333 order by desc limit 1",
+        "func": "msg.query = \"SELECT * FROM vessels_333 WHERE scan_day='\" + msg.payload[0].scan_day + \"' AND scan_hour='\" + msg.payload[0].scan_hour +\"'\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 640,
+        "wires": [
+            [
+                "0b6b0bcaf25739bc"
+            ]
+        ]
+    },
+    {
+        "id": "0b6b0bcaf25739bc",
+        "type": "influxdb in",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 570,
+        "y": 640,
+        "wires": [
+            [
+                "c9f1c4505cac5e4f"
+            ]
+        ]
+    },
+    {
+        "id": "7d48e13.90ee22",
+        "type": "ui_table",
+        "z": "253351a39d168f06",
+        "group": "8fa7348dc9ef730f",
+        "name": "Vessels",
+        "order": 5,
+        "width": 9,
+        "height": "4",
+        "columns": [
+            {
+                "field": "name",
+                "title": "Nombre",
+                "width": "",
+                "align": "left",
+                "formatter": "html",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "index",
+                "title": "Impacto",
+                "width": "100",
+                "align": "left",
+                "formatter": "star",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lenght",
+                "title": "Eslora",
+                "width": "85",
+                "align": "left",
+                "formatter": "progress",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1180,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c9f1c4505cac5e4f",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "JSON to JS Array of Object",
+        "func": "var payload = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}/*, ... */];\n\n//for (var i = 0; i < flow.get(\"total_vessels\"); i++) {\nfor (var i = 0; i < msg.payload.length; i++) {\n    payload[i].name = msg.payload[i].name;\n    payload[i].index = 0;\n    payload[i].lenght = (Number(msg.payload[i].length) * 100 / 330).toFixed(0);\n}\nreturn { payload };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 680,
+        "wires": [
+            [
+                "7b69c8edaf0a1068"
+            ]
+        ]
+    },
+    {
+        "id": "1f0f73a7d51ddd03",
+        "type": "ui_text",
+        "z": "253351a39d168f06",
+        "group": "8fa7348dc9ef730f",
+        "order": 4,
+        "width": 3,
+        "height": 2,
+        "name": "",
+        "label": "Total",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ed672912e6e159cd",
+        "type": "delay",
+        "z": "253351a39d168f06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [
+                "ecc748f492732c17",
+                "aebfe9b359144cc0"
+            ]
+        ]
+    },
+    {
+        "id": "ad0e4a5345f97571",
+        "type": "debug",
+        "z": "253351a39d168f06",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d16cfe491e140757",
+        "type": "inject",
+        "z": "253351a39d168f06",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 740,
+        "wires": [
+            [
+                "aebfe9b359144cc0"
+            ]
+        ]
+    },
+    {
+        "id": "7b69c8edaf0a1068",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "vessels",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 680,
+        "wires": [
+            [
+                "2accdc4ba44f6c90"
+            ]
+        ]
+    },
+    {
+        "id": "2accdc4ba44f6c90",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Read JSON of sensors catalogue",
+        "func": "var vessels = flow.get('vessels');\nvessels[0].index = 4;\nflow.set('vessels', vessels);\n\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < vessels.length; i++) {\n    var newMsg = {};\n\n    if (typeof vessels[i].name !== 'undefined'){\n        newMsg.payload = vessels[i].name;\n        newMsg.index = i;\n        node.send(newMsg);  \n    }\n  \n    await delay(1000);\n}\n\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 680,
+        "wires": [
+            [
+                "d903be2bf2252dfb"
+            ]
+        ]
+    },
+    {
+        "id": "d903be2bf2252dfb",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "select *  from vessels_info where \"name\" = <name>",
+        "func": "msg.query = \"SELECT * FROM vessels_info WHERE \\\"name\\\"='\" + msg.payload + \"'\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 720,
+        "wires": [
+            [
+                "30e8e4bdf4ff0f6a"
+            ]
+        ]
+    },
+    {
+        "id": "30e8e4bdf4ff0f6a",
+        "type": "influxdb in",
+        "z": "253351a39d168f06",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 1230,
+        "y": 720,
+        "wires": [
+            [
+                "15b25cb8023d92ec"
+            ]
+        ]
+    },
+    {
+        "id": "15b25cb8023d92ec",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "function 2",
+        "func": "var vessels = flow.get('vessels');\nvessels[msg.index].index = msg.payload[0].port_emission_score;\nflow.set('vessels', vessels);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 760,
+        "wires": [
+            [
+                "06f25dc69ced3e32"
+            ]
+        ]
+    },
+    {
+        "id": "06f25dc69ced3e32",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "vessels",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 760,
+        "wires": [
+            [
+                "7d48e13.90ee22"
+            ]
+        ]
+    },
+    {
+        "id": "12d2c146fd44e1e8",
+        "type": "comment",
+        "z": "253351a39d168f06",
+        "name": "Impart signation",
+        "info": "",
+        "x": 820,
+        "y": 640,
+        "wires": []
     },
     {
         "id": "66e474f370de58cd",
@@ -5290,12 +6317,10 @@
         "precision": "",
         "retentionPolicy": "",
         "org": "organisation",
-        "x": 450,
-        "y": 120,
+        "x": 470,
+        "y": 240,
         "wires": [
-            [
-                "460866ca64fddabb"
-            ]
+            []
         ]
     },
     {
@@ -5315,30 +6340,13 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 120,
+        "x": 120,
+        "y": 240,
         "wires": [
             [
                 "ff69ce486a940405"
             ]
         ]
-    },
-    {
-        "id": "460866ca64fddabb",
-        "type": "debug",
-        "z": "4ecb1660b0460e17",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 60,
-        "wires": []
     },
     {
         "id": "ff69ce486a940405",
@@ -5351,12 +6359,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 120,
+        "x": 280,
+        "y": 240,
         "wires": [
             [
-                "66e474f370de58cd",
-                "460866ca64fddabb"
+                "66e474f370de58cd"
             ]
         ]
     },
@@ -5371,8 +6378,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 240,
+        "x": 120,
+        "y": 300,
         "wires": [
             [
                 "3e31d8171f452319"
@@ -5389,8 +6396,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 260,
-        "y": 240,
+        "x": 280,
+        "y": 300,
         "wires": [
             [
                 "29c726784d9f6867"
@@ -5411,8 +6418,8 @@
         "retentionPolicyV18Flux": "",
         "org": "my-org",
         "bucket": "test",
-        "x": 410,
-        "y": 240,
+        "x": 430,
+        "y": 300,
         "wires": []
     },
     {
@@ -5429,8 +6436,8 @@
         "retentionPolicyV18Flux": "",
         "org": "my-org",
         "bucket": "test",
-        "x": 780,
-        "y": 180,
+        "x": 800,
+        "y": 80,
         "wires": []
     },
     {
@@ -5452,10 +6459,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\"}]}",
+        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
         "payloadType": "json",
-        "x": 170,
-        "y": 180,
+        "x": 190,
+        "y": 80,
         "wires": [
             [
                 "3409d04f4c7c4714"
@@ -5467,34 +6474,109 @@
         "type": "function",
         "z": "4ecb1660b0460e17",
         "name": "Read JSON of sensors catalogue",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n\n    newMsg.payload = msg.payload.sensors[i]\n    node.send(newMsg);   \n  \n    await delay(1000);\n}\n\nreturn null;\n",
+        "func": "flow.set('total_sensors', msg.payload.vessels_info.length);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n\n    newMsg.payload = msg.payload.sensors[i]\n    node.send(newMsg);   \n  \n    await delay(1000);\n}\n\nreturn null;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 180,
+        "x": 520,
+        "y": 80,
         "wires": [
             [
-                "460866ca64fddabb",
                 "61a758daf9906231"
             ]
         ]
+    },
+    {
+        "id": "cb6f1c944606306f",
+        "type": "comment",
+        "z": "4ecb1660b0460e17",
+        "name": "Testing",
+        "info": "",
+        "x": 90,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fc1a7533f7d88e52",
+        "type": "inject",
+        "z": "4ecb1660b0460e17",
+        "name": "Inject JSON of vessels info catalogue",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sensors",
+        "payload": "{\"vessels_info\":[{\"name\":\"COSTA SMERALDA\",\"mmsi\":247391900,\"type\":\"passenger\",\"passengers\":6554,\"length\":337,\"beam\":42,\"year_built\":2019,\"gross_tonnage\":183900,\"engine_power\":57200,\"deadweight_tonnage\":13000,\"propeller\":\"pitch\",\"fuel_type\":\"fuel & LNG\",\"port_emission_score\":4},{\"name\":\"NORWEGIAN EPIC\",\"mmsi\":311018500,\"type\":\"passenger\",\"passengers\":4200,\"length\":329,\"beam\":46,\"year_built\":2010,\"gross_tonnage\":155873,\"net_tonnage\":146495,\"engine_cylinders\":12,\"engine_power\":80400,\"engine_stroke\":430,\"deadweight_tonnage\":10850,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":5},{\"name\":\"MSC SEAVIEW\",\"mmsi\":248717000,\"type\":\"passenger\",\"passengers\":5060,\"length\":323,\"beam\":41,\"year_built\":2018,\"gross_tonnage\":153516,\"net_tonnage\":149345,\"engine_number\":4,\"engine_power\":62400,\"engine_RPM\":133,\"deadweight_tonnage\":11385,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":5},{\"name\":\"MSC BELLISSIMA\",\"mmsi\":248992000,\"type\":\"passenger\",\"passengers\":4932,\"length\":315.83,\"beam\":43,\"year_built\":2019,\"gross_tonnage\":171598,\"engine_number\":4,\"engine_cylinders\":12,\"engine_power\":38400,\"engine_RPM\":600,\"deadweight_tonnage\":12200,\"propeller\":\"azipod\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":4},{\"name\":\"AIDABLU\",\"mmsi\":247282500,\"type\":\"passenger\",\"passengers\":2799,\"length\":253.33,\"beam\":37.6,\"year_built\":2010,\"gross_tonnage\":71304,\"engine_number\":2,\"engine_cylinders\":9,\"engine_power\":25000,\"engine_stroke\":430,\"deadweight_tonnage\":7889,\"propeller\":\"propeller\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":2},{\"name\":\"AIDASTELLA\",\"mmsi\":247322800,\"type\":\"passenger\",\"passengers\":2050,\"length\":253.26,\"beam\":38.19,\"year_built\":2013,\"displacement\":37374,\"gross_tonnage\":71304,\"net_tonnage\":45266,\"engine_number\":2,\"engine_cylinders\":9,\"engine_power\":25000,\"engine_stroke\":430,\"deadweight_tonnage\":7833,\"propeller\":\"propeller\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":2},{\"name\":\"ECO ADRIATICA\",\"mmsi\":247384100,\"type\":\"cargo\",\"passengers\":600,\"length\":238,\"beam\":34,\"year_built\":2022,\"gross_tonnage\":67311,\"engine_number\":2,\"engine_power\":25200,\"deadweight_tonnage\":18121,\"propeller\":\"azipod\",\"fuel_type\":\"hybrid\",\"port_emission_score\":1},{\"name\":\"ECO MEDITERRANEA\",\"mmsi\":247383900,\"type\":\"cargo\",\"passengers\":600,\"length\":238,\"beam\":34,\"year_built\":2022,\"gross_tonnage\":64575,\"net_tonnage\":41147,\"engine_number\":2,\"engine_power\":25560,\"engine_RPM\":117,\"deadweight_tonnage\":64575,\"propeller\":\"azipod\",\"fuel_type\":\"hybrid\",\"port_emission_score\":1},{\"name\":\"SILVER DAWN\",\"mmsi\":311001044,\"type\":\"passenger\",\"passengers\":1040,\"length\":212.89,\"beam\":30,\"year_built\":2021,\"gross_tonnage\":40844,\"net_tonnage\":14174,\"engine_number\":2,\"engine_power\":25200,\"engine_RPM\":149,\"deadweight_tonnage\":3390,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"GNV SPIRIT\",\"mmsi\":247438100,\"type\":\"passenger\",\"passengers\":1702,\"length\":203.9,\"beam\":25,\"year_built\":2001,\"displacement\":20150,\"gross_tonnage\":32728,\"net_tonnage\":13081,\"engine_number\":4,\"engine_cylinders\":16,\"engine_power\":46080,\"engine_RPM\":510,\"engine_stroke\":400,\"deadweight_tonnage\":6515,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":2},{\"name\":\"KERRY\",\"mmsi\":210772000,\"type\":\"passenger\",\"passengers\":350,\"length\":186.5,\"beam\":25.6,\"year_built\":2001,\"displacement\":16850,\"gross_tonnage\":24418,\"net_tonnage\":7868,\"engine_number\":2,\"engine_bore\":480,\"engine_cylinders\":9,\"engine_power\":18900,\"engine_RPM\":500,\"engine_stroke\":600,\"deadweight_tonnage\":7111,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"HYPATIA DEALEJANDRIA\",\"mmsi\":209462000,\"type\":\"passenger\",\"passengers\":800,\"length\":186.46,\"beam\":25,\"year_built\":2019,\"gross_tonnage\":28658,\"net_tonnage\":9726,\"engine_number\":2,\"engine_cylinders\":9,\"engine_power\":21600,\"engine_RPM\":600,\"engine_stroke\":480,\"deadweight_tonnage\":7718,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"GNV SEALAND\",\"mmsi\":247265800,\"type\":\"passenger\",\"passengers\":852,\"length\":186.44,\"beam\":25.6,\"year_built\":2009,\"displacement\":17758,\"gross_tonnage\":26904,\"net_tonnage\":8912,\"engine_number\":2,\"engine_bore\":480,\"engine_cylinders\":9,\"engine_power\":21600,\"engine_RPM\":500,\"engine_stroke\":600,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"CIUDAD DE PALMA\",\"mmsi\":224588000,\"type\":\"passenger\",\"passengers\":878,\"length\":186.4,\"beam\":25.6,\"year_built\":2007,\"gross_tonnage\":27105,\"net_tonnage\":9175,\"engine_number\":2,\"engine_bore\":480,\"engine_cylinders\":9,\"engine_power\":21600,\"engine_RPM\":500,\"engine_stroke\":600,\"deadweight_tonnage\":7000,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"HEDY LAMARR\",\"mmsi\":209348000,\"type\":\"passenger\",\"passengers\":560,\"length\":186.4,\"beam\":25.6,\"year_built\":2010,\"gross_tonnage\":26375,\"net_tonnage\":8994,\"engine_number\":2,\"engine_bore\":480,\"engine_cylinders\":9,\"engine_power\":21600,\"engine_RPM\":500,\"engine_stroke\":600,\"deadweight_tonnage\":8702,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"CIUDAD DE ALCUDIA\",\"mmsi\":224509000,\"type\":\"passenger\",\"passengers\":136,\"length\":183,\"beam\":30,\"year_built\":1994,\"displacement\":26464,\"gross_tonnage\":33588,\"net_tonnage\":10076,\"engine_number\":4,\"engine_bore\":400,\"engine_cylinders\":8,\"engine_power\":23040,\"engine_RPM\":510,\"engine_stroke\":560,\"deadweight_tonnage\":10700,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"FENICUSA M\",\"mmsi\":247432200,\"type\":\"petrol\",\"length\":175.97,\"beam\":31.03,\"year_built\":2008,\"displacement\":48984,\"gross_tonnage\":25400,\"net_tonnage\":9932,\"engine_bore\":500,\"engine_cylinders\":6,\"engine_power\":8561,\"engine_RPM\":127,\"engine_stroke\":2000,\"deadweight_tonnage\":40037,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"CIUDAD DE BARCELONA\",\"mmsi\":225416000,\"type\":\"passenger\",\"passengers\":1450,\"length\":175,\"beam\":26.4,\"year_built\":2011,\"gross_tonnage\":29514,\"engine_number\":4,\"engine_cylinders\":7,\"engine_power\":33600,\"engine_RPM\":500,\"engine_stroke\":480,\"deadweight_tonnage\":11980,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"CIUDAD DE GRANADA\",\"mmsi\":224600000,\"type\":\"passenger\",\"passengers\":356,\"length\":172,\"beam\":26.2,\"year_built\":2001,\"gross_tonnage\":26916,\"net_tonnage\":14608,\"engine_number\":4,\"engine_cylinders\":8,\"engine_power\":28960,\"engine_RPM\":500,\"engine_stroke\":460,\"deadweight_tonnage\":5000,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"CIUDAD DE MAHON\",\"mmsi\":224692000,\"type\":\"passenger\",\"passengers\":966,\"length\":154.51,\"beam\":24.2,\"year_built\":2008,\"gross_tonnage\":10333,\"net_tonnage\":6051,\"engine_number\":2,\"engine_cylinders\":12,\"engine_power\":23400,\"engine_RPM\":500,\"engine_stroke\":460,\"deadweight_tonnage\":3400,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":1},{\"name\":\"BBC SEBASTOPOL\",\"mmsi\":304824000,\"type\":\"cargo\",\"length\":147,\"beam\":23.06,\"year_built\":2022,\"gross_tonnage\":11324,\"net_tonnage\":4484,\"engine_power\":4800,\"deadweight_tonnage\":12325,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"TINERFE\",\"mmsi\":224025000,\"type\":\"petrol\",\"length\":144,\"beam\":22.63,\"year_built\":2009,\"displacement\":23145,\"gross_tonnage\":11290,\"net_tonnage\":5263,\"engine_bore\":350,\"engine_cylinders\":8,\"engine_power\":5920,\"deadweight_tonnage\":17540,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"GUBAL TRADER\",\"mmsi\":210117000,\"type\":\"passenger\",\"length\":139.26,\"beam\":16.88,\"year_built\":1979,\"gross_tonnage\":7616,\"net_tonnage\":2285,\"engine_power\":4678,\"engine_stroke\":280,\"deadweight_tonnage\":2362,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"HEERENGRACHT\",\"mmsi\":244014000,\"type\":\"cargo\",\"length\":138.11,\"beam\":21.36,\"year_built\":2009,\"displacement\":17972,\"gross_tonnage\":9611,\"net_tonnage\":4260,\"engine_bore\":430,\"engine_cylinders\":6,\"engine_power\":5400,\"deadweight_tonnage\":12678,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"IMKE\",\"mmsi\":304513000,\"type\":\"cargo\",\"length\":133.97,\"beam\":23.2,\"year_built\":2010,\"gross_tonnage\":11473,\"net_tonnage\":3834,\"engine_bore\":480,\"engine_cylinders\":6,\"engine_power\":7200,\"deadweight_tonnage\":9962,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"ELEANOR ROOSEVELT\",\"mmsi\":210049000,\"type\":\"passenger\",\"passengers\":1196,\"length\":123.3,\"beam\":28,\"year_built\":2021,\"gross_tonnage\":12262,\"net_tonnage\":3678,\"engine_cylinders\":16,\"engine_power\":35200,\"engine_RPM\":750,\"deadweight_tonnage\":1339,\"propeller\":\"Waterjet\",\"fuel_type\":\"fuel & LNG\",\"port_emission_score\":1},{\"name\":\"TIMBER NAVIGATOR\",\"mmsi\":244909000,\"type\":\"cargo\",\"length\":118,\"beam\":16,\"year_built\":2011,\"gross_tonnage\":5425,\"net_tonnage\":2949,\"engine_cylinders\":9,\"engine_power\":2970,\"engine_stroke\":255,\"deadweight_tonnage\":8270,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"SIRIOS CEMENT V\",\"mmsi\":212781000,\"type\":\"cargo\",\"length\":86,\"beam\":14.5,\"year_built\":1988,\"displacement\":4799,\"gross_tonnage\":2453,\"net_tonnage\":750,\"engine_number\":1,\"engine_bore\":340,\"engine_cylinders\":6,\"engine_power\":1618,\"engine_RPM\":310,\"engine_stroke\":620,\"deadweight_tonnage\":3399,\"propeller\":\"pitch\",\"fuel_type\":\"marine diesel\",\"port_emission_score\":0},{\"name\":\"SOLLER CAT\",\"mmsi\":224005890,\"type\":\"passenger\",\"passengers\":26,\"length\":26,\"beam\":9,\"year_built\":2010,\"propeller\":\"propeller\",\"fuel_type\":\"diesel\",\"port_emission_score\":0},{\"name\":\"BLUE DELFIN\",\"mmsi\":224002170,\"type\":\"passenger\",\"passengers\":12,\"length\":26,\"beam\":9,\"propeller\":\"propeller\",\"fuel_type\":\"diesel\",\"port_emission_score\":0},{\"name\":\"SUPERMAN\",\"mmsi\":224166830,\"type\":\"passenger\",\"passengers\":8,\"length\":12,\"beam\":4,\"propeller\":\"propeller\",\"fuel_type\":\"diesel\",\"port_emission_score\":0},{\"name\":\"FLETXA\",\"mmsi\":224153760,\"type\":\"passenger\",\"passengers\":8,\"length\":11,\"beam\":3,\"propeller\":\"propeller\",\"fuel_type\":\"diesel\",\"port_emission_score\":0},{\"name\":\"MAGIC UNO\",\"mmsi\":224135960,\"type\":\"passenger\",\"passengers\":25,\"length\":23,\"beam\":10,\"propeller\":\"propeller\",\"fuel_type\":\"diesel\",\"port_emission_score\":0}]}",
+        "payloadType": "json",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "811d4c56c0ab7d13"
+            ]
+        ]
+    },
+    {
+        "id": "811d4c56c0ab7d13",
+        "type": "function",
+        "z": "4ecb1660b0460e17",
+        "name": "Read JSON of vessels info catalogue",
+        "func": "const delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < msg.payload.vessels_info.length; i++) {\n    var measure = {};\n    measure.payload = [{\n        name: msg.payload.vessels_info[i].name,\n        mmsi: msg.payload.vessels_info[i].mmsi\n    },\n    {\n        type: msg.payload.vessels_info[i].type,\n        passengers: msg.payload.vessels_info[i].passengers,\n        length: msg.payload.vessels_info[i].length,\n        beam: msg.payload.vessels_info[i].beam,\n        year_built: msg.payload.vessels_info[i].year_built,\n        displacement: msg.payload.vessels_info[i].displacement,\n        gross_tonnage: msg.payload.vessels_info[i].gross_tonnage,\n        net_tonnage: msg.payload.vessels_info[i].net_tonnage,\n        engine_number: msg.payload.vessels_info[i].engine_number,\n        engine_bore: msg.payload.vessels_info[i].engine_bore,\n        engine_cylinders: msg.payload.vessels_info[i].coengine_cylindersl13,\n        engine_power: msg.payload.vessels_info[i].engine_power,\n        engine_RPM: msg.payload.vessels_info[i].engine_RPM,\n        engine_stroke: msg.payload.vessels_info[i].engine_stroke,\n        deadweight_tonnage: msg.payload.vessels_info[i].deadweight_tonnage,\n        propeller: msg.payload.vessels_info[i].propeller,\n        fuel_type: msg.payload.vessels_info[i].fuel_type,\n        port_emission_score: msg.payload.vessels_info[i].port_emission_score\n    }];\n\n    node.send(measure);\n \n    await delay(500);\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "54844c61f339bada"
+            ]
+        ]
+    },
+    {
+        "id": "54844c61f339bada",
+        "type": "influxdb out",
+        "z": "4ecb1660b0460e17",
+        "influxdb": "7d886477915fc7be",
+        "name": "vessels info",
+        "measurement": "vessels_info",
+        "precision": "ms",
+        "retentionPolicy": "",
+        "database": "test",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "my-org",
+        "bucket": "test",
+        "x": 810,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "4eeb3adb.a27f94",
         "type": "debug",
         "z": "cf5158d38960fc7b",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "true",
         "targetType": "full",
-        "x": 730,
-        "y": 160,
+        "x": 310,
+        "y": 260,
         "wires": []
     },
     {
@@ -5508,9 +6590,7 @@
         "x": 730,
         "y": 80,
         "wires": [
-            [
-                "4eeb3adb.a27f94"
-            ]
+            []
         ]
     },
     {
@@ -5528,8 +6608,7 @@
         "y": 120,
         "wires": [
             [
-                "301b3fa1.3d193",
-                "4eeb3adb.a27f94"
+                "301b3fa1.3d193"
             ]
         ]
     },
@@ -5665,7 +6744,8 @@
         "name": "Telegram in Bot",
         "links": [
             "599adb277b764c14",
-            "ff57763cd0510546"
+            "ff57763cd0510546",
+            "7959aca61c46282c"
         ],
         "x": 195,
         "y": 120,
@@ -5707,23 +6787,6 @@
         "wires": []
     },
     {
-        "id": "bf4757920e675e69",
-        "type": "debug",
-        "z": "cf5158d38960fc7b",
-        "name": "2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 350,
-        "y": 680,
-        "wires": []
-    },
-    {
         "id": "97452d2ac9f1226e",
         "type": "telegram command",
         "z": "cf5158d38960fc7b",
@@ -5735,16 +6798,17 @@
         "scope": "default",
         "bot": "e15e12918f77cb7f",
         "strict": false,
-        "hasresponse": false,
+        "hasresponse": true,
         "useregex": false,
         "removeregexcommand": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 90,
-        "y": 380,
+        "y": 420,
         "wires": [
             [
                 "79a14595be86b11b"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -5752,18 +6816,17 @@
         "type": "function",
         "z": "cf5158d38960fc7b",
         "name": "Help compose",
-        "func": "msg.payload = \"/stop - Bloquea todas las notificaciones. \\r\\n/start - Activa todas las notificaciones. \\r\\n/users - Listado de usuarios registrados. \\r\\n/vessels - Registrar número de barcos en el puerto.\"\nreturn msg;",
+        "func": "msg.payload = \"/stop all- Bloquea todas las notificaciones. \\r\\n/stop [id]- Bloquea las notificaciones de sensor. \\r\\n/start - Activa todas las notificaciones. \\r\\n/users - Listado de usuarios registrados. \\r\\n/vessels - Lista de barcos en el puerto. \\r\\n/sensors - Lista de sensores.\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 380,
+        "y": 420,
         "wires": [
             [
-                "faae7108.c1e79",
-                "bf4757920e675e69"
+                "faae7108.c1e79"
             ]
         ]
     },
@@ -5779,16 +6842,17 @@
         "scope": "default",
         "bot": "e15e12918f77cb7f",
         "strict": false,
-        "hasresponse": false,
+        "hasresponse": true,
         "useregex": false,
         "removeregexcommand": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 90,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
-                "0b7d41b11d59e13e"
-            ]
+                "18eb691fb3f872f8"
+            ],
+            []
         ]
     },
     {
@@ -5810,11 +6874,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 440,
+        "x": 470,
+        "y": 460,
         "wires": [
             [
-                "bf4757920e675e69",
                 "931212327e5c0515"
             ]
         ]
@@ -5826,28 +6889,29 @@
         "name": "",
         "command": "/start",
         "description": "",
-        "registercommand": false,
+        "registercommand": true,
         "language": "",
         "scope": "default",
         "bot": "e15e12918f77cb7f",
         "strict": false,
-        "hasresponse": false,
+        "hasresponse": true,
         "useregex": false,
         "removeregexcommand": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 90,
-        "y": 480,
+        "y": 540,
         "wires": [
             [
                 "4667509e2ef5b9c5"
-            ]
+            ],
+            []
         ]
     },
     {
         "id": "4667509e2ef5b9c5",
         "type": "change",
         "z": "cf5158d38960fc7b",
-        "name": "",
+        "name": "global.silences",
         "rules": [
             {
                 "t": "set",
@@ -5855,6 +6919,13 @@
                 "pt": "global",
                 "to": "false",
                 "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "silence_id",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -5862,11 +6933,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 480,
+        "x": 460,
+        "y": 540,
         "wires": [
             [
-                "bf4757920e675e69",
                 "931212327e5c0515"
             ]
         ]
@@ -5883,16 +6953,17 @@
         "scope": "default",
         "bot": "e15e12918f77cb7f",
         "strict": false,
-        "hasresponse": false,
+        "hasresponse": true,
         "useregex": false,
         "removeregexcommand": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 90,
-        "y": 520,
+        "y": 580,
         "wires": [
             [
                 "d05a55e9223fee7c"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -5906,8 +6977,8 @@
         "precision": "",
         "retentionPolicy": "",
         "org": "organisation",
-        "x": 580,
-        "y": 520,
+        "x": 560,
+        "y": 580,
         "wires": [
             [
                 "5fb9802e41c6683a"
@@ -5926,7 +6997,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 520,
+        "y": 580,
         "wires": [
             [
                 "e009c064d2c758c2"
@@ -5938,17 +7009,16 @@
         "type": "function",
         "z": "cf5158d38960fc7b",
         "name": "Read users twitter",
-        "func": "var newMsg = {};\nnewMsg.payload = \"\";\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    newMsg.payload = newMsg.payload + msg.payload[i].name + \"|Activo: \" + msg.payload[i].active + \"|Mail: \" + msg.payload[i].email + \"|Twitter\" + msg.payload[i].twitter + \"|Sensor: \" + msg.payload[i].sensor + \"\\r\\n\"\n    node.send(newMsg);\n}\n\nreturn null;\n",
+        "func": "var newMsg = {};\nnewMsg.payload = \"\";\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    newMsg.payload = newMsg.payload + msg.payload[i].name + \"|Activo: \" + msg.payload[i].active + \"|Mail: \" + msg.payload[i].email + \"|Twitter\" + msg.payload[i].twitter + \"|Sensor: \" + msg.payload[i].sensor + \"\\r\\n\"\n}\n\nreturn [newMsg];",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 770,
-        "y": 520,
+        "y": 580,
         "wires": [
             [
-                "bf4757920e675e69",
                 "faae7108.c1e79"
             ]
         ]
@@ -5988,57 +7058,18 @@
         "scope": "default",
         "bot": "e15e12918f77cb7f",
         "strict": false,
-        "hasresponse": false,
+        "hasresponse": true,
         "useregex": false,
         "removeregexcommand": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 100,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
-                "bf4757920e675e69",
-                "dff5fcfc6f60f359"
-            ]
+                "6228c30f681db978"
+            ],
+            []
         ]
-    },
-    {
-        "id": "dff5fcfc6f60f359",
-        "type": "function",
-        "z": "cf5158d38960fc7b",
-        "name": "Compose vessels record",
-        "func": "var measure = {};\nmeasure.payload = [{\n    vessels: Number(msg.payload.content),\n},\n{\n    port: 'Palma'\n}];\nreturn [measure];\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 560,
-        "wires": [
-            [
-                "92b57fed6d006035",
-                "931212327e5c0515",
-                "bf4757920e675e69"
-            ]
-        ]
-    },
-    {
-        "id": "92b57fed6d006035",
-        "type": "influxdb out",
-        "z": "cf5158d38960fc7b",
-        "influxdb": "7d886477915fc7be",
-        "name": "port",
-        "measurement": "vessels",
-        "precision": "",
-        "retentionPolicy": "",
-        "database": "database",
-        "precisionV18FluxV20": "ms",
-        "retentionPolicyV18Flux": "",
-        "org": "organisation",
-        "bucket": "bucket",
-        "x": 570,
-        "y": 560,
-        "wires": []
     },
     {
         "id": "931212327e5c0515",
@@ -6059,12 +7090,343 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 460,
+        "x": 740,
+        "y": 500,
         "wires": [
             [
-                "faae7108.c1e79",
-                "bf4757920e675e69"
+                "faae7108.c1e79"
+            ]
+        ]
+    },
+    {
+        "id": "c0ccc90d3203b6f1",
+        "type": "inject",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "4667509e2ef5b9c5"
+            ]
+        ]
+    },
+    {
+        "id": "fdfd2598a2237677",
+        "type": "telegram command",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "command": "/sensors",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "e15e12918f77cb7f",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 100,
+        "y": 720,
+        "wires": [
+            [
+                "e82225b0d08bca9c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a921788b36f7dbee",
+        "type": "influxdb in",
+        "z": "cf5158d38960fc7b",
+        "influxdb": "7d886477915fc7be",
+        "name": "myusers",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 560,
+        "y": 720,
+        "wires": [
+            [
+                "d0cb085352edc664"
+            ]
+        ]
+    },
+    {
+        "id": "e82225b0d08bca9c",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "select * from myusers",
+        "func": "msg.query = \"SELECT * FROM \\\"sensors\\\" \";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "a921788b36f7dbee"
+            ]
+        ]
+    },
+    {
+        "id": "d0cb085352edc664",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Read sensors",
+        "func": "var newMsg = {};\nnewMsg.payload = \"\";\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    newMsg.payload = newMsg.payload + msg.payload[i].id + \"| \" + msg.payload[i].name + \"|Zone: \" + msg.payload[i].zone + \"\\r\\n\"\n}\n\nreturn [newMsg];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "faae7108.c1e79"
+            ]
+        ]
+    },
+    {
+        "id": "18eb691fb3f872f8",
+        "type": "switch",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": " all",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "0b7d41b11d59e13e"
+            ],
+            [
+                "912648355fc0707a"
+            ]
+        ]
+    },
+    {
+        "id": "667654afb2c09ce3",
+        "type": "telegram receiver",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "bot": "e15e12918f77cb7f",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "4eeb3adb.a27f94"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "912648355fc0707a",
+        "type": "change",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "silence_id",
+                "pt": "global",
+                "to": "$number($trim(payload.content))\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 500,
+        "wires": [
+            [
+                "931212327e5c0515"
+            ]
+        ]
+    },
+    {
+        "id": "6228c30f681db978",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "select * from vessels_333 order by desc limit 1",
+        "func": "msg.query = \"SELECT * FROM \\\"vessels_333\\\" ORDER BY DESC LIMIT 1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 620,
+        "wires": [
+            [
+                "3a4809ee8a7db6ab"
+            ]
+        ]
+    },
+    {
+        "id": "3a4809ee8a7db6ab",
+        "type": "influxdb in",
+        "z": "cf5158d38960fc7b",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 770,
+        "y": 620,
+        "wires": [
+            [
+                "d9b029581833c177",
+                "ed19f5e2e5bc28b4"
+            ]
+        ]
+    },
+    {
+        "id": "cf4b62424ca8a072",
+        "type": "inject",
+        "z": "cf5158d38960fc7b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "6228c30f681db978"
+            ]
+        ]
+    },
+    {
+        "id": "d9b029581833c177",
+        "type": "debug",
+        "z": "cf5158d38960fc7b",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "ed19f5e2e5bc28b4",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "select * from vessels_333 order by desc limit 1",
+        "func": "msg.query = \"SELECT * FROM vessels_333 WHERE scan_day='\" + msg.payload[0].scan_day + \"' AND scan_hour='\" + msg.payload[0].scan_hour +\"'\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 660,
+        "wires": [
+            [
+                "d9b029581833c177",
+                "2e9f53db339a294d"
+            ]
+        ]
+    },
+    {
+        "id": "2e9f53db339a294d",
+        "type": "influxdb in",
+        "z": "cf5158d38960fc7b",
+        "influxdb": "7d886477915fc7be",
+        "name": "",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 770,
+        "y": 660,
+        "wires": [
+            [
+                "d9b029581833c177",
+                "6b011884cc632c59"
+            ]
+        ]
+    },
+    {
+        "id": "6b011884cc632c59",
+        "type": "function",
+        "z": "cf5158d38960fc7b",
+        "name": "Read actual vessels",
+        "func": "var newMsg = {};\nnewMsg.payload = \"\";\n\nfor (var i = 0; i < msg.payload.length; i++) {\n    newMsg.payload = newMsg.payload + msg.payload[i].name + \"<\" + msg.payload[i].length + \">|Arrive: \" + msg.payload[i].arrive_day + \" \" + msg.payload[i].arrive_hour + \"\\r\\n\"\n}\n\nreturn [newMsg];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 660,
+        "wires": [
+            [
+                "faae7108.c1e79"
             ]
         ]
     },
