@@ -80,8 +80,9 @@ Inicialmente se ha desarrollado una analítica básica de un algoritmo de avisos
  
 ![mapa](./img/MapWindRose.png)
 
-#### Actividad, saturación y capacidad del puerto
-
+#### Impacto, saturación y capacidad del puerto
+la actividad del puerto se analiza cada 10 minutos quedando reflejada en una tabla y varios indicadores. Esta información se puede ver en el apartado de **Barcos en el puerto** de la página principal de la web.
+....
 
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
