@@ -414,9 +414,9 @@
         "className": ""
     },
     {
-        "id": "a71d89e7392e7f52",
+        "id": "f5fd1c1cedfe22b4",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "fb40f53421f214a6",
         "order": 4,
@@ -424,9 +424,9 @@
         "height": 1
     },
     {
-        "id": "fbcc0a362c9357f8",
+        "id": "a224f32e38f5d1aa",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "8fa7348dc9ef730f",
         "order": 2,
@@ -434,9 +434,19 @@
         "height": 1
     },
     {
-        "id": "c1bb7f1df8a0d29c",
+        "id": "a78f2ae77d8253a4",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
+        "name": "spacer",
+        "group": "8fa7348dc9ef730f",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "1635431b77b5501e",
+        "type": "ui_spacer",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 5,
@@ -444,9 +454,9 @@
         "height": 1
     },
     {
-        "id": "c9930b7d44f61df6",
+        "id": "3280e7b187168c23",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 7,
@@ -454,9 +464,9 @@
         "height": 1
     },
     {
-        "id": "f9a3b4a79b9b2777",
+        "id": "2bbbe6af69b63894",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 9,
@@ -464,9 +474,9 @@
         "height": 1
     },
     {
-        "id": "843e323e4267067f",
+        "id": "7b4fdf9178be2a94",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 11,
@@ -474,9 +484,9 @@
         "height": 1
     },
     {
-        "id": "eaf4571a5ec504b6",
+        "id": "c338cf64605b13c9",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "57d5a7045753184a",
         "order": 12,
@@ -484,9 +494,9 @@
         "height": 1
     },
     {
-        "id": "97512826b5fb164b",
+        "id": "6a5a929068e58033",
         "type": "ui_spacer",
-        "z": "253351a39d168f06",
+        "z": "bcba3d054e58be9c",
         "name": "spacer",
         "group": "d684ae17cb21aab8",
         "order": 4,
@@ -5969,7 +5979,9 @@
         "wires": [
             [
                 "87befdb95b55b201",
-                "017d581f1591de5e"
+                "017d581f1591de5e",
+                "d6156cfdf6c80ba0",
+                "f606a47b8f5860a6"
             ]
         ]
     },
@@ -6003,8 +6015,8 @@
         "precision": "",
         "retentionPolicy": "",
         "org": "organisation",
-        "x": 570,
-        "y": 640,
+        "x": 390,
+        "y": 680,
         "wires": [
             [
                 "c9f1c4505cac5e4f"
@@ -6019,7 +6031,7 @@
         "name": "Vessels",
         "order": 5,
         "width": 9,
-        "height": "4",
+        "height": 4,
         "columns": [
             {
                 "field": "name",
@@ -6033,8 +6045,8 @@
             },
             {
                 "field": "index",
-                "title": "Impacto",
-                "width": "100",
+                "title": "Impacto(*)",
+                "width": "110",
                 "align": "left",
                 "formatter": "star",
                 "formatterParams": {
@@ -6042,7 +6054,7 @@
                 }
             },
             {
-                "field": "lenght",
+                "field": "length_index",
                 "title": "Eslora",
                 "width": "85",
                 "align": "left",
@@ -6054,7 +6066,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1180,
+        "x": 1040,
         "y": 760,
         "wires": []
     },
@@ -6063,17 +6075,18 @@
         "type": "function",
         "z": "253351a39d168f06",
         "name": "JSON to JS Array of Object",
-        "func": "var payload = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}/*, ... */];\n\n//for (var i = 0; i < flow.get(\"total_vessels\"); i++) {\nfor (var i = 0; i < msg.payload.length; i++) {\n    payload[i].name = msg.payload[i].name;\n    payload[i].index = 0;\n    payload[i].lenght = (Number(msg.payload[i].length) * 100 / 330).toFixed(0);\n}\nreturn { payload };",
+        "func": "var payload = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}/*, ... */];\n\n//for (var i = 0; i < flow.get(\"total_vessels\"); i++) {\nfor (var i = 0; i < msg.payload.length; i++) {\n    payload[i].name = msg.payload[i].name;\n    payload[i].index = 0;\n    payload[i].length_index = (Number(msg.payload[i].length) * 100 / 330).toFixed(0);\n}\nreturn { payload };",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 680,
+        "x": 400,
+        "y": 720,
         "wires": [
             [
-                "7b69c8edaf0a1068"
+                "7b69c8edaf0a1068",
+                "516e74d7bd839a7f"
             ]
         ]
     },
@@ -6141,7 +6154,7 @@
         "id": "d16cfe491e140757",
         "type": "inject",
         "z": "253351a39d168f06",
-        "name": "",
+        "name": "Test",
         "props": [
             {
                 "p": "payload"
@@ -6158,8 +6171,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
-        "y": 740,
+        "x": 110,
+        "y": 700,
         "wires": [
             [
                 "aebfe9b359144cc0"
@@ -6185,7 +6198,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
+        "x": 680,
         "y": 680,
         "wires": [
             [
@@ -6197,14 +6210,14 @@
         "id": "2accdc4ba44f6c90",
         "type": "function",
         "z": "253351a39d168f06",
-        "name": "Read JSON of sensors catalogue",
-        "func": "var vessels = flow.get('vessels');\nvessels[0].index = 4;\nflow.set('vessels', vessels);\n\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < vessels.length; i++) {\n    var newMsg = {};\n\n    if (typeof vessels[i].name !== 'undefined'){\n        newMsg.payload = vessels[i].name;\n        newMsg.index = i;\n        node.send(newMsg);  \n    }\n  \n    await delay(1000);\n}\n\nreturn null;",
+        "name": "Read vessels catalogue",
+        "func": "var vessels = flow.get('vessels');\n\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < vessels.length; i++) {\n    var newMsg = {};\n\n    if (typeof vessels[i].name !== 'undefined'){\n        newMsg.payload = vessels[i].name;\n        newMsg.index = i;\n        node.send(newMsg);  \n    }\n  \n    await delay(1000);\n}\n\nreturn null;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
+        "x": 910,
         "y": 680,
         "wires": [
             [
@@ -6223,7 +6236,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
+        "x": 790,
         "y": 720,
         "wires": [
             [
@@ -6242,11 +6255,13 @@
         "precision": "",
         "retentionPolicy": "",
         "org": "organisation",
-        "x": 1230,
+        "x": 1090,
         "y": 720,
         "wires": [
             [
-                "15b25cb8023d92ec"
+                "15b25cb8023d92ec",
+                "26c250f230326ec5",
+                "08a3338265fdfe79"
             ]
         ]
     },
@@ -6254,19 +6269,17 @@
         "id": "15b25cb8023d92ec",
         "type": "function",
         "z": "253351a39d168f06",
-        "name": "function 2",
+        "name": "Update Emission Score",
         "func": "var vessels = flow.get('vessels');\nvessels[msg.index].index = msg.payload[0].port_emission_score;\nflow.set('vessels', vessels);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 760,
+        "x": 1330,
+        "y": 720,
         "wires": [
-            [
-                "06f25dc69ced3e32"
-            ]
+            []
         ]
     },
     {
@@ -6288,7 +6301,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
+        "x": 840,
         "y": 760,
         "wires": [
             [
@@ -6300,11 +6313,315 @@
         "id": "12d2c146fd44e1e8",
         "type": "comment",
         "z": "253351a39d168f06",
-        "name": "Impart signation",
+        "name": "Impart allocation",
         "info": "",
-        "x": 820,
+        "x": 680,
         "y": 640,
         "wires": []
+    },
+    {
+        "id": "516e74d7bd839a7f",
+        "type": "delay",
+        "z": "253351a39d168f06",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 760,
+        "wires": [
+            [
+                "06f25dc69ced3e32",
+                "335dee62e972c327",
+                "45d7d730d28ad5ce"
+            ]
+        ]
+    },
+    {
+        "id": "93f25011f2686b7c",
+        "type": "inject",
+        "z": "253351a39d168f06",
+        "name": "Total m of berth",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "berth",
+        "payload": "5886.8",
+        "payloadType": "num",
+        "x": 680,
+        "y": 860,
+        "wires": [
+            [
+                "478e8c49137c9c31"
+            ]
+        ]
+    },
+    {
+        "id": "4b361d6c30c73ed7",
+        "type": "comment",
+        "z": "253351a39d168f06",
+        "name": "Port congestion",
+        "info": "",
+        "x": 680,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "478e8c49137c9c31",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "total_berth",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6156cfdf6c80ba0",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "total_length",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26c250f230326ec5",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Sum length",
+        "func": "var total_length = Number(msg.payload[0].length).toFixed(0);\ntotal_length = Number(total_length) + flow.get('total_length');\nflow.set('total_length', total_length);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "520c582eb88edfda",
+        "type": "comment",
+        "z": "253351a39d168f06",
+        "name": "Passanger capacity",
+        "info": "",
+        "x": 690,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "f606a47b8f5860a6",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "total_passengers",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08a3338265fdfe79",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Sum passengers",
+        "func": "if (msg.payload[0].passengers !== 'undefined') {\n    var total_passengers = flow.get('total_passengers');\n    total_passengers += Number(msg.payload[0].passengers);\n    flow.set('total_passengers', total_passengers);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fc1d4c6fa474006",
+        "type": "ui_gauge",
+        "z": "253351a39d168f06",
+        "name": "",
+        "group": "8fa7348dc9ef730f",
+        "order": 8,
+        "width": 4,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Saturación del puerto (*)",
+        "label": "m atraque utilizados",
+        "format": "{{value}}m",
+        "min": 0,
+        "max": "5886.8",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1370,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "335dee62e972c327",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "total_passengers",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 980,
+        "wires": [
+            [
+                "d4bf25364caa89a8"
+            ]
+        ]
+    },
+    {
+        "id": "d4bf25364caa89a8",
+        "type": "ui_text",
+        "z": "253351a39d168f06",
+        "group": "8fa7348dc9ef730f",
+        "order": 7,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "Capacidad actual de pasajeros (*)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1400,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "45d7d730d28ad5ce",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "total_length",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 900,
+        "wires": [
+            [
+                "5fc1d4c6fa474006"
+            ]
+        ]
+    },
+    {
+        "id": "70602dd6cfbd46bf",
+        "type": "ui_template",
+        "z": "253351a39d168f06",
+        "group": "8fa7348dc9ef730f",
+        "name": "Methology (Github)",
+        "order": 9,
+        "width": 5,
+        "height": 1,
+        "format": "<!DOCTYPE html>\n<html>\n<head>\n<style>\na:link {\n  color: green;\n  background-color: transparent;\n  text-decoration: none;\n}\na:visited {\n  color: pink;\n  background-color: transparent;\n  text-decoration: none;\n}\na:hover {\n  color: red;\n  background-color: transparent;\n  text-decoration: underline;\n}\na:active {\n  color: yellow;\n  background-color: transparent;\n  text-decoration: underline;\n}\n</style>\n</head>\n<body>\n<div>\n    <a href=https://github.com/McOrts/fumport/blob/main/README.md#impacto-saturaci%C3%B3n-y-capacidad-del-puerto><span>(*) Metodolía y cálculos</span></a>\n</div>\n</body>\n</html>\n\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "66e474f370de58cd",
