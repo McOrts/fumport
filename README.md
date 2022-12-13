@@ -96,6 +96,8 @@ Se ha definido una fórmula de cálculo para que este índice tenga una escala d
 
 - **Capacidad actual de pasajeros**. Es la suma de los máximos de tripulantes y pasajeros declarados por las embarcaciones. Evidentemente la cifra real siempre será inferior.
 
+<img src="./img/impact_ui.png" />
+
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
 - Contaminación aislada: posiblemente de origen próximo al sensor. Humo de barbacoa, contaminación de tráfico rodado. 
