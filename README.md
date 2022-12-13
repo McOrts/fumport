@@ -82,16 +82,17 @@ Inicialmente se ha desarrollado una analítica básica de un algoritmo de avisos
 
 #### Impacto, saturación y capacidad del puerto (*)
 la actividad del puerto se analiza cada 10 minutos quedando reflejada en una tabla y varios indicadores. Esta información se puede ver en el apartado de **Barcos en el puerto** de la página principal de la web.
-- **Indice de impacto**. Basándose en otros índices como el EEXI o YETI. Se han utilizado datos públicos de las especificaciones de los barcos que transitan por el puerto, para calcular un índice en función de todos los parámetros que afectan al medio ambiente:
-  - Contaminación directa por el combustible utilizado en el entorno portuario. Siendo el fuel marino el de mayor consideración y el consumo eléctrico el de menos.
-  - Impacto en el entorno ciudadano basado en la capacidad de pasaje y la envergadura de la embarcación (registro bruto).
-Se ha definido una fórmula de cálculo para que este índice tenga una escala de 5 valores. De mayor a menor impacto. Los valores son ponderados para cada embarcación en base al máximo de todos los calculados.
 
 <img src="./img/vessel_impact_index.png" width="500" align="center" />
 
-- **Indice de saturación portuaria**. Dado que la capacidad de amarre de un puerto está limitada al número de alineaciones y estas suman un total de metros. Con la suma de las esloras de los barcos atracados se puede hacer una aproximación a lo cerca que se está de esta capacidad total. O sea de la saturación de barcos amarrados. Como valor total para el Puerto de Palma se ha obtenido la cifra de 5.886,8 metros según figura en el apartado 2.2.1.1 de la Memoria Anual de 2021.
+- **Indice de impacto**. Basándose en otros índices como el EEXI o YETI. Se han utilizado datos públicos de las especificaciones de los barcos que transitan por el puerto, para calcular un índice en función de todos los parámetros que afectan al medio ambiente:
+   * Contaminación directa por el combustible utilizado en el entorno portuario. Siendo el fuel marino el de mayor consideración y el consumo eléctrico el de menos.
+   * Impacto en el entorno ciudadano basado en la capacidad de pasaje y la envergadura de la embarcación (registro bruto).
+Se ha definido una fórmula de cálculo para que este índice tenga una escala de 5 valores. De mayor a menor impacto. Los valores son ponderados para cada embarcación en base al máximo de todos los calculados.
 
 <img src="./img/espmi_berth.png" width="300" align="right" />
+
+- **Indice de saturación portuaria**. Dado que la capacidad de amarre de un puerto está limitada al número de alineaciones y estas suman un total de metros. Con la suma de las esloras de los barcos atracados se puede hacer una aproximación a lo cerca que se está de esta capacidad total. O sea de la saturación de barcos amarrados. Como valor total para el Puerto de Palma se ha obtenido la cifra de 5.886,8 metros según figura en el apartado 2.2.1.1 de la Memoria Anual de 2021.
 
 - **Capacidad actual de pasajeros**. Es la suma de los máximos de tripulantes y pasajeros declarados por las embarcaciones. Evidentemente la cifra real siempre será inferior.
 
