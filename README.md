@@ -98,6 +98,8 @@ Se ha definido una fórmula de cálculo para que este índice tenga una escala d
 
 <img src="./img/impact_ui.png" />
 
+El set de datos utilizado para aplicar la lógica descrita anteriormente forma parte de este repositorio. Es un .json con el nombre [vessels_info.json](https://github.com/McOrts/fumport/blob/main/DDL/vessels_info.json)
+
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
 - Contaminación aislada: posiblemente de origen próximo al sensor. Humo de barbacoa, contaminación de tráfico rodado. 
