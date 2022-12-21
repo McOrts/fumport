@@ -100,6 +100,8 @@ Se ha definido una fórmula de cálculo para que este índice tenga una escala d
 
 El set de datos utilizado para aplicar la lógica descrita anteriormente forma parte de este repositorio. Es un .json con el nombre [vessels_info.json](https://github.com/McOrts/fumport/blob/main/DDL/vessels_info.json)
 
+Esta colección de datos persiste en la base de datos InfluxDB que alimenta la aplicación. El índice de impacto está precalculado con la lógica descrita en el documento de hoja de cálculo de LibreOffice [vessels_polution_impact_calculation.ods](https://github.com/McOrts/fumport/blob/main/DDL/vessels_polution_impact_calculation.ods) quedando registrado en la propiedad "port_emission_score" del vessels_info.json.
+
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
 - Contaminación aislada: posiblemente de origen próximo al sensor. Humo de barbacoa, contaminación de tráfico rodado. 
