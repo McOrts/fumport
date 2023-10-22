@@ -352,7 +352,7 @@
     {
         "id": "a41a42796139a2ed",
         "type": "ui_tab",
-        "name": "Participación",
+        "name": "Suscribete",
         "icon": "person_add",
         "order": 3,
         "disabled": false,
@@ -502,6 +502,33 @@
         "order": 4,
         "width": 8,
         "height": 1
+    },
+    {
+        "id": "eacc521ef3249ec1",
+        "type": "mqtt-broker",
+        "name": "IoT Anywhere",
+        "broker": "192.168.1.30",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
         "id": "625491ea70287a3c",
@@ -1193,7 +1220,7 @@
         "order": 1,
         "width": 1,
         "height": 1,
-        "format": "<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(data) {\n        if (data == \"grafana\") {\n          window.location.href = \"https://snapshots.raintank.io/dashboard/snapshot/X6w0tIEXQupvVvzLoRHoeeYgp3ULD35K\";\n        } \n        if (data == \"GitHub\") {\n          //window.open(\"https://github.com/node-red\");\n          window.location.href = \"https://github.com/node-red\";\n        } \n    });\n})(scope);\n</script>",
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(data) {\n        if (data == \"grafana\") {\n          window.location.href = \"https://snapshots.raintank.io/dashboard/snapshot/N5Me7nP4DyG1WnO2U1ZJrBEkHdshVX3I\";\n        } \n        if (data == \"GitHub\") {\n          //window.open(\"https://github.com/node-red\");\n          window.location.href = \"https://github.com/node-red\";\n        } \n    });\n})(scope);\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": true,
         "resendOnRefresh": false,
@@ -1428,6 +1455,11 @@
             {
                 "label": "Pere Garau",
                 "value": "Pere Garau",
+                "type": "str"
+            },
+            {
+                "label": "Es Jonquet",
+                "value": "Es Jonquet",
                 "type": "str"
             }
         ],
@@ -1928,7 +1960,7 @@
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "Compose alert message",
-        "func": "msg.payload = msg.icon + \"Alerta: contaminación \" + msg.prefix + \" (\" + msg.payload + \" PM2.5 µg/m³) detectada en \" + msg.topic;\nreturn [msg];",
+        "func": "msg.payload = msg.icon + \"Alerta: contaminación \" + msg.prefix + \" (\" + msg.payload + \" PM2.5 µg/m³) detectada en \" + msg.address + \" del barrio de \" + msg.topic;\nreturn [msg];",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1966,7 +1998,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
+        "payload": "{\"sensors\":[{\"id\":74808,\"name\":\"IoTF_PMI-chicanso\",\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"address_public\":\"Platja de Chicanso\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"name\":\"Unknown01\",\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"address_public\":\" Gral Antoni Barceló 28\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"name\":\"Unknown02\",\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"address_public\":\"Gabriel Roca 31\",\"distance2port\":1600,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"API\"},{\"id\":83137,\"name\":\"IoTF_PMI-gabrielroca26\",\"altitude\":\"45\",\"country\":\"ES\",\"latitude\":\"39.56578\",\"longitude\":\"2.628272\",\"address_public\":\"Gabriel Roca 26\",\"distance2port\":1800,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"MQTT\"},{\"id\":68449,\"name\":\"BarrilabAir01\",\"altitude\":\"19\",\"country\":\"ES\",\"latitude\":\"39.57270738790\",\"longitude\":\"2.65241824323\",\"address_public\":\"Moliners 5\",\"distance2port\":3060,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"name\":\"BarrilabAir02\",\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"address_public\":\"Plaza del Cuadrado\",\"distance2port\":3260,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"name\":\"Unknown03\",\"altitude\":\"16.5\",\"country\":\"ES\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"address_public\":\"Parc de la Mar\",\"distance2port\":2900,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"La Calatraba\",\"source\":\"API\"},{\"id\":74349,\"name\":\"IoTF_PMI-elterreno\",\"altitude\":\"58\",\"country\":\"ES\",\"latitude\":\"39.56058\",\"longitude\":\"2.621714\",\"address_public\":\"Dos de Maig 41\",\"distance2port\":1770,\"wind_angle_max\":300,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"MQTT\"},{\"id\":68453,\"name\":\"McOrts-Home\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"address_public\":\"Bartomeu Riutort 25\",\"distance2port\":7800,\"wind_angle_max\":108,\"wind_angle_min\":96,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"name\":\"Unknown03\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"address_public\":\"Pere Llobera, 18\",\"distance2port\":4350,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Pere Garau\",\"source\":\"API\"},{\"id\":77131,\"name\":\"IoTF_PMI-plazavapor\",\"altitude\":\"9\",\"country\":\"ES\",\"latitude\":\"39.569788\",\"longitude\":\"2.637109\",\"address_public\":\"Plaza Vapor\",\"distance2port\":2200,\"wind_angle_max\":30,\"wind_angle_min\":1,\"zone\":\"Es Jonquet\",\"source\":\"API\"}]}",
         "payloadType": "json",
         "x": 220,
         "y": 380,
@@ -2025,7 +2057,7 @@
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "Read JSON of sensors catalogue",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    newMsg.payload = msg.payload.sensors[i].id\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.id = msg.payload.sensors[i].id\n    newMsg.source = msg.payload.sensors[i].source\n\n    node.send(newMsg);    \n    await delay(1000);\n}\n\nreturn null;\n",
+        "func": "flow.set('total_sensors', msg.payload.sensors.length);\n\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    newMsg.payload = msg.payload.sensors[i].id\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.address_public = msg.payload.sensors[i].address_public\n    newMsg.id = msg.payload.sensors[i].id\n    newMsg.source = msg.payload.sensors[i].source\n\n    node.send(newMsg);    \n    await delay(1000);\n}\n\nreturn null;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2055,7 +2087,8 @@
         "wires": [
             [
                 "edc114b1.b4d3e8",
-                "e79e3ca5c4aedf18"
+                "e79e3ca5c4aedf18",
+                "aaa0eded56c26073"
             ]
         ]
     },
@@ -2988,7 +3021,7 @@
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "Sensors Catalogue to global readings",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nvar readings_pm25 = {};\nvar readings_pm10 = {};\nvar sensors = {};\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm25[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm10[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    sensors[msg.payload.sensors[i].id] = msg.payload.sensors[i].zone;\n}\n\nreadings_pm25.wind_direction = 0;\nreadings_pm25.wind_speed = 0;\nreadings_pm25.humidity = 0;\nreadings_pm25.temperature = 0;\nreadings_pm25.rain = false;\n\nreadings_pm10.wind_direction = 0;\nreadings_pm10.wind_speed = 0;\nreadings_pm10.humidity = 0;\nreadings_pm10.temperature = 0;\nreadings_pm10.rain = false;\n\nglobal.set('readings_pm25', readings_pm25);\nglobal.set('readings_pm10', readings_pm10);\nglobal.set('sensors',sensors);\n\nreturn msg;\n",
+        "func": "flow.set('total_sensors', msg.payload.sensors.length);\nvar readings_pm25 = {};\nvar readings_pm10 = {};\nvar sensors_zone = {};\nvar sensors_address = {};\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm25[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    readings_pm10[msg.payload.sensors[i].id] = 0;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    sensors_zone[msg.payload.sensors[i].id] = msg.payload.sensors[i].zone;\n}\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    sensors_address[msg.payload.sensors[i].id] = msg.payload.sensors[i].address_public;\n}\n\nreadings_pm25.wind_direction = 0;\nreadings_pm25.wind_speed = 0;\nreadings_pm25.humidity = 0;\nreadings_pm25.temperature = 0;\nreadings_pm25.rain = false;\n\nreadings_pm10.wind_direction = 0;\nreadings_pm10.wind_speed = 0;\nreadings_pm10.humidity = 0;\nreadings_pm10.temperature = 0;\nreadings_pm10.rain = false;\n\nglobal.set('readings_pm25', readings_pm25);\nglobal.set('readings_pm10', readings_pm10);\nglobal.set('sensors_zone',sensors_zone);\nglobal.set('sensors_address', sensors_address);\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3359,7 +3392,7 @@
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "Standarize payload",
-        "func": "var sensors = global.get('sensors');\n\nvar msg_pm25 = {};\nmsg_pm25.payload = msg.payload.pm25;\nmsg_pm25.topic = sensors[msg.payload.id];\nmsg_pm25.id = msg.payload.id;\nmsg_pm25.source = \"MQTT\";\n\nvar msg_pm10 = {};\nmsg_pm10.payload = msg.payload.pm10;\nmsg_pm10.topic = sensors[msg.payload.id];\nmsg_pm10.id = msg.payload.id;\nmsg_pm10.source = \"MQTT\";\n\nreturn [msg_pm25, msg_pm10];\n",
+        "func": "var sensors_zone = global.get('sensors_zone');\nvar sensors_address = global.get('sensors_address');\n\nvar msg_pm25 = {};\nmsg_pm25.payload = msg.payload.pm25;\nmsg_pm25.topic = sensors_zone[msg.payload.id];\nmsg_pm25.address_public = sensors_address[msg.payload.id];\nmsg_pm25.id = msg.payload.id;\nmsg_pm25.source = \"MQTT\";\n\nvar msg_pm10 = {};\nmsg_pm10.payload = msg.payload.pm10;\nmsg_pm25.topic = sensors_zone[msg.payload.id];\nmsg_pm25.address_public = sensors_address[msg.payload.id];\nmsg_pm10.id = msg.payload.id;\nmsg_pm10.source = \"MQTT\";\n\nreturn [msg_pm25, msg_pm10];\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -3369,7 +3402,8 @@
         "y": 260,
         "wires": [
             [
-                "edc114b1.b4d3e8"
+                "edc114b1.b4d3e8",
+                "aaa0eded56c26073"
             ],
             [
                 "298a9afcbd3cd616"
@@ -3800,14 +3834,14 @@
         "type": "function",
         "z": "d4e727584e18a1cb",
         "name": "PM 2.5 average calculation",
-        "func": "var average_pm25 = 0;\nvar total_pm25 = 0;\nvar readings_pm25 = global.get('readings_pm25');\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    total_pm25 += readings_pm25[msg.payload.sensors[i].id];\n}\n\naverage_pm25 = total_pm25 / flow.get('total_sensors');\nmsg.payload = average_pm25;\nmsg.topic = 'Contaminación media';\n\nreturn msg;",
+        "func": "var average_pm25 = 0;\nvar total_pm25 = 0;\nvar readings_pm25 = global.get('readings_pm25');\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n\n    total_pm25 += readings_pm25[msg.payload.sensors[i].id];\n}\n\naverage_pm25 = total_pm25 / flow.get('total_sensors');\nmsg.payload = average_pm25;\nmsg.topic = 'Contaminación media';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 620,
-        "y": 480,
+        "y": 440,
         "wires": [
             [
                 "6ca5245613efd9cd"
@@ -3823,8 +3857,8 @@
         "links": [
             "a70262105bca8aab"
         ],
-        "x": 845,
-        "y": 480,
+        "x": 835,
+        "y": 440,
         "wires": []
     },
     {
@@ -3919,8 +3953,8 @@
         "links": [
             "86d8d1e99109e95c"
         ],
-        "x": 1485,
-        "y": 460,
+        "x": 1615,
+        "y": 620,
         "wires": []
     },
     {
@@ -3935,7 +3969,7 @@
         "finalize": "",
         "libs": [],
         "x": 1450,
-        "y": 500,
+        "y": 620,
         "wires": [
             [
                 "7959aca61c46282c"
@@ -3954,7 +3988,7 @@
         "propertyType": "global",
         "rules": [
             {
-                "t": "empty"
+                "t": "null"
             }
         ],
         "checkall": "true",
@@ -4007,7 +4041,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
+                "to": "{\"sensors\":[{\"id\":74808,\"name\":\"IoTF_PMI-chicanso\",\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"address_public\":\"Platja de Chicanso\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"name\":\"Unknown01\",\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"address_public\":\" Gral Antoni Barceló 28\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"name\":\"Unknown02\",\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"address_public\":\"Gabriel Roca 31\",\"distance2port\":1600,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"API\"},{\"id\":83137,\"name\":\"IoTF_PMI-gabrielroca26\",\"altitude\":\"45\",\"country\":\"ES\",\"latitude\":\"39.56578\",\"longitude\":\"2.628272\",\"address_public\":\"Gabriel Roca 26\",\"distance2port\":1800,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"MQTT\"},{\"id\":68449,\"name\":\"BarrilabAir01\",\"altitude\":\"19\",\"country\":\"ES\",\"latitude\":\"39.57270738790\",\"longitude\":\"2.65241824323\",\"address_public\":\"Moliners 5\",\"distance2port\":3060,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"name\":\"BarrilabAir02\",\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"address_public\":\"Plaza del Cuadrado\",\"distance2port\":3260,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"name\":\"Unknown03\",\"altitude\":\"16.5\",\"country\":\"ES\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"address_public\":\"Parc de la Mar\",\"distance2port\":2900,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"La Calatraba\",\"source\":\"API\"},{\"id\":74349,\"name\":\"IoTF_PMI-elterreno\",\"altitude\":\"58\",\"country\":\"ES\",\"latitude\":\"39.56058\",\"longitude\":\"2.621714\",\"address_public\":\"Dos de Maig 41\",\"distance2port\":1770,\"wind_angle_max\":300,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"MQTT\"},{\"id\":68453,\"name\":\"McOrts-Home\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"address_public\":\"Bartomeu Riutort 25\",\"distance2port\":7800,\"wind_angle_max\":108,\"wind_angle_min\":96,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"name\":\"Unknown03\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"address_public\":\"Pere Llobera, 18\",\"distance2port\":4350,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Pere Garau\",\"source\":\"API\"},{\"id\":77131,\"name\":\"IoTF_PMI-plazavapor\",\"altitude\":\"9\",\"country\":\"ES\",\"latitude\":\"39.569788\",\"longitude\":\"2.637109\",\"address_public\":\"Plaza Vapor\",\"distance2port\":2200,\"wind_angle_max\":30,\"wind_angle_min\":1,\"zone\":\"Es Jonquet\",\"source\":\"API\"}]}",
                 "tot": "json"
             }
         ],
@@ -4054,6 +4088,23 @@
         ]
     },
     {
+        "id": "aaa0eded56c26073",
+        "type": "debug",
+        "z": "d4e727584e18a1cb",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 180,
+        "y": 760,
+        "wires": []
+    },
+    {
         "id": "3d75beaab8257083",
         "type": "inject",
         "z": "1eb2925cd16908e4",
@@ -4075,10 +4126,11 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 100,
+        "y": 220,
         "wires": [
             [
-                "723fe3417d5cdefc"
+                "723fe3417d5cdefc",
+                "e597dc4ff7087b42"
             ]
         ]
     },
@@ -4099,7 +4151,7 @@
         "senderr": false,
         "headers": [],
         "x": 310,
-        "y": 100,
+        "y": 220,
         "wires": [
             [
                 "774b52bb33411b61"
@@ -4111,7 +4163,7 @@
         "type": "debug",
         "z": "1eb2925cd16908e4",
         "name": "debug 5",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4120,7 +4172,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1060,
-        "y": 420,
+        "y": 540,
         "wires": []
     },
     {
@@ -4132,14 +4184,15 @@
         "action": "",
         "pretty": false,
         "x": 510,
-        "y": 100,
+        "y": 220,
         "wires": [
             [
                 "1e34d1e46be34c11",
                 "e42dcfc6607a8f08",
                 "576b05e9cf022d85",
                 "a5fa9c449116c856",
-                "2bdb9aeb77ba02ce"
+                "2bdb9aeb77ba02ce",
+                "5f9e16ac0179e6ad"
             ]
         ]
     },
@@ -4167,7 +4220,7 @@
         "seg2": "",
         "className": "",
         "x": 880,
-        "y": 200,
+        "y": 320,
         "wires": []
     },
     {
@@ -4182,11 +4235,12 @@
         "finalize": "",
         "libs": [],
         "x": 600,
-        "y": 200,
+        "y": 320,
         "wires": [
             [
                 "b82d63fb46a61304",
-                "079612641670a685"
+                "079612641670a685",
+                "0be760717b1bda08"
             ]
         ]
     },
@@ -4214,7 +4268,7 @@
         "seg2": "",
         "className": "",
         "x": 870,
-        "y": 240,
+        "y": 360,
         "wires": []
     },
     {
@@ -4229,12 +4283,13 @@
         "finalize": "",
         "libs": [],
         "x": 570,
-        "y": 240,
+        "y": 360,
         "wires": [
             [
                 "4e0a6d30cec94e43",
                 "59daefb01edd4573",
-                "0ebf57544d44fec2"
+                "0ebf57544d44fec2",
+                "d1195945ebb60d54"
             ]
         ]
     },
@@ -4277,7 +4332,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 830,
-        "y": 160,
+        "y": 280,
         "wires": [
             []
         ]
@@ -4309,7 +4364,7 @@
         "animate": false,
         "className": "",
         "x": 840,
-        "y": 320,
+        "y": 440,
         "wires": [
             []
         ]
@@ -4345,7 +4400,7 @@
         "to": "",
         "reg": false,
         "x": 560,
-        "y": 280,
+        "y": 400,
         "wires": [
             [
                 "167fc5f31fc980ba",
@@ -4392,7 +4447,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 830,
-        "y": 280,
+        "y": 400,
         "wires": [
             []
         ]
@@ -4417,7 +4472,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 440,
+        "y": 560,
         "wires": [
             []
         ]
@@ -4429,7 +4484,7 @@
         "name": "Similar (+/- 15º) wind direction last 10 min.",
         "info": "",
         "x": 200,
-        "y": 400,
+        "y": 520,
         "wires": []
     },
     {
@@ -4450,7 +4505,7 @@
         "payload": "80",
         "payloadType": "num",
         "x": 110,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "b8f29c0206c5472f"
@@ -4469,7 +4524,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 460,
+        "y": 580,
         "wires": [
             [
                 "b8f29c0206c5472f"
@@ -4499,7 +4554,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 480,
+        "y": 600,
         "wires": [
             []
         ]
@@ -4522,7 +4577,7 @@
         "payload": "true",
         "payloadType": "bool",
         "x": 110,
-        "y": 500,
+        "y": 620,
         "wires": [
             [
                 "362d68fce48a6ae0"
@@ -4549,7 +4604,7 @@
         "to": "",
         "reg": false,
         "x": 880,
-        "y": 360,
+        "y": 480,
         "wires": [
             []
         ]
@@ -4561,7 +4616,7 @@
         "name": "Read RCNP weather station",
         "info": "",
         "x": 160,
-        "y": 40,
+        "y": 160,
         "wires": []
     },
     {
@@ -4586,7 +4641,7 @@
         "payload": "{\"TEMPERATURE\":{\"0\":24,\"1\":24,\"2\":24,\"3\":24.1,\"4\":24.1,\"5\":24.1,\"6\":24.2,\"7\":24.2,\"8\":24.2,\"9\":24.2,\"10\":24.2,\"11\":24.2,\"12\":24.2,\"13\":24.2,\"14\":24.1,\"15\":24.2,\"16\":24.1,\"17\":24.1,\"18\":24.1,\"19\":24.1,\"20\":24.1,\"21\":24.1,\"22\":24.1,\"23\":24.1,\"24\":24.1,\"25\":24.1,\"26\":24.1,\"27\":24.1,\"28\":24.1,\"29\":24.1,\"30\":24.1,\"31\":24.1,\"32\":24.1,\"33\":24,\"34\":24.1,\"35\":24,\"36\":24,\"37\":24,\"38\":24,\"39\":24,\"40\":24,\"41\":23.9,\"42\":23.9,\"43\":23.9,\"44\":23.9,\"45\":23.9,\"46\":23.9,\"47\":23.8,\"48\":23.8,\"49\":23.8,\"50\":23.8,\"51\":23.8,\"52\":23.8,\"53\":23.8,\"54\":23.8,\"55\":23.8,\"56\":23.8,\"57\":23.8,\"58\":23.8,\"59\":23.8},\"TWD\":{\"0\":279,\"1\":266,\"2\":263,\"3\":250,\"4\":253,\"5\":238,\"6\":248,\"7\":237,\"8\":239,\"9\":244,\"10\":253,\"11\":241,\"12\":248,\"13\":244,\"14\":249,\"15\":248,\"16\":247,\"17\":247,\"18\":250,\"19\":250,\"20\":248,\"21\":247,\"22\":251,\"23\":250,\"24\":252,\"25\":250,\"26\":242,\"27\":249,\"28\":253,\"29\":252,\"30\":241,\"31\":245,\"32\":239,\"33\":246,\"34\":247,\"35\":250,\"36\":248,\"37\":252,\"38\":248,\"39\":244,\"40\":245,\"41\":239,\"42\":242,\"43\":244,\"44\":246,\"45\":251,\"46\":248,\"47\":248,\"48\":247,\"49\":251,\"50\":254,\"51\":266,\"52\":263,\"53\":263,\"54\":257,\"55\":252,\"56\":250,\"57\":248,\"58\":249,\"59\":248},\"TWS\":{\"0\":4,\"1\":3,\"2\":4,\"3\":4,\"4\":4,\"5\":5,\"6\":6,\"7\":4,\"8\":4,\"9\":4,\"10\":3,\"11\":5,\"12\":6,\"13\":7,\"14\":6,\"15\":6,\"16\":4,\"17\":5,\"18\":4,\"19\":4,\"20\":5,\"21\":6,\"22\":6,\"23\":5,\"24\":4,\"25\":4,\"26\":5,\"27\":6,\"28\":4,\"29\":4,\"30\":4,\"31\":5,\"32\":4,\"33\":4,\"34\":3,\"35\":4,\"36\":4,\"37\":4,\"38\":3,\"39\":4,\"40\":4,\"41\":4,\"42\":4,\"43\":4,\"44\":4,\"45\":4,\"46\":5,\"47\":4,\"48\":4,\"49\":4,\"50\":4,\"51\":3,\"52\":3,\"53\":2,\"54\":3,\"55\":4,\"56\":3,\"57\":4,\"58\":4,\"59\":4},\"LATEST_DATA\":{\"TWS_GUST_MAX\":{\"TIME_STRING\":\"5-10-2022 4:20_PM:00\",\"VALUE\":\"17.0\"},\"TWD\":220,\"HUMIDEX\":27.2,\"TWS\":4,\"LOCALTIME\":2,\"HUMIDITY_IN\":100,\"WINDCHILL\":23.7,\"TEMP_IN\":48,\"ICON_NOW\":\"1\",\"ICON_FOR\":\"1\",\"TEMPERATURE\":23.7,\"TWS_GUST\":3.5,\"RAIN\":0,\"PRESSURE\":1025.7,\"LONGITUDE\":2.634551,\"PRESSURE_TR\":0.4,\"RAIN_MONTH\":0,\"RAIN_DAY\":0,\"HUMIDITY\":55,\"TIME_STRING\":\"5-10-2022 20:46:58\",\"TIME\":1664995618000,\"LATITUDE\":39.566895,\"WEATHER_DES\":\"Dry/Night_time\"},\"TWS_GUST\":{\"0\":5,\"1\":6,\"2\":6,\"3\":6,\"4\":4,\"5\":8,\"6\":6,\"7\":8,\"8\":5,\"9\":4,\"10\":5,\"11\":8,\"12\":7,\"13\":8,\"14\":6,\"15\":6,\"16\":4,\"17\":7,\"18\":6,\"19\":6,\"20\":6,\"21\":8,\"22\":7,\"23\":6,\"24\":6,\"25\":7,\"26\":7,\"27\":7,\"28\":4,\"29\":6,\"30\":7,\"31\":6,\"32\":7,\"33\":5,\"34\":6,\"35\":4,\"36\":6,\"37\":4,\"38\":6,\"39\":4,\"40\":5,\"41\":5,\"42\":4,\"43\":4,\"44\":4,\"45\":6,\"46\":6,\"47\":4,\"48\":6,\"49\":6,\"50\":4,\"51\":3,\"52\":3,\"53\":3,\"54\":5,\"55\":4,\"56\":4,\"57\":6,\"58\":4,\"59\":4},\"RAIN\":{\"0\":0,\"1\":0,\"2\":0,\"3\":0,\"4\":0,\"5\":0,\"6\":0,\"7\":0,\"8\":0,\"9\":0,\"10\":0,\"11\":0,\"12\":0,\"13\":0,\"14\":0,\"15\":0,\"16\":0,\"17\":0,\"18\":0,\"19\":0,\"20\":0,\"21\":0,\"22\":0,\"23\":0,\"24\":0,\"25\":0,\"26\":0,\"27\":0,\"28\":0,\"29\":0,\"30\":0,\"31\":0,\"32\":0,\"33\":0,\"34\":0,\"35\":0,\"36\":0,\"37\":0,\"38\":0,\"39\":0,\"40\":0,\"41\":0,\"42\":0,\"43\":0,\"44\":0,\"45\":0,\"46\":0,\"47\":0,\"48\":0,\"49\":0,\"50\":0,\"51\":0,\"52\":0,\"53\":0,\"54\":0,\"55\":0,\"56\":0,\"57\":0,\"58\":0,\"59\":0},\"HUMIDITY\":{\"0\":57,\"1\":57,\"2\":57,\"3\":57,\"4\":58,\"5\":58,\"6\":58,\"7\":58,\"8\":58,\"9\":58,\"10\":58,\"11\":58,\"12\":58,\"13\":58,\"14\":58,\"15\":58,\"16\":58,\"17\":58,\"18\":58,\"19\":58,\"20\":58,\"21\":58,\"22\":58,\"23\":58,\"24\":59,\"25\":59,\"26\":59,\"27\":59,\"28\":59,\"29\":59,\"30\":59,\"31\":59,\"32\":59,\"33\":59,\"34\":59,\"35\":59,\"36\":59,\"37\":59,\"38\":59,\"39\":59,\"40\":59,\"41\":59,\"42\":59,\"43\":59,\"44\":59,\"45\":59,\"46\":59,\"47\":59,\"48\":59,\"49\":59,\"50\":59,\"51\":59,\"52\":59,\"53\":59,\"54\":59,\"55\":59,\"56\":59,\"57\":59,\"58\":59,\"59\":59},\"PRESSURE\":{\"0\":1025.1,\"1\":1025.1,\"2\":1025.1,\"3\":1025.1,\"4\":1025.1,\"5\":1025.1,\"6\":1025.2,\"7\":1025.1,\"8\":1025.1,\"9\":1025.1,\"10\":1025.1,\"11\":1025.1,\"12\":1025.2,\"13\":1025.1,\"14\":1025.1,\"15\":1025.1,\"16\":1025.2,\"17\":1025.2,\"18\":1025.1,\"19\":1025.2,\"20\":1025.1,\"21\":1025.2,\"22\":1025.2,\"23\":1025.2,\"24\":1025.2,\"25\":1025.2,\"26\":1025.2,\"27\":1025.2,\"28\":1025.2,\"29\":1025.2,\"30\":1025.2,\"31\":1025.2,\"32\":1025.2,\"33\":1025.2,\"34\":1025.2,\"35\":1025.3,\"36\":1025.2,\"37\":1025.3,\"38\":1025.3,\"39\":1025.3,\"40\":1025.3,\"41\":1025.2,\"42\":1025.3,\"43\":1025.3,\"44\":1025.3,\"45\":1025.3,\"46\":1025.3,\"47\":1025.3,\"48\":1025.2,\"49\":1025.3,\"50\":1025.3,\"51\":1025.3,\"52\":1025.4,\"53\":1025.3,\"54\":1025.3,\"55\":1025.3,\"56\":1025.3,\"57\":1025.4,\"58\":1025.3,\"59\":1025.4},\"length\":60,\"TIME\":{\"0\":1664992078000,\"1\":1664992138000,\"2\":1664992198000,\"3\":1664992258000,\"4\":1664992318000,\"5\":1664992378000,\"6\":1664992438000,\"7\":1664992498000,\"8\":1664992558000,\"9\":1664992618000,\"10\":1664992678000,\"11\":1664992738000,\"12\":1664992798000,\"13\":1664992858000,\"14\":1664992918000,\"15\":1664992978000,\"16\":1664993038000,\"17\":1664993098000,\"18\":1664993158000,\"19\":1664993218000,\"20\":1664993278000,\"21\":1664993338000,\"22\":1664993398000,\"23\":1664993458000,\"24\":1664993518000,\"25\":1664993578000,\"26\":1664993638000,\"27\":1664993698000,\"28\":1664993758000,\"29\":1664993818000,\"30\":1664993878000,\"31\":1664993938000,\"32\":1664993998000,\"33\":1664994058000,\"34\":1664994118000,\"35\":1664994178000,\"36\":1664994238000,\"37\":1664994298000,\"38\":1664994358000,\"39\":1664994418000,\"40\":1664994478000,\"41\":1664994538000,\"42\":1664994598000,\"43\":1664994658000,\"44\":1664994718000,\"45\":1664994778000,\"46\":1664994838000,\"47\":1664994898000,\"48\":1664994958000,\"49\":1664995018000,\"50\":1664995078000,\"51\":1664995138000,\"52\":1664995198000,\"53\":1664995258000,\"54\":1664995318000,\"55\":1664995378000,\"56\":1664995438000,\"57\":1664995498000,\"58\":1664995558000,\"59\":1664995618000},\"ACTIVE\":\"ON\"}",
         "payloadType": "json",
         "x": 110,
-        "y": 160,
+        "y": 280,
         "wires": [
             [
                 "1e34d1e46be34c11"
@@ -4627,10 +4682,11 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 360,
+        "y": 480,
         "wires": [
             [
-                "323d1794653ce8d1"
+                "323d1794653ce8d1",
+                "55f096bfe39dce73"
             ]
         ]
     },
@@ -4668,7 +4724,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 320,
+        "y": 440,
         "wires": [
             []
         ]
@@ -4707,7 +4763,7 @@
         "to": "",
         "reg": false,
         "x": 290,
-        "y": 280,
+        "y": 400,
         "wires": [
             [
                 "eeb63e126b23890e"
@@ -4748,7 +4804,7 @@
         "to": "",
         "reg": false,
         "x": 320,
-        "y": 240,
+        "y": 360,
         "wires": [
             [
                 "cb665269cea5f46c"
@@ -4789,7 +4845,7 @@
         "to": "",
         "reg": false,
         "x": 310,
-        "y": 200,
+        "y": 320,
         "wires": [
             [
                 "aa1bc1a0.1e576",
@@ -4817,9 +4873,183 @@
         "to": "",
         "reg": false,
         "x": 580,
-        "y": 160,
+        "y": 280,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "f329638bcf67866f",
+        "type": "mqtt out",
+        "z": "1eb2925cd16908e4",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "eacc521ef3249ec1",
+        "x": 990,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "0be760717b1bda08",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "Wind speed",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "/port_espmi/meteo/wind/speed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "f329638bcf67866f"
+            ]
+        ]
+    },
+    {
+        "id": "d1195945ebb60d54",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "Wind direction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "/port_espmi/meteo/wind/direction",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 180,
+        "wires": [
+            [
+                "f329638bcf67866f"
+            ]
+        ]
+    },
+    {
+        "id": "e597dc4ff7087b42",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "CP",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "/port_espmi/cp",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "07012",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 60,
+        "wires": [
+            [
+                "f329638bcf67866f"
+            ]
+        ]
+    },
+    {
+        "id": "5f9e16ac0179e6ad",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "/port_espmi/meteo/humidity",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload.LATEST_DATA.HUMIDITY)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 100,
+        "wires": [
+            [
+                "f329638bcf67866f"
+            ]
+        ]
+    },
+    {
+        "id": "55f096bfe39dce73",
+        "type": "change",
+        "z": "1eb2925cd16908e4",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "/port_espmi/meteo/temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload.LATEST_DATA.TEMPERATURE)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 220,
+        "wires": [
+            [
+                "f329638bcf67866f"
+            ]
         ]
     },
     {
@@ -4844,7 +5074,7 @@
         "type": "function",
         "z": "bcba3d054e58be9c",
         "name": "Read JSON of sensors catalogue",
-        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-2);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n// opposite wind direcction\nvar wd = global.get(\"wind_direction_last\") + 180;\nif (wd > 360) {\n    wd = wd - 360;\n}\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    if (wd < msg.payload.sensors[i].wind_angle_max && wd > msg.payload.sensors[i].wind_angle_min) {\n        newMsg.payload = true;\n    } else {\n        newMsg.payload = false;\n    }\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.wd = wd;\n    newMsg.max = msg.payload.sensors[i].wind_angle_max;\n    newMsg.min = msg.payload.sensors[i].wind_angle_min;\n    node.send(newMsg);\n    await delay(500);\n}\nreturn null;\n",
+        "func": "flow.set('total_sensors', Object.keys(msg.payload.sensors[0]).length-1);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n// opposite wind direcction\nvar wd = global.get(\"wind_direction_last\") + 180;\nif (wd > 360) {\n    wd = wd - 360;\n}\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n    if (wd < msg.payload.sensors[i].wind_angle_max && wd > msg.payload.sensors[i].wind_angle_min) {\n        newMsg.payload = true;\n    } else {\n        newMsg.payload = false;\n    }\n    newMsg.topic = msg.payload.sensors[i].zone\n    newMsg.wd = wd;\n    newMsg.max = msg.payload.sensors[i].wind_angle_max;\n    newMsg.min = msg.payload.sensors[i].wind_angle_min;\n    node.send(newMsg);\n    await delay(500);\n}\nreturn null;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4941,13 +5171,13 @@
         "id": "918233dfe9312d5f",
         "type": "switch",
         "z": "bcba3d054e58be9c",
-        "name": "If wind_speed > 10 Kn ",
+        "name": "If wind_speed > 20 Kn ",
         "property": "wind_speed",
         "propertyType": "global",
         "rules": [
             {
                 "t": "gte",
-                "v": "10",
+                "v": "20",
                 "vt": "num"
             }
         ],
@@ -5054,7 +5284,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
+        "payload": "{\"sensors\":[{\"id\":74808,\"name\":\"IoTF_PMI-chicanso\",\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"address_public\":\"Platja de Chicanso\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"name\":\"Unknown01\",\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"address_public\":\" Gral Antoni Barceló 28\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"name\":\"Unknown02\",\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"address_public\":\"Gabriel Roca 31\",\"distance2port\":1600,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"API\"},{\"id\":83137,\"name\":\"IoTF_PMI-gabrielroca26\",\"altitude\":\"45\",\"country\":\"ES\",\"latitude\":\"39.56578\",\"longitude\":\"2.628272\",\"address_public\":\"Gabriel Roca 26\",\"distance2port\":1800,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"MQTT\"},{\"id\":68449,\"name\":\"BarrilabAir01\",\"altitude\":\"19\",\"country\":\"ES\",\"latitude\":\"39.57270738790\",\"longitude\":\"2.65241824323\",\"address_public\":\"Moliners 5\",\"distance2port\":3060,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"name\":\"BarrilabAir02\",\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"address_public\":\"Plaza del Cuadrado\",\"distance2port\":3260,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"name\":\"Unknown03\",\"altitude\":\"16.5\",\"country\":\"ES\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"address_public\":\"Parc de la Mar\",\"distance2port\":2900,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"La Calatraba\",\"source\":\"API\"},{\"id\":74349,\"name\":\"IoTF_PMI-elterreno\",\"altitude\":\"58\",\"country\":\"ES\",\"latitude\":\"39.56058\",\"longitude\":\"2.621714\",\"address_public\":\"Dos de Maig 41\",\"distance2port\":1770,\"wind_angle_max\":300,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"MQTT\"},{\"id\":68453,\"name\":\"McOrts-Home\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"address_public\":\"Bartomeu Riutort 25\",\"distance2port\":7800,\"wind_angle_max\":108,\"wind_angle_min\":96,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"name\":\"Unknown03\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"address_public\":\"Pere Llobera, 18\",\"distance2port\":4350,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Pere Garau\",\"source\":\"API\"},{\"id\":77131,\"name\":\"IoTF_PMI-plazavapor\",\"altitude\":\"9\",\"country\":\"ES\",\"latitude\":\"39.569788\",\"longitude\":\"2.637109\",\"address_public\":\"Plaza Vapor\",\"distance2port\":2200,\"wind_angle_max\":30,\"wind_angle_min\":1,\"zone\":\"Es Jonquet\",\"source\":\"API\"}]}",
         "payloadType": "json",
         "x": 270,
         "y": 280,
@@ -5186,7 +5416,7 @@
         "id": "dd51315eef54bcb1",
         "type": "ui_chart",
         "z": "253351a39d168f06",
-        "name": "",
+        "name": "Vessels / Polluition",
         "group": "f6579e9edf3ef0c2",
         "order": 1,
         "width": 9,
@@ -5199,7 +5429,7 @@
         "nodata": "",
         "dot": false,
         "ymin": "1",
-        "ymax": "15",
+        "ymax": "20",
         "removeOlder": "2",
         "removeOlderPoints": "",
         "removeOlderUnit": "86400",
@@ -5402,13 +5632,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
+        "x": 1010,
         "y": 180,
         "wires": [
             [
                 "7743d3ffca03e1c1",
-                "f2b57147078f6177",
-                "ad0e4a5345f97571"
+                "f2b57147078f6177"
             ]
         ]
     },
@@ -5625,8 +5854,7 @@
         "wires": [
             [
                 "5485307d896ad70b",
-                "ed672912e6e159cd",
-                "ad0e4a5345f97571"
+                "ed672912e6e159cd"
             ]
         ]
     },
@@ -6046,7 +6274,7 @@
             {
                 "field": "index",
                 "title": "Impacto(*)",
-                "width": "110",
+                "width": "105",
                 "align": "left",
                 "formatter": "star",
                 "formatterParams": {
@@ -6056,9 +6284,19 @@
             {
                 "field": "length_index",
                 "title": "Eslora",
-                "width": "85",
+                "width": "80",
                 "align": "left",
                 "formatter": "progress",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "type",
+                "title": "Tipo",
+                "width": "50",
+                "align": "left",
+                "formatter": "plaintext",
                 "formatterParams": {
                     "target": "_blank"
                 }
@@ -6075,7 +6313,7 @@
         "type": "function",
         "z": "253351a39d168f06",
         "name": "JSON to JS Array of Object",
-        "func": "var payload = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}/*, ... */];\n\n//for (var i = 0; i < flow.get(\"total_vessels\"); i++) {\nfor (var i = 0; i < msg.payload.length; i++) {\n    payload[i].name = msg.payload[i].name;\n    payload[i].index = 0;\n    payload[i].length_index = (Number(msg.payload[i].length) * 100 / 330).toFixed(0);\n}\nreturn { payload };",
+        "func": "var payload = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}/*, ... */];\n\n//for (var i = 0; i < flow.get(\"total_vessels\"); i++) {\nfor (var i = 0; i < msg.payload.length; i++) {\n    payload[i].name = msg.payload[i].name;\n    payload[i].index = 0;\n    payload[i].length_index = (Number(msg.payload[i].length) * 100 / 330).toFixed(0);\n    payload[i].type = msg.payload[i].type;\n}\nreturn { payload };",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6132,23 +6370,6 @@
                 "aebfe9b359144cc0"
             ]
         ]
-    },
-    {
-        "id": "ad0e4a5345f97571",
-        "type": "debug",
-        "z": "253351a39d168f06",
-        "name": "debug 12",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1100,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "d16cfe491e140757",
@@ -6211,7 +6432,7 @@
         "type": "function",
         "z": "253351a39d168f06",
         "name": "Read vessels catalogue",
-        "func": "var vessels = flow.get('vessels');\n\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < vessels.length; i++) {\n    var newMsg = {};\n\n    if (typeof vessels[i].name !== 'undefined'){\n        newMsg.payload = vessels[i].name;\n        newMsg.index = i;\n        node.send(newMsg);  \n    }\n  \n    await delay(1000);\n}\n\nreturn null;",
+        "func": "var vessels = flow.get('vessels');\n\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < vessels.length; i++) {\n    var newMsg = {};\n\n    if (typeof vessels[i].name !== 'undefined'){\n        newMsg.payload = vessels[i].name;\n        newMsg.index = i;\n        node.send(newMsg);  \n    }\n\n    await delay(1000);\n}\n\nreturn null;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6276,7 +6497,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1330,
+        "x": 1370,
         "y": 720,
         "wires": [
             []
@@ -6342,7 +6563,7 @@
             [
                 "06f25dc69ced3e32",
                 "335dee62e972c327",
-                "45d7d730d28ad5ce"
+                "a70f6231555dbf10"
             ]
         ]
     },
@@ -6368,7 +6589,7 @@
         "payload": "5886.8",
         "payloadType": "num",
         "x": 680,
-        "y": 860,
+        "y": 880,
         "wires": [
             [
                 "478e8c49137c9c31"
@@ -6382,7 +6603,7 @@
         "name": "Port congestion",
         "info": "",
         "x": 680,
-        "y": 820,
+        "y": 840,
         "wires": []
     },
     {
@@ -6405,7 +6626,7 @@
         "to": "",
         "reg": false,
         "x": 890,
-        "y": 860,
+        "y": 880,
         "wires": [
             []
         ]
@@ -6430,7 +6651,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 900,
+        "y": 920,
         "wires": [
             []
         ]
@@ -6447,7 +6668,7 @@
         "finalize": "",
         "libs": [],
         "x": 930,
-        "y": 900,
+        "y": 920,
         "wires": [
             []
         ]
@@ -6459,7 +6680,7 @@
         "name": "Passanger capacity",
         "info": "",
         "x": 690,
-        "y": 940,
+        "y": 980,
         "wires": []
     },
     {
@@ -6482,7 +6703,7 @@
         "to": "",
         "reg": false,
         "x": 710,
-        "y": 980,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -6499,7 +6720,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 980,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -6515,10 +6736,10 @@
         "height": 2,
         "gtype": "gage",
         "title": "Saturación del puerto (*)",
-        "label": "m atraque utilizados",
-        "format": "{{value}}m",
+        "label": "% atraque total utilizado",
+        "format": "{{value}}%",
         "min": 0,
-        "max": "5886.8",
+        "max": "100",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -6527,8 +6748,8 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 1370,
-        "y": 900,
+        "x": 1470,
+        "y": 920,
         "wires": []
     },
     {
@@ -6551,7 +6772,7 @@
         "to": "",
         "reg": false,
         "x": 1160,
-        "y": 980,
+        "y": 1020,
         "wires": [
             [
                 "d4bf25364caa89a8"
@@ -6572,35 +6793,8 @@
         "layout": "col-center",
         "className": "",
         "x": 1400,
-        "y": 980,
+        "y": 1020,
         "wires": []
-    },
-    {
-        "id": "45d7d730d28ad5ce",
-        "type": "change",
-        "z": "253351a39d168f06",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "total_length",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1160,
-        "y": 900,
-        "wires": [
-            [
-                "5fc1d4c6fa474006"
-            ]
-        ]
     },
     {
         "id": "70602dd6cfbd46bf",
@@ -6611,7 +6805,7 @@
         "order": 9,
         "width": 5,
         "height": 1,
-        "format": "<!DOCTYPE html>\n<html>\n<head>\n<style>\na:link {\n  color: green;\n  background-color: transparent;\n  text-decoration: none;\n}\na:visited {\n  color: pink;\n  background-color: transparent;\n  text-decoration: none;\n}\na:hover {\n  color: red;\n  background-color: transparent;\n  text-decoration: underline;\n}\na:active {\n  color: yellow;\n  background-color: transparent;\n  text-decoration: underline;\n}\n</style>\n</head>\n<body>\n<div>\n    <a href=https://github.com/McOrts/fumport/blob/main/README.md#impacto-saturaci%C3%B3n-y-capacidad-del-puerto><span>(*) Metodolía y cálculos</span></a>\n</div>\n</body>\n</html>\n\n\n",
+        "format": "<!DOCTYPE html>\n<html>\n<head>\n<style>\na:link {\n  color: green;\n  background-color: transparent;\n  text-decoration: none;\n}\na:visited {\n  color: pink;\n  background-color: transparent;\n  text-decoration: none;\n}\na:hover {\n  color: red;\n  background-color: transparent;\n  text-decoration: underline;\n}\na:active {\n  color: yellow;\n  background-color: transparent;\n  text-decoration: underline;\n}\n</style>\n</head>\n<body>\n<div>\n    <a href=https://github.com/McOrts/fumport/blob/main/README.md#impacto-saturaci%C3%B3n-y-capacidad-del-puerto><span>(*) Metodología y cálculos</span></a>\n</div>\n</body>\n</html>\n\n\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
@@ -6621,6 +6815,169 @@
         "y": 760,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "a70f6231555dbf10",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Port Congestion % calculation",
+        "func": "msg.payload = flow.get('total_length') * 100 / flow.get('total_berth');\nmsg.payload = parseFloat(msg.payload).toFixed(1);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 920,
+        "wires": [
+            [
+                "5fc1d4c6fa474006",
+                "a3144b8babaf324c"
+            ]
+        ]
+    },
+    {
+        "id": "a3144b8babaf324c",
+        "type": "switch",
+        "z": "253351a39d168f06",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 90,
+        "y": 900,
+        "wires": [
+            [
+                "5ff0a91b40f95302"
+            ]
+        ]
+    },
+    {
+        "id": "a1965500d36c5c50",
+        "type": "comment",
+        "z": "253351a39d168f06",
+        "name": "Alarm of Congestion",
+        "info": "",
+        "x": 130,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "5ff0a91b40f95302",
+        "type": "change",
+        "z": "253351a39d168f06",
+        "name": "🛳️",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "🛳️",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 90,
+        "y": 940,
+        "wires": [
+            [
+                "4781dc39e434e006"
+            ]
+        ]
+    },
+    {
+        "id": "4781dc39e434e006",
+        "type": "function",
+        "z": "253351a39d168f06",
+        "name": "Compose alert message",
+        "func": "msg.payload = msg.icon + \" Aviso: la congestión del puerto es del \" + msg.payload + \" %\" ;\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 940,
+        "wires": [
+            [
+                "1599a5654517f37f",
+                "972ce4c9e15bc095"
+            ]
+        ],
+        "outputLabels": [
+            "Sunset"
+        ]
+    },
+    {
+        "id": "1599a5654517f37f",
+        "type": "link out",
+        "z": "253351a39d168f06",
+        "name": "Telegram out",
+        "mode": "link",
+        "links": [
+            "fa5a411f.3ecff"
+        ],
+        "x": 485,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "972ce4c9e15bc095",
+        "type": "link out",
+        "z": "253351a39d168f06",
+        "name": "Twitter out",
+        "mode": "link",
+        "links": [
+            "87e2263d707b5a1c",
+            "f3f5d9e147efb1b2",
+            "6b0386d8931674c6",
+            "1af1a5e912539bc0"
+        ],
+        "x": 485,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "233be2aee85f8edf",
+        "type": "inject",
+        "z": "253351a39d168f06",
+        "name": "Clean",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1030,
+        "y": 420,
+        "wires": [
+            [
+                "dd51315eef54bcb1"
+            ]
         ]
     },
     {
@@ -6776,7 +7133,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "sensors",
-        "payload": "{\"sensors\":[{\"id\":74808,\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"name\":\"McOrts03\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"name\":\"Unknown01\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"name\":\"Unknown02\",\"distance2port\":1770,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"API\"},{\"id\":68449,\"altitude\":\"31.5\",\"country\":\"ES\",\"latitude\":\"39.57052011993\",\"longitude\":\"2.65284479792\",\"name\":\"Canamunt1\",\"distance2port\":3060,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"name\":\"Canamunt2\",\"distance2port\":3260,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"altitude\":\"16.5\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"name\":\"Unknown03\",\"distance2port\":2900,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Parc de la Mar\",\"source\":\"API\"},{\"id\":74349,\"altitude\":\"4.7\",\"country\":\"ES\",\"latitude\":\"39.55581818787\",\"longitude\":\"2.68565833569\",\"name\":\"McOrts02\",\"distance2port\":4850,\"wind_angle_max\":70,\"wind_angle_min\":90,\"zone\":\"La Gruta\",\"source\":\"MQTT\"},{\"id\":68453,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"name\":\"McOrts01\",\"distance2port\":7800,\"wind_angle_max\":96,\"wind_angle_min\":108,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"name\":\"Unknown01\",\"distance2port\":4350,\"wind_angle_max\":26,\"wind_angle_min\":56,\"zone\":\"Pere Garau\",\"source\":\"API\"}]}",
+        "payload": "{\"sensors\":[{\"id\":74808,\"name\":\"IoTF_PMI-chicanso\",\"altitude\":\"11.6\",\"country\":\"ES\",\"latitude\":\"39.544\",\"longitude\":\"2.596\",\"address_public\":\"Platja de Chicanso\",\"distance2port\":2930,\"wind_angle_max\":272,\"wind_angle_min\":252,\"zone\":\"Cas català\",\"source\":\"MQTT\"},{\"id\":72964,\"name\":\"Unknown01\",\"altitude\":\"51.1\",\"country\":\"ES\",\"latitude\":\"39.55338446606\",\"longitude\":\"2.61948475041\",\"address_public\":\" Gral Antoni Barceló 28\",\"distance2port\":982,\"wind_angle_max\":330,\"wind_angle_min\":284,\"zone\":\"Portopí\",\"source\":\"API\"},{\"id\":74670,\"name\":\"Unknown02\",\"altitude\":\"13.7\",\"country\":\"ES\",\"latitude\":\"39.564\",\"longitude\":\"2.628\",\"address_public\":\"Gabriel Roca 31\",\"distance2port\":1600,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"API\"},{\"id\":83137,\"name\":\"IoTF_PMI-gabrielroca26\",\"altitude\":\"45\",\"country\":\"ES\",\"latitude\":\"39.56578\",\"longitude\":\"2.628272\",\"address_public\":\"Gabriel Roca 26\",\"distance2port\":1800,\"wind_angle_max\":10,\"wind_angle_min\":340,\"zone\":\"Paseo Martitimo\",\"source\":\"MQTT\"},{\"id\":68449,\"name\":\"BarrilabAir01\",\"altitude\":\"19\",\"country\":\"ES\",\"latitude\":\"39.57270738790\",\"longitude\":\"2.65241824323\",\"address_public\":\"Moliners 5\",\"distance2port\":3060,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":68451,\"name\":\"BarrilabAir02\",\"altitude\":\"24.8\",\"country\":\"ES\",\"latitude\":\"39.56940319892\",\"longitude\":\"2.65431618687\",\"address_public\":\"Plaza del Cuadrado\",\"distance2port\":3260,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Canamunt\",\"source\":\"MQTT\"},{\"id\":74660,\"name\":\"Unknown03\",\"altitude\":\"16.5\",\"country\":\"ES\",\"latitude\":\"39.566\",\"longitude\":\"2.654\",\"address_public\":\"Parc de la Mar\",\"distance2port\":2900,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"La Calatraba\",\"source\":\"API\"},{\"id\":74349,\"name\":\"IoTF_PMI-elterreno\",\"altitude\":\"58\",\"country\":\"ES\",\"latitude\":\"39.56058\",\"longitude\":\"2.621714\",\"address_public\":\"Dos de Maig 41\",\"distance2port\":1770,\"wind_angle_max\":300,\"wind_angle_min\":340,\"zone\":\"El Terreno\",\"source\":\"MQTT\"},{\"id\":68453,\"name\":\"McOrts-Home\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.53555593270\",\"longitude\":\"2.71826756010\",\"address_public\":\"Bartomeu Riutort 25\",\"distance2port\":7800,\"wind_angle_max\":108,\"wind_angle_min\":96,\"zone\":\"C'an pastilla\",\"source\":\"MQTT\"},{\"id\":74662,\"name\":\"Unknown03\",\"altitude\":\"9.2\",\"country\":\"ES\",\"latitude\":\"39.57472212555465\",\"longitude\":\"2.666550123432801\",\"address_public\":\"Pere Llobera, 18\",\"distance2port\":4350,\"wind_angle_max\":56,\"wind_angle_min\":26,\"zone\":\"Pere Garau\",\"source\":\"API\"},{\"id\":77131,\"name\":\"IoTF_PMI-plazavapor\",\"altitude\":\"9\",\"country\":\"ES\",\"latitude\":\"39.569788\",\"longitude\":\"2.637109\",\"address_public\":\"Plaza Vapor\",\"distance2port\":2200,\"wind_angle_max\":30,\"wind_angle_min\":1,\"zone\":\"Es Jonquet\",\"source\":\"API\"}]}",
         "payloadType": "json",
         "x": 190,
         "y": 80,
@@ -6791,7 +7148,7 @@
         "type": "function",
         "z": "4ecb1660b0460e17",
         "name": "Read JSON of sensors catalogue",
-        "func": "flow.set('total_sensors', msg.payload.vessels_info.length);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n\n    newMsg.payload = msg.payload.sensors[i]\n    node.send(newMsg);   \n  \n    await delay(1000);\n}\n\nreturn null;\n",
+        "func": "flow.set('total_sensors', msg.payload.sensors.length);\nconst delay = ms => new Promise(res => context.set(\"timer\", setTimeout(res, ms)));\n\nfor (var i = 0; i < flow.get('total_sensors'); i++) {\n    var newMsg = {};\n\n    newMsg.payload = msg.payload.sensors[i]\n    node.send(newMsg);   \n  \n    await delay(1000);\n}\n\nreturn null;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6956,7 +7313,8 @@
         "links": [
             "0dd8f996ed40bf89",
             "41d807af6908e062",
-            "530257cc6310e55f"
+            "530257cc6310e55f",
+            "1599a5654517f37f"
         ],
         "x": 195,
         "y": 80,
@@ -7440,7 +7798,7 @@
         "y": 380,
         "wires": [
             [
-                "4667509e2ef5b9c5"
+                "d05a55e9223fee7c"
             ]
         ]
     },
@@ -7637,7 +7995,6 @@
         "y": 620,
         "wires": [
             [
-                "d9b029581833c177",
                 "ed19f5e2e5bc28b4"
             ]
         ]
@@ -7672,23 +8029,6 @@
         ]
     },
     {
-        "id": "d9b029581833c177",
-        "type": "debug",
-        "z": "cf5158d38960fc7b",
-        "name": "debug 11",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 780,
-        "wires": []
-    },
-    {
         "id": "ed19f5e2e5bc28b4",
         "type": "function",
         "z": "cf5158d38960fc7b",
@@ -7703,7 +8043,6 @@
         "y": 660,
         "wires": [
             [
-                "d9b029581833c177",
                 "2e9f53db339a294d"
             ]
         ]
@@ -7723,7 +8062,6 @@
         "y": 660,
         "wires": [
             [
-                "d9b029581833c177",
                 "6b011884cc632c59"
             ]
         ]
@@ -7765,7 +8103,8 @@
         "links": [
             "04b2f8cee2f37cd3",
             "1688427cae116437",
-            "f222f308ac636076"
+            "f222f308ac636076",
+            "972ce4c9e15bc095"
         ],
         "x": 175,
         "y": 140,
@@ -8020,7 +8359,8 @@
         "links": [
             "04b2f8cee2f37cd3",
             "1688427cae116437",
-            "f222f308ac636076"
+            "f222f308ac636076",
+            "972ce4c9e15bc095"
         ],
         "x": 95,
         "y": 120,
