@@ -92,9 +92,9 @@ Se ha definido una fórmula de cálculo para que este índice tenga una escala d
 
 <img src="./img/espmi_berth.png" width="300" align="right" />
 
-- **Indice de saturación portuaria**. Dado que la capacidad de amarre de un puerto está limitada al número de alineaciones y estas suman un total de metros. Con la suma de las esloras de los barcos atracados se puede hacer una aproximación a lo cerca que se está de esta capacidad total. O sea de la saturación de barcos amarrados. Como valor total para el Puerto de Palma se ha obtenido la cifra de 5.886,8 metros según figura en el apartado 2.2.1.1 de la Memoria Anual de 2021.
+- **Indice de saturación portuaria**. Dado que la capacidad de amarre de un puerto está limitada al número de alineaciones y estas suman un total de metros. Con la suma de las esloras de los barcos atracados se puede hacer una aproximación a lo cerca que se está de esta capacidad total. O sea de la saturación de barcos amarrados. Como valor total para el Puerto de Palma se ha obtenido la cifra de 5.198,8 metros según figura en el apartado 2.2.1.1 de la [Memoria Anual de 2021](./doc/MemoriaAnual2021Digital_0.pdf) para uso de ferris, Ro-Ro y mercancias.
 
-- **Capacidad actual de pasajeros**. Es la suma de los máximos de tripulantes y pasajeros declarados por las embarcaciones. Evidentemente la cifra real siempre será inferior.
+- **Capacidad actual de pasajeros**. Es la suma de las capacidades máximas de pasajeros en doble ocupación declaradas por las embarcaciones. Evidentemente la cifra real siempre será inferior. Para estimar el desembarque de passageros, se considera un 80% de ocupación media de la cifra anterior y sobre el resultado, se aplica un 70% que es el porcentaje más bajo del rango estadístico.
 
 <img src="./img/impact_ui.png" />
 
