@@ -102,6 +102,13 @@ El set de datos utilizado para aplicar la lógica descrita anteriormente forma p
 
 Esta colección de datos persiste en la base de datos InfluxDB que alimenta la aplicación. El índice de impacto está precalculado con la lógica descrita en el documento de hoja de cálculo de LibreOffice [vessels_polution_impact_calculation.ods](https://github.com/McOrts/fumport/blob/main/DDL/vessels_polution_impact_calculation.ods) quedando registrado en la propiedad "port_emission_score" del vessels_info.json.
 
+#### Supervición del acuerdo de limitación 
+El 4 de mayo de 2022, la patronal de las navieras CLIA y las principales empresas del sector de cruceros, entre ellas TUI Cruise, Royal Caribbean, MSC, Costa y Virgin, firmaron en el Palacio de Congresos el memorándum de entendimiento con el Govern para limitar la llegada de escalas de cruceros en el puerto de Palma de Mallorca hasta 2026.
+Dicho acuerdo se resume en estas restricciones:
+- Solo podrán coincidir tres cruceros al día.
+- Solo uno de ellos podrá ser un megacrucero con más de 5.000 pasajeros.
+- Además hay un límite diario de 8.500 cruceristas en cómputo semanal en Palma
+
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
 - Contaminación aislada: posiblemente de origen próximo al sensor. Humo de barbacoa, contaminación de tráfico rodado. 
