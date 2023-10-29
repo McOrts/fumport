@@ -1250,6 +1250,7 @@
             "name": "GNV SPIRIT",
             "mmsi": 247438100,
             "type": "passenger",
+            "passengers": 1609,
             "length": "203,9",
             "beam": "25",
             "year_built": 2001,
@@ -1263,13 +1264,13 @@
             "engine_stroke": 400,
             "deadweight_tonnage": 6515,
             "propeller": "pitch",
-            "fuel_type": "LNG",
-            "SC_fuel": "0,5",
+            "fuel_type": "Marine Diesel",
+            "SC_fuel": "2",
             "SC_engine": 4,
-            "SC_passengers": 0,
+            "SC_passengers": 1,
             "SC_GT": 3,
-            "fuel*engine+passenger+GT": "5",
-            "port_emission_score": 1
+            "fuel*engine+passenger+GT": "12",
+            "port_emission_score": 2
         },
         {
             "order": 64,
@@ -2074,7 +2075,7 @@
         {
             "order": 122,
             "name": "SEA CLOUD II",
-            "mmsi": 248953000,        
+            "mmsi": 248953000,
             "type": "passenger",
             "length": "117",
             "SC_fuel": "0",
@@ -2703,7 +2704,9 @@
         {
             "order": 160,
             "name": "LA BARCA SAMBA",
+            "mmsi": 224006050,
             "type": "passenger",
+            "passengers": 50,
             "length": "23",
             "SC_fuel": "2",
             "SC_engine": 0,
@@ -2981,6 +2984,53 @@
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
             "port_emission_score": 0
+        },
+        {
+            "order": 182,
+            "name": "AZAMARA QUEST",
+            "mmsi": 256216000,
+            "type": "passenger",
+            "passengers": 696,
+            "length": "181",
+            "fuel_type": "Marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 3,
+            "SC_passengers": 0,
+            "SC_GT": 3,
+            "fuel*engine+passenger+GT": "9",
+            "port_emission_score": 1
+        },
+        {
+            "order": 183,
+            "name": "FUTURA",
+            "mmsi": 247158200,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "169",
+            "fuel_type": "Marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 4,
+            "fuel*engine+passenger+GT": "4",
+            "port_emission_score": 1
+        },
+        {
+            "order": 184,
+            "name": "NORWEGIAN JADE",
+            "mmsi": 308416000,
+            "type": "passenger",
+            "passengers": 2402,
+            "length": "294",
+            "gross_tonnage": 93558,
+            "engine_power": 72080,
+            "fuel_type": "Marine Diesel",
+            "SC_fuel": "2",
+            "SC_engine": 7,
+            "SC_passengers": 2,
+            "SC_GT": 9,
+            "fuel*engine+passenger+GT": "25",
+            "port_emission_score": 3
         }
     ]
 }
