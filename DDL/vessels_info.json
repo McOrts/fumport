@@ -3099,6 +3099,57 @@
             "SC_GT": 14,
             "fuel*engine+passenger+GT": "27",
             "port_emission_score": 4
-        }
+        },
+        {
+            "order": 194,
+            "name": "ACAIA",
+            "mmsi": 256147000,
+            "type": "passenger",
+            "passengers": 15,
+            "length": "30",
+            "gross_tonnage": 5000,
+            "engine_power": 150,
+            "fuel_type": "Marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": 0
+        },
+        {
+            "order": 195,
+            "name": "NORWEGIAN DAWN",
+            "mmsi": 311307000,
+            "type": "passenger",
+            "passengers": 2340,
+            "length": "295",
+            "gross_tonnage": 92250,
+            "engine_power": 58800,
+            "fuel_type": "Marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 5,
+            "SC_passengers": 2,
+            "SC_GT": 9,
+            "fuel*engine+passenger+GT": "21",
+            "port_emission_score": 3
+        },
+        {
+            "order": 195,
+            "name": "SAIMAAGRACHT",
+            "mmsi": 311307000,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "184",
+            "gross_tonnage": 18321,
+            "engine_power": 12060,
+            "fuel_type": "Marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 1,
+            "SC_passengers": 0,
+            "SC_GT": 1,
+            "fuel*engine+passenger+GT": "3",
+            "port_emission_score": 0
+        }        
     ]
 }
