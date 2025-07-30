@@ -7,6 +7,15 @@ Los focos de contaminación varían a lo largo de la historia de una ciudad, y p
 
 El monitoreo ambiental en ciudades se refiere a las prácticas de seguridad y privacidad utilizadas para proteger a los ciudadanos de los contaminantes transportados por el aire. Esto incluye la recopilación de datos sobre la calidad del aire, la temperatura, la humedad y otros factores ambientales. Estos datos luego se utilizan para evaluar el riesgo de exposición a materiales peligrosos y tomar medidas para mitigar o eliminar esos riesgos.
 
+
+## Objetivos
+Principalmente, crear una plataforma abierta de monitorización del puerto de Palma de Mallorca para registrar su actividad y generar alertas sobre riesgos ambientales y su impacto urbano en tiempo real.
+
+- Monitorización en tiempo real del tráfico marítimo y su impacto ambiental
+- Emitir alertas para informar a la ciudania de riesgos y problemas
+- Tratar de identificar los focos de la contaminación.
+- Hacer un análisis predictivo para dar avisos de contaminación.
+
 ## Nuestra solución
 <img src="./img/taller.jpg" width="300" align="right" />
 
