@@ -150,7 +150,15 @@ Este es el set actual de comandos:
 En un futuro los usuarios podrán enviar peticiones por este medio a la aplicación.
 
 ## Acceso libre a los datos
-De primera mano hay una carpeta con un volcado de todas las entidades de datos almacenadas en InfluxDB a excepción de la de usuarios, en este mismo repositorio: https://github.com/McOrts/fumport/tree/main/DDL
+<img src="./img/MQTT_Topic_ESPPMI.png" width="300" align="right" />
+De forma **on-line y en tiempo real**. Tanto los datos de la operación del puerto como de emisiones estimadas y la meteorología. Se puede recibir por subscripción a libre y gratuita a un servicio público de broker MQTT. Los parámetros de conexión son:
+- URL: mqtt.iot-foundations.org
+- Puerto: 1883
+- MQTT Topic: sensograma/PMI/port_espmi
+- Usuario: user_r
+- Clave: Ecology6-Cassette4-Roving3
+
+También hay una carpeta con un volcado de todas las entidades de datos almacenadas en InfluxDB a excepción de la de usuarios, en este mismo repositorio: https://github.com/McOrts/fumport/tree/main/DDL
 
 Las entidades de datos utilizadas son:
 - (sensors_readings.json) Lecturas sensores de calidad del aire
