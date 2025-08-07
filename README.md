@@ -7,7 +7,6 @@ Los focos de contaminación varían a lo largo de la historia de una ciudad, y p
 
 El monitoreo ambiental en ciudades se refiere a las prácticas de seguridad y privacidad utilizadas para proteger a los ciudadanos de los contaminantes transportados por el aire. Esto incluye la recopilación de datos sobre la calidad del aire, la temperatura, la humedad y otros factores ambientales. Estos datos luego se utilizan para evaluar el riesgo de exposición a materiales peligrosos y tomar medidas para mitigar o eliminar esos riesgos.
 
-
 ## Objetivos
 Principalmente, crear una plataforma abierta de monitorización del puerto de Palma de Mallorca para registrar su actividad y generar alertas sobre riesgos ambientales y su impacto urbano en tiempo real.
 
@@ -99,13 +98,15 @@ la actividad del puerto se analiza cada 10 minutos quedando reflejada en una tab
    * Impacto en el entorno ciudadano basado en la capacidad de pasaje y la envergadura de la embarcación (registro bruto).
 Se ha definido una fórmula de cálculo para que este índice tenga una escala de 5 valores. De mayor a menor impacto. Los valores son ponderados para cada embarcación en base al máximo de todos los calculados.
 
+<img src="./img/IndiceSaturaciónPuertoPMI.png" align="center" />
+<br>
 <img src="./img/espmi_berth.png" width="300" align="right" />
 
 - **Indice de saturación portuaria**. Dado que la capacidad de amarre de un puerto está limitada al número de alineaciones y estas suman un total de metros. Con la suma de las esloras de los barcos atracados se puede hacer una aproximación a lo cerca que se está de esta capacidad total. O sea de la saturación de barcos amarrados. Como valor total para el Puerto de Palma se ha obtenido la cifra de 5.198,8 metros según figura en el apartado 2.2.1.1 de la [Memoria Anual de 2021](./doc/MemoriaAnual2021Digital_0.pdf) para uso de ferris, Ro-Ro y mercancias.
 
 - **Capacidad actual de pasajeros**. Es la suma de las capacidades máximas de pasajeros en doble ocupación declaradas por las embarcaciones. Evidentemente la cifra real siempre será inferior. Para estimar el desembarque de passageros, se considera un 80% de ocupación media de la cifra anterior y sobre el resultado, se aplica un 70% que es el porcentaje más bajo del rango estadístico.
 
-<img src="./img/impact_ui.png" />
+<img src="./img/impact_ui.jpeg" />
 
 El set de datos utilizado para aplicar la lógica descrita anteriormente forma parte de este repositorio. Es un .json con el nombre [vessels_info.json](https://github.com/McOrts/fumport/blob/main/DDL/vessels_info.json)
 
@@ -120,13 +121,15 @@ camas bajas de capacidad.
 - Además hay un límite diario de 8.500 cruceristas en cómputo semanal en Palma
 
 ### Estimaciones de emisiones de gases contaminantes
-Con el fin de concretar la estimación del impacto medioambiental. El cálculo de las emisiones de gases contaminantes es un elemento clave. Se ha intentando aplicar una metodología rigurosa en el **calculao cada 10 minutos de las las emisiones instantáneas de CO₂, NOₓ y SOₓ** que producidas por buques atracados en el puerto. Se cubren tres familias de combustible (gasóleo marino, fuel pesado y gas natural licuado) y dos tipologías operativas (pasajeros y petroleros/cargo). A continuación se describen los fundamentos físico‑químicos, las fórmulas empíricas empleadas y su implementación en un flujo **Node‑RED**. Además, contextualiza el estado actual del servicio **Cold Ironing** local, destacando exclusiones (p. ej. *ELEANOR ROOSEVELT*).
+Con el fin de concretar la estimación del impacto medioambiental. El cálculo de las emisiones de gases contaminantes es un elemento clave. Se ha intentando aplicar una metodología rigurosa en el **calculao cada 10 minutos de las las emisiones instantáneas de CO₂, NOₓ y SOₓ que son producidas por buques atracados en el puerto cuyo consumo no corresponde con el usado en el desplazamiento sino para los servicios a bordo**. Se cubren tres familias de combustible (gasóleo marino, fuel pesado y gas natural licuado) y dos tipologías operativas (pasajeros y petroleros/cargo). A continuación se describen los fundamentos físico‑químicos, las fórmulas empíricas empleadas y su implementación en un flujo **Node‑RED**. Además, contextualiza el estado actual del servicio **Cold Ironing** local, destacando exclusiones (p. ej. *ELEANOR ROOSEVELT*).
+
+<img src="./img/grafana_emissions.png" align="center" />
 
 #### 1. Introducción
 La directiva 2008/50/CE y el **Real Decreto 102/2011** obligan a los puertos españoles a monitorizar contaminantes atmosféricos. El Govern de les Illes Balears publica inventarios donde la navegación aporta >20 % de NOₓ regional (CAIB, 2024). Palma ha iniciado el despliegue OPS (*On‑shore Power Supply*) pero, salvo dos atraques en Paraires, la mayoría de escalas mantienen motores auxiliares encendidos (Mrabet, 2022).
 
 #### 2. Parámetros considerados y su fundamento
-| Variable (`msg.payload`) | Símbolo | Fundamentación técnica |
+| Variable | Símbolo | Fundamentación técnica |
 |-------------------------|---------|------------------------|
 | `engine_power` (kW)            | P<sub>inst</sub> | Limita la potencia eléctrica disponible. Norma ISO 3046. |
 | `passengers`                   | N<sub>pax</sub> | La demanda hotel (HVAC, cocina, ascensores) escala ~2 kW/pax (CE Delft, 2021). |
@@ -135,7 +138,7 @@ La directiva 2008/50/CE y el **Real Decreto 102/2011** obligan a los puertos es
 | `fuel_type`                    | — | Selecciona SFC y fracciones másicas. |
 
 ##### 2.1 Supuesto de Potencia de Hotel
-Hotel load (o “consumo de hotel”) es la energía eléctrica que un barco necesita mientras está amarrado para mantener todos los servicios a bordo que hacen cómoda la vida de las personas y el funcionamiento básico del buque, aun cuando los motores de propulsión están apagados. Incluye, por ejemplo:
+"Hotel Load" (P<sub>h</sub>) es la energía eléctrica que un barco necesita mientras está amarrado para mantener todos los servicios a bordo que hacen cómoda la vida de las personas y el funcionamiento básico del buque, aun cuando los motores de propulsión están apagados. Incluye, por ejemplo:
 * Iluminación de camarotes, pasillos y zonas comunes.
 * Aire acondicionado o calefacción.
 * Cocinas, frigoríficos y lavanderías.
@@ -144,13 +147,9 @@ Hotel load (o “consumo de hotel”) es la energía eléctrica que un barco nec
 
 En otras palabras, es la «corriente para la casa» del barco: todo lo que sigue funcionando para que la tripulación y los pasajeros dispongan de luz, climatización y servicios esenciales, igual que en un hotel en tierra.
 * **Pasajeros:**  
-  \[
-  P_h = \min\bigl(P_{inst},\; N_{pax} \times 2 \text{ kW}\bigr)
-  \]
-* **Petrolero / Carga:**  
-  \[
-  P_h = 0,05 \times P_{inst}
-  \]  
+  P<sub>h</sub> = min(P<sub>inst</sub> , N<sub>ipax</sub> * 2 kW})
+* **Petrolero / Cargo:**  
+  P<sub>h</sub> = 0,05 * P<sub>inst</sub>
   (media extraída de MR‑tankers 50 k dwt ≈ 500 kW frente a 10 MW — *MAN ES Case Study*, 2023).
 
 ##### 2.2 Consumo Específico de Combustible (SFC)
@@ -160,78 +159,38 @@ En otras palabras, es la «corriente para la casa» del barco: todo lo que sigue
 | Heavy Fuel Oil (HFO)   | 0.24 | IMO GHG Study 2020 |
 | LNG (gas‑dual)         | 0.19 | Wärtsilä 34DF TechNote 2023 |
 
-## 3. Metodología de Cálculo
-### 3.1 Eficiencia y Factor de Corrección (CF)
-Interpolación lineal entre η<sub>2000</sub> = 35 % y η<sub>2025</sub> = 40 %:
+#### 3. Metodología de Cálculo
+##### 3.1 Eficiencia y Factor de Corrección (CF)
+Los motores más nuevos son más eficientes. Si tomamos como rendimiento de referencia η₀ = 40 % para buques recientes (año 2025) y suponemos que en el año 2000 su eficiencia caía hasta η₍₂₀₀₀₎ = 35 %, podemos interpolar:
 
-\[
-η = 0,35 + 0,05 \cdot \frac{year - 2000}{25}\quad (2000 ≤ year ≤ 2025)
-\]
+<img src="./img/vessel_motor_performance_interpolation.png" align="center" />
+Interpretación: CF > 1 penaliza buques antiguos por mayor consumo real.
 
-\[
-CF = \frac{0,40}{η}
-\]  
-> CF > 1 penaliza buques antiguos por mayor consumo real.
+##### 3.2 Flujo de masa de combustible
+<img src="./img/mass_fuel_hora.png" align="center" />
 
-### 3.2 Flujo de masa de combustible
-\[
-\dot m_{\text{fuel,h}} = P_h \times SFC \times CF \quad(\text{kg·h}^{-1})
-\]
-
-\[
-\dot m_{\text{fuel,min}} = \frac{\dot m_{\text{fuel,h}}}{60}
-\]
-
-### 3.3 Fracciones másicas de gases de escape
-| Gas | Diesel & MD | HFO | LNG | Referencia |
+##### 3.3 Fracciones másicas de gases de escape
+| Gas | Diesel & MD | Heavy Fuel Oil (HFO) | LNG | Referencia |
 |-----|-------------|-----|-----|------------|
 | N₂      | 77.62 % | ≈ 78 % | 84.92 % | Wärtsilä 2023 |
 | CO₂     | 13.77 % | 13.77 % | 15.00 % | ibid. |
 | NOₓ     | 0.20 % | 0.20 % | 0.08 % | MARPOL VI |
 | SOₓ     | 0.03 % | **5.0 %** (S = 2.5 %) | 0 % | ISO 8217 |
 
-### 3.4 Emisiones por minuto
-\[
-E_i = \dot m_{\text{fuel,min}} \times f_i \quad (\text{kg·min}^{-1})
-\]
-con \(i∈\{CO₂, NOₓ, SOₓ\}\).
+##### 3.4 Emisiones por minuto
+Para estimar las emisiones de cada gas por minuto en régimen de hotel (sólo “hotel load”), podemos usar la siguiente fórmula:
 
-## 4. Implementación Node‑RED
+<img src="./img/emissions_per_minute.png" align="center" />
+Como ejemplo se muestra el cálculo de las emisiones por minuto en puerto (solo “hotel load”) para un motor que queme gas natural GNL (LNG), tomando como ejemplo un motor de 1.000 kW y aplicando el mismo factor de corrección de averías/eficiencia (CF = 1,081) y SFC típico para GNL de 0,17 kg/kWh:
+1. Cálculo de la masa de GNL
+<img src="./img/mcomb_GNL.png" align="center" />
 
-### 4.1 Estructura del flujo
-```mermaid
-graph TD
-    A[Inject 10 min] --> B[Consulta AIS]
-    B --> C[validarCampos]
-    C --> D{fuel_type}
-    D -->|diesel| E[Func_MD]
-    D -->|HFO| F[Func_HFO]
-    D -->|LNG| G[Func_LNG]
-    E --> H[redondeo]
-    F --> H
-    G --> H
-    H --> I[InfluxDB/Dashboard]
-```
+2. Aplicando las proporciones típicas de los principales gases en el escape de un motor LNG descritas en el punto 3.3 Estas serían las emisiones por minuto:
+<img src="./img/em_x_min_gnl.png" align="center" />
 
-#### 4.1.1 Función `validarCampos`
-```javascript
-const d = msg.payload[0] || {};
-if (!d.engine_power || !d.passengers || !d.fuel_type || !d.year_built) {
-  return null;               // Detiene el flujo
-}
-return msg;                  // Continúa
-```
-
-#### 4.1.2 Redondeo final
-```javascript
-msg.payload = Object.fromEntries(
-  Object.entries(msg.payload)
-        .map(([k,v]) => [k, +(v.toFixed(2))])
-);
-return msg;
-```
-
-> Las funciones `Func_MD`, `Func_HFO` y `Func_LNG` implementan las ecuaciones de la sección 3 con sus parámetros específicos.
+#### 4. Implementación Node‑RED
+##### 4.1 Estructura del flujo
+<img src="./img/Node-RED_Emission_Flow.png" align="center" />
 
 #### 5. Cold Ironing en Palma
 El proyecto **OPS Palma – Muelle Paraires** entró en servicio en 2023 (APB, 2024). Actualmente conecta únicamente:
@@ -251,6 +210,10 @@ Los buques con OPS no se incluyen en el cálculo porque apagan motores auxiliare
 | CO₂ kg/min  | **0.088** | 0.032 | 0.086 |
 | NOₓ kg/min  | 0.0013 | 0.00046 | 0.00046 |
 | SOₓ kg/min  | 0.00019 | **0.012** | 0.00000 |
+
+El cálculo completo para el caso de un barco de un crucero del año 2010 con capacidad de 500 pasajeros y combustible de fuel pesado sería:
+<br>
+<img src="./img/ej_hfo_pasajeros.png" align="center" />
 
 #### 7. Conclusiones pedagógicas
 1. **Hotel load** se relaciona con el servicio (pax) o el tipo de buque (5 % en petroleros).  
