@@ -114,9 +114,159 @@ Esta colección de datos persiste en la base de datos InfluxDB que alimenta la a
 #### Supervición del acuerdo de limitación 
 El 4 de mayo de 2022, la patronal de las navieras CLIA y las principales empresas del sector de cruceros, entre ellas TUI Cruise, Royal Caribbean, MSC, Costa y Virgin, firmaron en el Palacio de Congresos el memorándum de entendimiento con el Govern para limitar la llegada de escalas de cruceros en el puerto de Palma de Mallorca hasta 2026.
 Dicho acuerdo se resume en estas restricciones:
-- Solo podrán coincidir tres cruceros al día.
+- Solo podrán coincidir tres cruceros al día. Se considera crucero a un navio de más de 500
+camas bajas de capacidad.
 - Solo uno de ellos podrá ser un megacrucero con más de 5.000 pasajeros.
 - Además hay un límite diario de 8.500 cruceristas en cómputo semanal en Palma
+
+### Estimaciones de emisiones de gases contaminantes
+Con el fin de concretar la estimación del impacto medioambiental. El cálculo de las emisiones de gases contaminantes es un elemento clave. Se ha intentando aplicar una metodología rigurosa en el **calculao cada 10 minutos de las las emisiones instantáneas de CO₂, NOₓ y SOₓ** que producidas por buques atracados en el puerto. Se cubren tres familias de combustible (gasóleo marino, fuel pesado y gas natural licuado) y dos tipologías operativas (pasajeros y petroleros/cargo). A continuación se describen los fundamentos físico‑químicos, las fórmulas empíricas empleadas y su implementación en un flujo **Node‑RED**. Además, contextualiza el estado actual del servicio **Cold Ironing** local, destacando exclusiones (p. ej. *ELEANOR ROOSEVELT*).
+
+#### 1. Introducción
+La directiva 2008/50/CE y el **Real Decreto 102/2011** obligan a los puertos españoles a monitorizar contaminantes atmosféricos. El Govern de les Illes Balears publica inventarios donde la navegación aporta >20 % de NOₓ regional (CAIB, 2024). Palma ha iniciado el despliegue OPS (*On‑shore Power Supply*) pero, salvo dos atraques en Paraires, la mayoría de escalas mantienen motores auxiliares encendidos (Mrabet, 2022).
+
+#### 2. Parámetros considerados y su fundamento
+| Variable (`msg.payload`) | Símbolo | Fundamentación técnica |
+|-------------------------|---------|------------------------|
+| `engine_power` (kW)            | P<sub>inst</sub> | Limita la potencia eléctrica disponible. Norma ISO 3046. |
+| `passengers`                   | N<sub>pax</sub> | La demanda hotel (HVAC, cocina, ascensores) escala ~2 kW/pax (CE Delft, 2021). |
+| `year_built`                   | `year` | Mejora del rendimiento mecánico ≈ 0,2 %/año (IMO EEDI). |
+| `type` (`passenger`/`petrol`)  | — | Define el algoritmo de hotel load (sección 3.2). |
+| `fuel_type`                    | — | Selecciona SFC y fracciones másicas. |
+
+##### 2.1 Supuesto de Potencia de Hotel
+Hotel load (o “consumo de hotel”) es la energía eléctrica que un barco necesita mientras está amarrado para mantener todos los servicios a bordo que hacen cómoda la vida de las personas y el funcionamiento básico del buque, aun cuando los motores de propulsión están apagados. Incluye, por ejemplo:
+* Iluminación de camarotes, pasillos y zonas comunes.
+* Aire acondicionado o calefacción.
+* Cocinas, frigoríficos y lavanderías.
+* Bombas de agua, ascensores y sistemas informáticos.
+* Equipos de seguridad y comunicación.
+
+En otras palabras, es la «corriente para la casa» del barco: todo lo que sigue funcionando para que la tripulación y los pasajeros dispongan de luz, climatización y servicios esenciales, igual que en un hotel en tierra.
+* **Pasajeros:**  
+  \[
+  P_h = \min\bigl(P_{inst},\; N_{pax} \times 2 \text{ kW}\bigr)
+  \]
+* **Petrolero / Carga:**  
+  \[
+  P_h = 0,05 \times P_{inst}
+  \]  
+  (media extraída de MR‑tankers 50 k dwt ≈ 500 kW frente a 10 MW — *MAN ES Case Study*, 2023).
+
+##### 2.2 Consumo Específico de Combustible (SFC)
+| Combustible | SFC (kg·kWh⁻¹) | Fuente |
+|-------------|----------------|--------|
+| Diesel / Marine Diesel | 0.22 | MAN 4‑stroke L32/44CR datasheet 2024 |
+| Heavy Fuel Oil (HFO)   | 0.24 | IMO GHG Study 2020 |
+| LNG (gas‑dual)         | 0.19 | Wärtsilä 34DF TechNote 2023 |
+
+## 3. Metodología de Cálculo
+### 3.1 Eficiencia y Factor de Corrección (CF)
+Interpolación lineal entre η<sub>2000</sub> = 35 % y η<sub>2025</sub> = 40 %:
+
+\[
+η = 0,35 + 0,05 \cdot \frac{year - 2000}{25}\quad (2000 ≤ year ≤ 2025)
+\]
+
+\[
+CF = \frac{0,40}{η}
+\]  
+> CF > 1 penaliza buques antiguos por mayor consumo real.
+
+### 3.2 Flujo de masa de combustible
+\[
+\dot m_{\text{fuel,h}} = P_h \times SFC \times CF \quad(\text{kg·h}^{-1})
+\]
+
+\[
+\dot m_{\text{fuel,min}} = \frac{\dot m_{\text{fuel,h}}}{60}
+\]
+
+### 3.3 Fracciones másicas de gases de escape
+| Gas | Diesel & MD | HFO | LNG | Referencia |
+|-----|-------------|-----|-----|------------|
+| N₂      | 77.62 % | ≈ 78 % | 84.92 % | Wärtsilä 2023 |
+| CO₂     | 13.77 % | 13.77 % | 15.00 % | ibid. |
+| NOₓ     | 0.20 % | 0.20 % | 0.08 % | MARPOL VI |
+| SOₓ     | 0.03 % | **5.0 %** (S = 2.5 %) | 0 % | ISO 8217 |
+
+### 3.4 Emisiones por minuto
+\[
+E_i = \dot m_{\text{fuel,min}} \times f_i \quad (\text{kg·min}^{-1})
+\]
+con \(i∈\{CO₂, NOₓ, SOₓ\}\).
+
+## 4. Implementación Node‑RED
+
+### 4.1 Estructura del flujo
+```mermaid
+graph TD
+    A[Inject 10 min] --> B[Consulta AIS]
+    B --> C[validarCampos]
+    C --> D{fuel_type}
+    D -->|diesel| E[Func_MD]
+    D -->|HFO| F[Func_HFO]
+    D -->|LNG| G[Func_LNG]
+    E --> H[redondeo]
+    F --> H
+    G --> H
+    H --> I[InfluxDB/Dashboard]
+```
+
+#### 4.1.1 Función `validarCampos`
+```javascript
+const d = msg.payload[0] || {};
+if (!d.engine_power || !d.passengers || !d.fuel_type || !d.year_built) {
+  return null;               // Detiene el flujo
+}
+return msg;                  // Continúa
+```
+
+#### 4.1.2 Redondeo final
+```javascript
+msg.payload = Object.fromEntries(
+  Object.entries(msg.payload)
+        .map(([k,v]) => [k, +(v.toFixed(2))])
+);
+return msg;
+```
+
+> Las funciones `Func_MD`, `Func_HFO` y `Func_LNG` implementan las ecuaciones de la sección 3 con sus parámetros específicos.
+
+#### 5. Cold Ironing en Palma
+El proyecto **OPS Palma – Muelle Paraires** entró en servicio en 2023 (APB, 2024). Actualmente conecta únicamente:
+* *ELEANOR ROOSEVELT* (fast‑ferry de Balearia)
+* Un ferry Ro‑Pax clase Visentini  
+
+Los buques con OPS no se incluyen en el cálculo porque apagan motores auxiliares durante la conexión.
+
+#### 6. Ejemplo comparativo
+| Parámetro | Ferry 2010 (MD) | Petrolero 2015 (HFO) | Ferry LNG 2022 |
+|-----------|-----------------|----------------------|----------------|
+| P<sub>inst</sub> (kW) | 15 000 | 11 000 | 16 500 |
+| P<sub>h</sub> (kW) | 1 600 | 550 | 1 800 |
+| CF | 1.081 | 1.048 | 1.000 |
+| SFC (kg/kWh) | 0.22 | 0.24 | 0.19 |
+| Fuel kg/min | 0.636 | 0.231 | 0.571 |
+| CO₂ kg/min  | **0.088** | 0.032 | 0.086 |
+| NOₓ kg/min  | 0.0013 | 0.00046 | 0.00046 |
+| SOₓ kg/min  | 0.00019 | **0.012** | 0.00000 |
+
+#### 7. Conclusiones pedagógicas
+1. **Hotel load** se relaciona con el servicio (pax) o el tipo de buque (5 % en petroleros).  
+2. El ajuste de **eficiencia** por antigüedad evita sub‑/sobrestimar consumos.  
+3. SFC y fracciones másicas deben actualizarse según fichas de motor e ISO 8217.  
+4. OPS ya reduce emisiones de algunos atraques; el flujo los excluye.
+
+#### 8. Bibliografía
+1. IMO. *MARPOL Annex VI* (2023 ed.).  
+2. EMEP/EEA. *Guidebook 2019 – 1.A.3.d Navigation* (Update 2021).  
+3. Mrabet, A. *TFG: Cold Ironing en el puerto de Palma* (UPC, 2022).  
+4. Autoritat Portuària de Balears. *Memoria Anual 2023* (2024).  
+5. Wärtsilä. *TechNotes – Gas & DF Engines* (2023).  
+6. CE Delft. *Energy use of cruise ships in port* (2021).  
+7. MAN ES. *Project Guide L32/44CR* (2024).  
+
 
 ### Segunda fase
 Análisis de las curvas de detección y propagación para distinguir entre:
