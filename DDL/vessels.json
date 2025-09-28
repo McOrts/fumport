@@ -11,13 +11,14 @@
             "year_built": 2018,
             "gross_tonnage": 228081,
             "engine_power": 57600,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 5,
             "SC_passengers": 6,
             "SC_GT": 22,
             "fuel*engine+passenger+GT": "38",
-            "port_emission_score": 5
+            "port_emission_score": 5,
+            "cold_ironing": "false"
         },
         {
             "order": 2,
@@ -35,13 +36,14 @@
             "engine_stroke": 430,
             "deadweight_tonnage": 10850,
             "propeller": "pitch",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 8,
             "SC_passengers": 4,
             "SC_GT": 15,
             "fuel*engine+passenger+GT": "35",
-            "port_emission_score": 5
+            "port_emission_score": 5,
+            "cold_ironing": "false"
         },
         {
             "order": 3,
@@ -54,13 +56,14 @@
             "year_built": 2021,
             "gross_tonnage": 181541,
             "engine_power": 67200,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 4,
             "SC_GT": 18,
             "fuel*engine+passenger+GT": "34",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 4,
@@ -73,13 +76,14 @@
             "year_built": 2021,
             "gross_tonnage": 167704,
             "engine_power": 67200,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 4,
             "SC_GT": 16,
             "fuel*engine+passenger+GT": "32",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 5,
@@ -97,13 +101,14 @@
             "engine_RPM": 133,
             "deadweight_tonnage": 11385,
             "propeller": "pitch",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 4,
             "SC_GT": 15,
             "fuel*engine+passenger+GT": "31",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 6,
@@ -116,13 +121,14 @@
             "year_built": 2022,
             "gross_tonnage": 185206,
             "engine_power": 61700,
-            "fuel_type": "Fuel & LNG",
+            "fuel_type": "fuel & LNG",
             "SC_fuel": "1",
             "SC_engine": 6,
             "SC_passengers": 5,
             "SC_GT": 18,
             "fuel*engine+passenger+GT": "29",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 7,
@@ -136,13 +142,14 @@
             "gross_tonnage": 145281,
             "net_tonnage": 122695,
             "engine_power": 62400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 3,
             "SC_GT": 14,
             "fuel*engine+passenger+GT": "29",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 8,
@@ -156,13 +163,14 @@
             "gross_tonnage": 145655,
             "net_tonnage": 132549,
             "engine_power": 62400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 3,
             "SC_GT": 14,
             "fuel*engine+passenger+GT": "29",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 9,
@@ -176,13 +184,14 @@
             "gross_tonnage": 133019,
             "net_tonnage": 121694,
             "engine_power": 67200,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 4,
             "SC_GT": 13,
             "fuel*engine+passenger+GT": "29",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 10,
@@ -196,13 +205,14 @@
             "gross_tonnage": 129690,
             "net_tonnage": 104345,
             "engine_power": 77500,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 7,
             "SC_passengers": 2,
             "SC_GT": 12,
             "fuel*engine+passenger+GT": "28",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 11,
@@ -217,13 +227,14 @@
             "engine_power": 57200,
             "deadweight_tonnage": 13000,
             "propeller": "pitch",
-            "fuel_type": "Fuel & LNG",
+            "fuel_type": "fuel & LNG",
             "SC_fuel": "1",
             "SC_engine": 5,
             "SC_passengers": 5,
             "SC_GT": 18,
             "fuel*engine+passenger+GT": "28",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 12,
@@ -242,7 +253,8 @@
             "SC_passengers": 6,
             "SC_GT": 18,
             "fuel*engine+passenger+GT": "27",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 13,
@@ -260,13 +272,14 @@
             "engine_RPM": 600,
             "deadweight_tonnage": 12200,
             "propeller": "azipod",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 3,
             "SC_passengers": 4,
             "SC_GT": 17,
             "fuel*engine+passenger+GT": "27",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 14,
@@ -280,13 +293,14 @@
             "gross_tonnage": 113321,
             "net_tonnage": 86908,
             "engine_power": 42000,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 4,
             "SC_passengers": 3,
             "SC_GT": 11,
             "fuel*engine+passenger+GT": "26",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 15,
@@ -300,13 +314,14 @@
             "gross_tonnage": 113307,
             "net_tonnage": 86898,
             "engine_power": 42000,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 4,
             "SC_passengers": 3,
             "SC_GT": 11,
             "fuel*engine+passenger+GT": "26",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 16,
@@ -320,13 +335,14 @@
             "gross_tonnage": 130818,
             "net_tonnage": 92639,
             "engine_power": 54960,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 5,
             "SC_passengers": 2,
             "SC_GT": 13,
             "fuel*engine+passenger+GT": "25",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 17,
@@ -340,13 +356,14 @@
             "gross_tonnage": 102669,
             "net_tonnage": 74537,
             "engine_power": 42240,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 10,
             "fuel*engine+passenger+GT": "24",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 18,
@@ -360,13 +377,14 @@
             "gross_tonnage": 111554,
             "net_tonnage": 75476,
             "engine_power": 44000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 11,
             "fuel*engine+passenger+GT": "21",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 19,
@@ -378,13 +396,14 @@
             "year_built": 2018,
             "gross_tonnage": 99500,
             "engine_power": 50400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 5,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "21",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 20,
@@ -398,13 +417,14 @@
             "gross_tonnage": 115055,
             "net_tonnage": 85194,
             "engine_power": 36400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 3,
             "SC_passengers": 3,
             "SC_GT": 11,
             "fuel*engine+passenger+GT": "20",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 21,
@@ -416,13 +436,14 @@
             "year_built": 2021,
             "gross_tonnage": 108192,
             "engine_power": 48000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 10,
             "fuel*engine+passenger+GT": "20",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 22,
@@ -436,13 +457,14 @@
             "gross_tonnage": 91740,
             "net_tonnage": 61087,
             "engine_power": 46170,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "19",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 23,
@@ -456,13 +478,14 @@
             "gross_tonnage": 92409,
             "net_tonnage": 64360,
             "engine_power": 41400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "19",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 24,
@@ -476,13 +499,14 @@
             "gross_tonnage": 92409,
             "net_tonnage": 34360,
             "engine_power": 41400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "19",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 25,
@@ -496,13 +520,14 @@
             "gross_tonnage": 95128,
             "net_tonnage": 66135,
             "engine_power": 41400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "19",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 26,
@@ -516,13 +541,14 @@
             "gross_tonnage": 77302,
             "net_tonnage": 43519,
             "engine_power": 58500,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 5,
             "SC_passengers": 1,
             "SC_GT": 7,
             "fuel*engine+passenger+GT": "18",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 27,
@@ -536,13 +562,14 @@
             "gross_tonnage": 70285,
             "net_tonnage": 35113,
             "engine_power": 38800,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 3,
             "SC_passengers": 1,
             "SC_GT": 7,
             "fuel*engine+passenger+GT": "17",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 28,
@@ -553,13 +580,14 @@
             "length": "238",
             "gross_tonnage": 62735,
             "engine_power": 37500,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 3,
             "SC_passengers": 1,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "16",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 29,
@@ -573,13 +601,14 @@
             "gross_tonnage": 98811,
             "net_tonnage": 62704,
             "engine_power": 28000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "15",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 30,
@@ -593,13 +622,14 @@
             "gross_tonnage": 93530,
             "net_tonnage": 63887,
             "engine_power": 25000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "15",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 31,
@@ -613,13 +643,14 @@
             "gross_tonnage": 99526,
             "net_tonnage": 63078,
             "engine_power": 25000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "15",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 32,
@@ -633,13 +664,14 @@
             "gross_tonnage": 90940,
             "net_tonnage": 53635,
             "engine_power": 23500,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "15",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 33,
@@ -653,13 +685,14 @@
             "gross_tonnage": 82820,
             "net_tonnage": 41898,
             "engine_power": 37800,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 3,
             "SC_passengers": 1,
             "SC_GT": 8,
             "fuel*engine+passenger+GT": "15",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 34,
@@ -670,13 +703,14 @@
             "length": "219",
             "gross_tonnage": 55877,
             "engine_power": 34560,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 3,
             "SC_passengers": 1,
             "SC_GT": 5,
             "fuel*engine+passenger+GT": "15",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 35,
@@ -694,13 +728,14 @@
             "engine_stroke": 430,
             "deadweight_tonnage": 7889,
             "propeller": "propeller",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 2,
             "SC_GT": 7,
             "fuel*engine+passenger+GT": "13",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 36,
@@ -720,13 +755,14 @@
             "engine_stroke": 430,
             "deadweight_tonnage": 7833,
             "propeller": "propeller",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 2,
             "SC_GT": 7,
             "fuel*engine+passenger+GT": "13",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 37,
@@ -740,13 +776,14 @@
             "gross_tonnage": 77302,
             "net_tonnage": 43519,
             "engine_power": 28000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 1,
             "SC_GT": 7,
             "fuel*engine+passenger+GT": "12",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 38,
@@ -760,13 +797,14 @@
             "gross_tonnage": 76998,
             "net_tonnage": 43358,
             "engine_power": 25600,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 1,
             "SC_GT": 7,
             "fuel*engine+passenger+GT": "12",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 39,
@@ -780,13 +818,14 @@
             "gross_tonnage": 65542,
             "net_tonnage": 41682,
             "engine_power": 20800,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 1,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "11",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 40,
@@ -800,13 +839,14 @@
             "gross_tonnage": 69472,
             "net_tonnage": 37971,
             "engine_power": 25600,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 1,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "11",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 41,
@@ -820,13 +860,14 @@
             "gross_tonnage": 66172,
             "net_tonnage": 29187,
             "engine_power": 25000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 1,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "11",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 42,
@@ -837,13 +878,14 @@
             "length": "216",
             "gross_tonnage": 48075,
             "engine_power": 31680,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 3,
             "SC_passengers": 0,
             "SC_GT": 4,
             "fuel*engine+passenger+GT": "10",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 43,
@@ -854,13 +896,14 @@
             "length": "236",
             "gross_tonnage": 58250,
             "engine_power": 21600,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 5,
             "fuel*engine+passenger+GT": "9",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 44,
@@ -871,19 +914,20 @@
             "length": "236",
             "gross_tonnage": 58250,
             "engine_power": 21600,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 5,
             "fuel*engine+passenger+GT": "9",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 45,
             "name": "CIUDAD DE BARCELONA",
             "mmsi": 225416000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 1450,
             "length": "175",
             "beam": "26,4",
@@ -902,65 +946,66 @@
             "SC_passengers": 1,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "9",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 46,
             "name": "ECO LIVORNO",
             "mmsi": 247383500,
-            "type": "cargo",
-            "passengers": 0,
+            "imo": 9859557,
+            "type": "roro",
+            "passengers": 12,
             "length": "238",
+            "beam": "34",
+            "year_built": 2020,
             "gross_tonnage": 64575,
-            "engine_power": 51120,
-            "fuel_type": "LNG",
-            "SC_fuel": "0,5",
-            "SC_engine": 5,
-            "SC_passengers": 0,
-            "SC_GT": 6,
-            "fuel*engine+passenger+GT": "8,5",
-            "port_emission_score": 1
+            "engine_power": 25560,
+            "fuel_type": "hybrid",
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 47,
             "name": "ECO SAVONA",
             "mmsi": 247383600,
-            "type": "cargo",
-            "passengers": 0,
+            "imo": 9859569,
+            "type": "roro",
+            "passengers": 12,
             "length": "238",
+            "beam": "34",
+            "year_built": 2020,
             "gross_tonnage": 64575,
-            "engine_power": 51120,
-            "fuel_type": "LNG",
-            "SC_fuel": "0,5",
-            "SC_engine": 5,
-            "SC_passengers": 0,
-            "SC_GT": 6,
-            "fuel*engine+passenger+GT": "8,5",
-            "port_emission_score": 1
+            "engine_power": 25560,
+            "fuel_type": "hybrid",
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 48,
             "name": "SILVER MOON",
             "mmsi": 311000719,
+            "imo": 9857937,
             "type": "passenger",
             "passengers": 596,
             "length": "213",
             "gross_tonnage": 40844,
             "engine_power": 22184,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 4,
             "fuel*engine+passenger+GT": "8",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 49,
             "name": "SILVER DAWN",
             "mmsi": 311001044,
             "type": "passenger",
-            "passengers": 596,
+            "passengers": 623,
             "length": "213",
             "beam": "30",
             "year_built": 2021,
@@ -971,13 +1016,14 @@
             "engine_RPM": 149,
             "deadweight_tonnage": 3390,
             "propeller": "pitch",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 4,
             "fuel*engine+passenger+GT": "8",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 50,
@@ -994,7 +1040,8 @@
             "SC_passengers": 0,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "7",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 51,
@@ -1003,13 +1050,14 @@
             "passengers": 450,
             "length": "198",
             "gross_tonnage": 32346,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "7",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 52,
@@ -1018,19 +1066,20 @@
             "passengers": 450,
             "length": "197",
             "gross_tonnage": 32346,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "7",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 53,
             "name": "CIUDAD DE ALCUDIA",
             "mmsi": 224509000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 136,
             "length": "183",
             "beam": "30",
@@ -1052,7 +1101,8 @@
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "7",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 54,
@@ -1075,7 +1125,8 @@
             "SC_passengers": 0,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 55,
@@ -1099,7 +1150,8 @@
             "SC_passengers": 0,
             "SC_GT": 6,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 56,
@@ -1110,13 +1162,14 @@
             "length": "238",
             "gross_tonnage": 32728,
             "engine_power": 16800,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 1,
             "SC_passengers": 1,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 57,
@@ -1125,13 +1178,14 @@
             "passengers": 400,
             "length": "199",
             "gross_tonnage": 28437,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 58,
@@ -1140,19 +1194,20 @@
             "passengers": 0,
             "length": "189",
             "gross_tonnage": 0,
-            "fuel_type": "Heavy Fuel Oil",
+            "fuel_type": "heavy fuel oil",
             "SC_fuel": "3",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 59,
             "name": "CIUDAD DE PALMA",
             "mmsi": 224588000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 878,
             "length": "186",
             "beam": "25,6",
@@ -1173,13 +1228,14 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 60,
             "name": "HEDY LAMARR",
             "mmsi": 209348000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 560,
             "length": "186",
             "beam": "25,6",
@@ -1200,13 +1256,14 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 61,
             "name": "CIUDAD DE GRANADA",
             "mmsi": 224600000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 356,
             "length": "172",
             "beam": "26,2",
@@ -1226,7 +1283,8 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 62,
@@ -1237,13 +1295,14 @@
             "length": "231",
             "gross_tonnage": 31143,
             "engine_power": 19040,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 1,
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "5",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 63,
@@ -1264,13 +1323,14 @@
             "engine_stroke": 400,
             "deadweight_tonnage": 6515,
             "propeller": "pitch",
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 1,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "12",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "order": 64,
@@ -1282,13 +1342,14 @@
             "beam": "20",
             "gross_tonnage": 14745,
             "engine_power": 11520,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 1,
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 65,
@@ -1297,19 +1358,20 @@
             "passengers": 386,
             "length": "187",
             "gross_tonnage": 14983,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "5",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 66,
             "name": "CIUDAD DE MAHON",
             "mmsi": 224692000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 966,
             "length": "155",
             "beam": "24,2",
@@ -1329,13 +1391,14 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "5",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 67,
             "name": "ELEANOR ROOSEVELT",
             "mmsi": 210049000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 1196,
             "length": "123",
             "beam": "28",
@@ -1353,7 +1416,8 @@
             "SC_passengers": 1,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "5",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "true"
         },
         {
             "order": 68,
@@ -1363,42 +1427,30 @@
             "passengers": 0,
             "length": "227",
             "gross_tonnage": 0,
-            "fuel_type": "�",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 69,
             "name": "YACHT EXPRESS",
+            "mmsi": 306814000,
+            "imo": 9346029,
             "type": "cargo",
             "passengers": 0,
             "length": "209",
-            "gross_tonnage": 4562,
-            "fuel_type": "�",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
-        },
-        {
-            "order": 70,
-            "name": "TENACIA",
-            "type": "passenger",
-            "length": "199",
-            "gross_tonnage": 0,
-            "fuel_type": "�",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "beam": "32",
+            "year_built": 2007,
+            "gross_tonnage": 17951,
+            "engine_power": 23660,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
         },
         {
             "order": 71,
@@ -1406,43 +1458,51 @@
             "type": "passenger",
             "length": "199",
             "gross_tonnage": 0,
-            "fuel_type": "�",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 72,
             "name": "ABEL MATUTES",
             "mmsi": 210772000,
-            "type": "passenger",
+            "imo": 9441130,
+            "type": "roro",
+            "passengers": 900,
             "length": "190",
-            "gross_tonnage": 2967,
-            "engine_power": 9000,
+            "beam": "26",
+            "year_built": 2009,
+            "gross_tonnage": 29670,
+            "engine_power": 18000,
             "fuel_type": "LNG",
-            "SC_fuel": "0.5",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 73,
             "name": "EVRIMA",
+            "mmsi": 215001000,
             "type": "passenger",
+            "passengers": 298,
             "length": "190",
-            "gross_tonnage": 0,
-            "fuel_type": "Marine Diesel",
+            "beam": "24",
+            "year_built": 2020,
+            "gross_tonnage": 25401,
+            "engine_power": 18000,
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
-            "SC_engine": 2,
+            "SC_engine": 1,
             "SC_passengers": 0,
-            "SC_GT": 0,
+            "SC_GT": 2,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": "1",
+            "imo": 9823687,
+            "cold_ironing": "false"
         },
         {
             "order": 74,
@@ -1450,13 +1510,14 @@
             "type": "passenger",
             "length": "187",
             "gross_tonnage": 0,
-            "fuel_type": "�",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 75,
@@ -1484,7 +1545,8 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 76,
@@ -1496,7 +1558,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 77,
@@ -1509,20 +1572,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
-        },
-        {
-            "order": 78,
-            "name": "SAIMAAGRACHT",
-            "type": "cargo",
-            "passengers": 0,
-            "length": "184",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 79,
@@ -1535,7 +1586,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 80,
@@ -1548,21 +1600,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
-        },
-        {
-            "order": 81,
-            "name": "AZAMARA PURSUIT",
-            "type": "passenger",
-            "passengers": 694,
-            "length": "181",
-            "fuel_type": "marine diesel",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 82,
@@ -1576,7 +1615,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 83,
@@ -1590,7 +1630,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 84,
@@ -1603,7 +1644,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 85,
@@ -1615,7 +1657,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 86,
@@ -1628,20 +1671,24 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 87,
             "name": "CASTILLO DE ARTEAGA",
+            "mmsi": 215045000,
+            "imo": 9871012,
             "type": "petrol",
             "passengers": 0,
-            "length": "177",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "length": "176",
+            "beam": "29",
+            "year_built": 2017,
+            "gross_tonnage": 23420,
+            "engine_power": 6560,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 88,
@@ -1654,7 +1701,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 89,
@@ -1667,7 +1715,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 90,
@@ -1680,7 +1729,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 91,
@@ -1692,19 +1742,21 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 92,
             "name": "MARTIN I SOLER",
-            "type": "passenger",
+            "type": "roro",
             "length": "165",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 93,
@@ -1717,7 +1769,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 94,
@@ -1730,7 +1783,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 95,
@@ -1743,19 +1797,21 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 96,
             "name": "BAHAMA MAMA",
-            "type": "passenger",
+            "type": "roro",
             "length": "155",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 97,
@@ -1768,7 +1824,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 98,
@@ -1781,19 +1838,21 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 99,
             "name": "DENIA CIUTAT CREATIV",
-            "type": "passenger",
+            "type": "roro",
             "length": "148",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 100,
@@ -1806,7 +1865,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 101,
@@ -1819,7 +1879,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 102,
@@ -1832,7 +1893,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 103,
@@ -1844,7 +1906,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 104,
@@ -1857,7 +1920,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 105,
@@ -1870,7 +1934,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 106,
@@ -1883,7 +1948,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 107,
@@ -1895,7 +1961,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 108,
@@ -1908,7 +1975,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 109,
@@ -1921,7 +1989,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 110,
@@ -1934,7 +2003,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 111,
@@ -1947,7 +2017,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 112,
@@ -1960,19 +2031,24 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 113,
             "name": "WORLD NAVIGATOR",
+            "mmsi": 255806207,
+            "imo": 9871531,
             "type": "passenger",
-            "length": "126",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "passengers": 200,
+            "length": "120",
+            "beam": "18",
+            "year_built": 2021,
+            "gross_tonnage": 9923,
+            "engine_power": 5330,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 114,
@@ -1984,7 +2060,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 115,
@@ -1997,7 +2074,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 116,
@@ -2010,7 +2088,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 117,
@@ -2023,7 +2102,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 118,
@@ -2036,7 +2116,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 119,
@@ -2049,7 +2130,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 120,
@@ -2062,7 +2144,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 121,
@@ -2075,7 +2158,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 122,
@@ -2088,7 +2172,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 123,
@@ -2100,7 +2185,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 124,
@@ -2112,7 +2198,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 125,
@@ -2125,7 +2212,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 126,
@@ -2137,26 +2225,14 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
-        },
-        {
-            "order": 127,
-            "name": "CEMBROOK",
-            "type": "cargo",
-            "passengers": 0,
-            "length": "100",
-            "SC_fuel": "2",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 128,
             "name": "HYPATIA DEALEJANDRIA",
             "mmsi": 209462000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 800,
             "length": "186",
             "beam": "25",
@@ -2176,7 +2252,8 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 129,
@@ -2203,7 +2280,8 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 130,
@@ -2229,7 +2307,8 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 131,
@@ -2256,7 +2335,8 @@
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "2",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 132,
@@ -2270,21 +2350,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
-        },
-        {
-            "order": 133,
-            "name": "GNV BRIDGE",
-            "type": "passenger",
-            "length": "203",
-            "gross_tonnage": 0,
-            "fuel_type": "LNG",
-            "SC_fuel": "0,5",
-            "SC_engine": 2,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 134,
@@ -2306,7 +2373,8 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 135,
@@ -2331,7 +2399,8 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 136,
@@ -2355,13 +2424,15 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 137,
             "name": "GUBAL TRADER",
             "mmsi": 210117000,
             "type": "passenger",
+            "passengers": 88,
             "length": "139",
             "beam": "16,88",
             "year_built": 1979,
@@ -2377,7 +2448,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 138,
@@ -2402,7 +2474,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 139,
@@ -2426,7 +2499,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 140,
@@ -2438,7 +2512,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 141,
@@ -2466,7 +2541,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 142,
@@ -2479,7 +2555,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 143,
@@ -2491,19 +2568,24 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 144,
             "name": "ABSA UNO",
-            "type": "passenger",
+            "type": "cargo",
+            "mmsi": 224005890,
+            "imo": 7810143,
+            "passengers": 0,
             "length": "36",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "beam": "24",
+            "year_built": 1994,
+            "gross_tonnage": 317,
+            "engine_power": 416,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 145,
@@ -2515,7 +2597,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 146,
@@ -2527,7 +2610,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 147,
@@ -2540,7 +2624,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 148,
@@ -2553,7 +2638,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 149,
@@ -2566,67 +2652,38 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
-        },
-        {
-            "order": 150,
-            "name": "ACAIA",
-            "type": "cargo",
-            "passengers": 0,
-            "length": "30",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 151,
             "name": "SOLLER CAT",
             "mmsi": 224005890,
             "type": "passenger",
-            "passengers": 26,
+            "passengers": 150,
             "length": "26",
             "beam": "9",
             "year_built": 2010,
-            "propeller": "propeller",
+            "gross_tonnage": 5,
+            "engine_power": 400,
             "fuel_type": "diesel",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 152,
             "name": "BLUE DELFIN",
             "mmsi": 224002170,
             "type": "passenger",
-            "passengers": 12,
+            "passengers": 150,
             "length": "26",
             "beam": "9",
-            "propeller": "propeller",
+            "year_built": 2010,
+            "gross_tonnage": 5,
+            "engine_power": 400,
             "fuel_type": "diesel",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
-        },
-        {
-            "order": 153,
-            "name": "PANORAMA",
-            "type": "passenger",
-            "length": "26",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 154,
@@ -2638,7 +2695,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 155,
@@ -2651,19 +2709,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
-        },
-        {
-            "order": 156,
-            "name": "SUPER DELFIN VERDE",
-            "type": "passenger",
-            "length": "24",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 157,
@@ -2680,19 +2727,23 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 158,
             "name": "GRAN GOLETA",
             "type": "passenger",
             "length": "23",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "beam": "5",
+            "mmsi": 224002900,
+            "passengers": 50,
+            "year_built": 2010,
+            "gross_tonnage": 5,
+            "engine_power": 400,
+            "fuel_type": "diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 159,
@@ -2704,21 +2755,23 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 160,
             "name": "LA BARCA SAMBA",
             "mmsi": 224006050,
             "type": "passenger",
-            "passengers": 50,
+            "passengers": 115,
             "length": "23",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "beam": "7",
+            "year_built": 1995,
+            "gross_tonnage": 73,
+            "engine_power": 3600,
+            "fuel_type": "diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 161,
@@ -2730,7 +2783,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 162,
@@ -2743,7 +2797,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 163,
@@ -2755,7 +2810,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 164,
@@ -2767,7 +2823,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 165,
@@ -2779,19 +2836,23 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 166,
             "name": "SAN TELMO II",
             "type": "passenger",
+            "mmsi": 224003940,
+            "passengers": 50,
             "length": "22",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "beam": "7",
+            "year_built": 1996,
+            "gross_tonnage": 5,
+            "engine_power": 250,
+            "fuel_type": "diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 167,
@@ -2803,7 +2864,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 168,
@@ -2815,7 +2877,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 169,
@@ -2824,12 +2887,13 @@
             "type": "passenger",
             "passengers": 50,
             "length": "22",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "beam": "8",
+            "year_built": 2005,
+            "gross_tonnage": 10,
+            "engine_power": 400,
+            "fuel_type": "diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 170,
@@ -2841,7 +2905,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 171,
@@ -2853,7 +2918,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 172,
@@ -2866,19 +2932,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
-        },
-        {
-            "order": 173,
-            "name": "ESMERALDA DOS",
-            "type": "passenger",
-            "length": "20",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 174,
@@ -2890,7 +2945,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 175,
@@ -2903,7 +2959,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 176,
@@ -2920,7 +2977,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 177,
@@ -2933,19 +2991,24 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 178,
             "name": "LIMITLESS",
             "type": "passenger",
-            "length": "12",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "mmsi": 368344670,
+            "imo": 8975940,
+            "passengers": 12,
+            "length": "96",
+            "beam": "12",
+            "year_built": 2013,
+            "gross_tonnage": 2146,
+            "engine_power": 5420,
+            "fuel_type": "hybrid",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 179,
@@ -2955,14 +3018,12 @@
             "passengers": 8,
             "length": "11",
             "beam": "3",
-            "propeller": "propeller",
+            "year_built": 2006,
+            "gross_tonnage": 5,
+            "engine_power": 250,
             "fuel_type": "diesel",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 0,
-            "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 180,
@@ -2974,7 +3035,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 181,
@@ -2988,7 +3050,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 182,
@@ -2997,13 +3060,14 @@
             "type": "passenger",
             "passengers": 696,
             "length": "181",
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 3,
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "9",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 183,
@@ -3012,13 +3076,14 @@
             "type": "petrol",
             "passengers": 0,
             "length": "169",
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 0,
             "SC_passengers": 0,
             "SC_GT": 4,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 184,
@@ -3029,13 +3094,14 @@
             "length": "294",
             "gross_tonnage": 93558,
             "engine_power": 72080,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 7,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "25",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 185,
@@ -3046,30 +3112,32 @@
             "length": "199",
             "gross_tonnage": 25993,
             "engine_power": 24000,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 186,
             "name": "SICILIA",
             "mmsi": 209115000,
-            "type": "passenger",
+            "type": "roro",
             "passengers": 950,
             "length": "187",
             "gross_tonnage": 24409,
             "engine_power": 18900,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 1,
             "SC_passengers": 0,
             "SC_GT": 2,
             "fuel*engine+passenger+GT": "4",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 187,
@@ -3080,13 +3148,14 @@
             "length": "134",
             "gross_tonnage": 5703,
             "engine_power": 1400,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "0",
             "SC_engine": 0,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 188,
@@ -3097,13 +3166,14 @@
             "length": "293",
             "gross_tonnage": 143535,
             "engine_power": 57600,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 5,
             "SC_passengers": 3,
             "SC_GT": 14,
             "fuel*engine+passenger+GT": "27",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "order": 194,
@@ -3114,13 +3184,14 @@
             "length": "30",
             "gross_tonnage": 5000,
             "engine_power": 150,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 0,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 195,
@@ -3131,13 +3202,14 @@
             "length": "295",
             "gross_tonnage": 92250,
             "engine_power": 58800,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 5,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "21",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 195,
@@ -3148,13 +3220,14 @@
             "length": "184",
             "gross_tonnage": 18321,
             "engine_power": 12060,
-            "fuel_type": "Marine diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 1,
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "name": "ISLAND PRINCESS",
@@ -3167,13 +3240,14 @@
             "year_built": 2003,
             "gross_tonnage": 91627,
             "engine_power": 62683,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 6,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "23",
-            "port_emission_score": 
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "name": "YACHT SERVANT",
@@ -3186,13 +3260,14 @@
             "year_built": 2022,
             "gross_tonnage": 12780,
             "engine_power": 10400,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 1,
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "name": "CEMBROOK",
@@ -3205,13 +3280,14 @@
             "year_built": 2017,
             "gross_tonnage": 3517,
             "engine_power": 1860,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 0,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "name": "EMERALD AZZURRA",
@@ -3229,26 +3305,50 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
-            "name": "CELEB. CONSTELLATION",
+            "name": "CELEBRITY CONSTELLATION",
             "order": 200,
             "mmsi": 249046000,
-            "type": "cargo",
-            "passengers": 0,
+            "imo": 9192399,
+            "type": "passenger",
+            "passengers": 2559,
             "length": "294",
             "beam": "32",
             "year_built": 2002,
             "gross_tonnage": 90940,
-            "engine_power": 96860,
+            "engine_power": 71242,
             "fuel_type": "LNG",
             "SC_fuel": "2",
             "SC_engine": 9,
             "SC_passengers": 2,
             "SC_GT": 9,
             "fuel*engine+passenger+GT": "15,5",
-            "port_emission_score": 2
+            "port_emission_score": 2,
+            "cold_ironing": "false"
+        },
+        {
+            "name": "CELEB. CONSTELLATION",
+            "order": 200,
+            "mmsi": 249046000,
+            "imo": 9192399,
+            "type": "passenger",
+            "passengers": 2559,
+            "length": "294",
+            "beam": "32",
+            "year_built": 2002,
+            "gross_tonnage": 90940,
+            "engine_power": 71242,
+            "fuel_type": "LNG",
+            "SC_fuel": "2",
+            "SC_engine": 9,
+            "SC_passengers": 2,
+            "SC_GT": 9,
+            "fuel*engine+passenger+GT": "15,5",
+            "port_emission_score": 2,
+            "cold_ironing": "false"
         },
         {
             "name": "MSC FANTASIA",
@@ -3266,25 +3366,8 @@
             "SC_passengers": 3,
             "SC_GT": 13,
             "fuel*engine+passenger+GT": "24",
-            "port_emission_score": 3
-        },
-        {
-            "name": "YACHT SERVANT",
-            "order": 200,
-            "mmsi": 246132000,
-            "type": "cargo",
-            "passengers": 0,
-            "length": "214",
-            "year_built": 2022,
-            "gross_tonnage": 12780,
-            "engine_power": 10400,
-            "fuel_type": "marine diesel",
-            "SC_fuel": "2",
-            "SC_engine": 0,
-            "SC_passengers": 0,
-            "SC_GT": 1,
-            "fuel*engine+passenger+GT": "3",
-            "port_emission_score": 0
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "name": "NORWEGIAN VIVA",
@@ -3302,7 +3385,8 @@
             "SC_passengers": 3,
             "SC_GT": 14,
             "fuel*engine+passenger+GT": "27",
-            "port_emission_score": 4
+            "port_emission_score": 4,
+            "cold_ironing": "false"
         },
         {
             "name": "FAGELGRACHT",
@@ -3320,7 +3404,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "name": "GRANDE ANGOLA",
@@ -3338,7 +3423,8 @@
             "SC_passengers": 0,
             "SC_GT": 4,
             "fuel*engine+passenger+GT": "6",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "name": "ENCHANTMENT OTS",
@@ -3356,25 +3442,8 @@
             "SC_passengers": 2,
             "SC_GT": 8,
             "fuel*engine+passenger+GT": "24",
-            "port_emission_score": 3
-        },
-        {
-            "name": "AZAMARA PURSUIT",
-            "order": 207,
-            "mmsi": 248762000,
-            "type": "passenger",
-            "passengers": 777,
-            "length": "181",
-            "year_built": 2000,
-            "gross_tonnage": 30277,
-            "engine_power": 18596,
-            "fuel_type": "marine diesel",
-            "SC_fuel": "2",
-            "SC_engine": 1,
-            "SC_passengers": 0,
-            "SC_GT": 3,
-            "fuel*engine+passenger+GT": "5",
-            "port_emission_score": 1
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "name": "AZAMARA PURSUIT",
@@ -3392,7 +3461,8 @@
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "7",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "name": "SUPER DELFIN VERDE",
@@ -3410,7 +3480,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "name": "GNV BRIDGE",
@@ -3428,7 +3499,8 @@
             "SC_passengers": 0,
             "SC_GT": 3,
             "fuel*engine+passenger+GT": "7",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "name": "RONNIE",
@@ -3446,7 +3518,8 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "name": "PANORAMA",
@@ -3464,7 +3537,8 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 212,
@@ -3476,13 +3550,15 @@
             "beam": "32",
             "gross_tonnage": 56182,
             "engine_power": 32000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
+            "year_built": 2020,
             "SC_fuel": "2",
             "SC_engine": 3,
             "SC_passengers": 0,
             "SC_GT": 5,
             "fuel*engine+passenger+GT": "11",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 213,
@@ -3494,13 +3570,14 @@
             "beam": "38",
             "gross_tonnage": 125572,
             "engine_power": 46800,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 4,
             "SC_passengers": 4,
             "SC_GT": 12,
             "fuel*engine+passenger+GT": "23",
-            "port_emission_score": 3
+            "port_emission_score": 3,
+            "cold_ironing": "false"
         },
         {
             "order": 216,
@@ -3512,13 +3589,14 @@
             "beam": "28",
             "gross_tonnage": 43537,
             "engine_power": 21300,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 2,
             "SC_passengers": 1,
             "SC_GT": 4,
             "fuel*engine+passenger+GT": "9",
-            "port_emission_score": 1
+            "port_emission_score": 1,
+            "cold_ironing": "false"
         },
         {
             "order": 215,
@@ -3530,13 +3608,14 @@
             "beam": "17",
             "gross_tonnage": 6749,
             "engine_power": 3000,
-            "fuel_type": "Marine Diesel",
+            "fuel_type": "marine diesel",
             "SC_fuel": "2",
             "SC_engine": 0,
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 220,
@@ -3554,7 +3633,8 @@
             "SC_passengers": 0,
             "SC_GT": 0,
             "fuel*engine+passenger+GT": "0",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
         },
         {
             "order": 216,
@@ -3572,7 +3652,1857 @@
             "SC_passengers": 0,
             "SC_GT": 1,
             "fuel*engine+passenger+GT": "1",
-            "port_emission_score": 0
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 218,
+            "name": "CELEBRITY APEX",
+            "mmsi": 215105000,
+            "type": "passenger",
+            "passengers": 3405,
+            "length": "306",
+            "beam": "39",
+            "year_built": 2020,
+            "gross_tonnage": 130818,
+            "engine_power": 57960,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 5,
+            "SC_passengers": 3,
+            "SC_GT": 13,
+            "fuel*engine+passenger+GT": "26",
+            "port_emission_score": 3,
+            "imo": 9838383,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 219,
+            "name": "RESILIENT LADY",
+            "mmsi": 311001056,
+            "type": "passenger",
+            "passengers": 2770,
+            "length": "278",
+            "beam": "38",
+            "year_built": 2023,
+            "gross_tonnage": 11000,
+            "engine_power": 80000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 8,
+            "SC_passengers": 2,
+            "SC_GT": 2,
+            "fuel*engine+passenger+GT": "11",
+            "port_emission_score": 4,
+            "imo": 9805348,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 173,
+            "name": "ESMERALDA DOS",
+            "mmsi": 224005990,
+            "type": "passenger",
+            "passengers": 80,
+            "length": "20",
+            "beam": "7",
+            "year_built": 1996,
+            "gross_tonnage": 5000,
+            "engine_power": 250,
+            "fuel_type": "diesel",
+            "SC_fuel": "2",
+            "SC_engine": 80,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 20,
+            "name": "BLUE CIRCLE",
+            "mmsi": 225997278,
+            "type": "passenger",
+            "passengers": 20,
+            "length": "15",
+            "beam": "6",
+            "year_built": 2023,
+            "gross_tonnage": 3000,
+            "engine_power": 150,
+            "fuel_type": "electric",
+            "SC_fuel": "0",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 221,
+            "name": "CIUDAD DE SOLLER",
+            "mmsi": 224729000,
+            "type": "roro",
+            "passengers": 440,
+            "length": "188",
+            "beam": "34",
+            "year_built": 1993,
+            "gross_tonnage": 33958,
+            "engine_power": 23040,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 2,
+            "SC_passengers": 0,
+            "SC_GT": 3,
+            "fuel*engine+passenger+GT": "7",
+            "port_emission_score": "1",
+            "imo": 9137997,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 222,
+            "name": "FORZA",
+            "mmsi": 224729000,
+            "type": "passenger",
+            "passengers": 200,
+            "length": "199",
+            "beam": "27",
+            "year_built": 2010,
+            "gross_tonnage": 25518,
+            "engine_power": 24000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 2,
+            "SC_passengers": 0,
+            "SC_GT": 3,
+            "fuel*engine+passenger+GT": "6",
+            "port_emission_score": "1",
+            "imo": 9458523,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 223,
+            "name": "MEGALODON",
+            "mmsi": 225998471,
+            "type": "passenger",
+            "passengers": 10,
+            "length": "14",
+            "beam": "4",
+            "year_built": 2009,
+            "gross_tonnage": 5000,
+            "engine_power": 100,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 224,
+            "name": "COSTA PACIFICA",
+            "mmsi": 247258100,
+            "type": "passenger",
+            "passengers": 3780,
+            "length": "289",
+            "beam": "35",
+            "year_built": 2009,
+            "gross_tonnage": 114425,
+            "engine_power": 42000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 4,
+            "SC_passengers": 4,
+            "SC_GT": 11,
+            "fuel*engine+passenger+GT": "22",
+            "port_emission_score": "3",
+            "imo": 9378498,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 225,
+            "name": "CELEBRITY ASCENT",
+            "mmsi": 256191000,
+            "type": "passenger",
+            "passengers": 3200,
+            "length": "327",
+            "beam": "47",
+            "year_built": 2023,
+            "gross_tonnage": 141420,
+            "engine_power": 71949,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 7,
+            "SC_passengers": 3,
+            "SC_GT": 14,
+            "fuel*engine+passenger+GT": "31",
+            "port_emission_score": "4",
+            "imo": 9838400,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 226,
+            "name": "CARPE  DIEM  UNO",
+            "mmsi": 225997408,
+            "type": "passenger",
+            "year_built": 2010,
+            "passengers": 150,
+            "length": "22",
+            "beam": "4",
+            "gross_tonnage": 5,
+            "engine_power": 267,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 229,
+            "name": "OASIS OF THE SEAS",
+            "mmsi": 311020600,
+            "type": "passenger",
+            "passengers": 5408,
+            "length": "360",
+            "beam": "47",
+            "year_built": 2007,
+            "gross_tonnage": 225282,
+            "engine_power": 97020,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 9,
+            "SC_passengers": 5,
+            "SC_GT": 22,
+            "fuel*engine+passenger+GT": "45",
+            "port_emission_score": "5",
+            "imo": 9383936,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 230,
+            "name": "EUROPA 2",
+            "mmsi": 229378000,
+            "type": "passenger",
+            "passengers": 516,
+            "length": "226",
+            "beam": "27",
+            "year_built": 2013,
+            "gross_tonnage": 42830,
+            "engine_power": 15500,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 1,
+            "SC_passengers": 0,
+            "SC_GT": 4,
+            "fuel*engine+passenger+GT": "6",
+            "port_emission_score": "1",
+            "imo": 9616230,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 231,
+            "name": "NORWEGIAN ESCAPE",
+            "mmsi": 311000341,
+            "type": "passenger",
+            "passengers": 4266,
+            "length": "326",
+            "beam": "46",
+            "year_built": 2012,
+            "gross_tonnage": 164998,
+            "engine_power": 76800,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 7,
+            "SC_passengers": 4,
+            "SC_GT": 16,
+            "fuel*engine+passenger+GT": "34",
+            "port_emission_score": "4",
+            "imo": 9677076,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 231,
+            "name": "EASTERLY SIRIUS",
+            "mmsi": 538010211,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "184",
+            "beam": "27",
+            "year_built": 2009,
+            "gross_tonnage": 23373,
+            "engine_power": 7860,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 2,
+            "fuel*engine+passenger+GT": "2",
+            "port_emission_score": "0",
+            "imo": 9455052,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 233,
+            "name": "BREIZ ILE ONE",
+            "mmsi": 256735000,
+            "type": "passenger",
+            "passengers": 15,
+            "length": "20",
+            "beam": "10",
+            "year_built": 2011,
+            "gross_tonnage": 13,
+            "engine_power": 120,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9580974,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 234,
+            "name": "SEACONGER",
+            "mmsi": 211822000,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "177",
+            "beam": "28",
+            "year_built": 2005,
+            "gross_tonnage": 21329,
+            "engine_power": 8340,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 2,
+            "fuel*engine+passenger+GT": "2",
+            "port_emission_score": "0",
+            "imo": 9352298,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 235,
+            "name": "ONTIME",
+            "mmsi": 256783000,
+            "type": "passenger",
+            "passengers": 15,
+            "length": "35",
+            "beam": "6",
+            "year_built": 2024,
+            "gross_tonnage": 30,
+            "engine_power": 1500,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9291365,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 236,
+            "name": "SCARLET LADY",
+            "mmsi": 311000807,
+            "type": "passenger",
+            "passengers": 2770,
+            "length": "277",
+            "beam": "38",
+            "year_built": 2020,
+            "gross_tonnage": 110000,
+            "engine_power": 48000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 4,
+            "SC_passengers": 2,
+            "SC_GT": 11,
+            "fuel*engine+passenger+GT": "21",
+            "port_emission_score": "3",
+            "imo": 9804801,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 236,
+            "name": "FAIR WONDER",
+            "mmsi": 636016406,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "183",
+            "beam": "32",
+            "year_built": 2006,
+            "gross_tonnage": 27916,
+            "engine_power": 11636,
+            "fuel_type": "diesel",
+            "SC_fuel": "2",
+            "SC_engine": 1,
+            "SC_passengers": 0,
+            "SC_GT": 2,
+            "fuel*engine+passenger+GT": "4",
+            "port_emission_score": "1",
+            "imo": 9327449,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 237,
+            "name": "COSTA TOSCANA",
+            "mmsi": 247431200,
+            "type": "passenger",
+            "passengers": 6554,
+            "length": "336",
+            "beam": "54",
+            "year_built": 2021,
+            "gross_tonnage": 186364,
+            "engine_power": 61760,
+            "fuel_type": "LNG",
+            "SC_fuel": "05",
+            "SC_engine": 6,
+            "SC_passengers": 6,
+            "SC_GT": 18,
+            "fuel*engine+passenger+GT": "27",
+            "port_emission_score": "4",
+            "imo": 9781891,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 238,
+            "name": "VISBORG",
+            "mmsi": 229455000,
+            "type": "passenger",
+            "passengers": 1100,
+            "length": "196",
+            "beam": "26",
+            "year_built": 2000,
+            "gross_tonnage": 29746,
+            "engine_power": 50400,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 5,
+            "SC_passengers": 1,
+            "SC_GT": 2,
+            "fuel*engine+passenger+GT": "2",
+            "port_emission_score": "2",
+            "imo": 9223784,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 242,
+            "name": "GUARANA",
+            "mmsi": 249425000,
+            "type": "passenger",
+            "passengers": 20,
+            "length": "25",
+            "beam": "6",
+            "year_built": 1997,
+            "gross_tonnage": 3726,
+            "engine_power": 1500,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 239,
+            "name": "SEABOURN OVATION",
+            "mmsi": 311000585,
+            "type": "passenger",
+            "passengers": 604,
+            "length": "210",
+            "beam": "28",
+            "year_built": 2018,
+            "gross_tonnage": 41865,
+            "engine_power": 23040,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 2,
+            "SC_passengers": 0,
+            "SC_GT": 4,
+            "fuel*engine+passenger+GT": "8",
+            "port_emission_score": "1",
+            "imo": 9764958,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 240,
+            "name": "MEIN SCHIFF RELAX",
+            "mmsi": 249129000,
+            "type": "passenger",
+            "passengers": 3984,
+            "length": "330",
+            "beam": "42",
+            "year_built": 2023,
+            "gross_tonnage": 160000,
+            "engine_power": 60000,
+            "fuel_type": "LNG",
+            "SC_fuel": "0.5",
+            "SC_engine": 6,
+            "SC_passengers": 3,
+            "SC_GT": 16,
+            "fuel*engine+passenger+GT": "22",
+            "port_emission_score": "3",
+            "imo": 9862657,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 241,
+            "name": "GNV SIRIO",
+            "mmsi": 247106500,
+            "type": "passenger",
+            "passengers": 2700,
+            "length": "214",
+            "beam": "26",
+            "year_built": 2004,
+            "gross_tonnage": 39798,
+            "engine_power": 51360,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 5,
+            "SC_passengers": 2,
+            "SC_GT": 3,
+            "fuel*engine+passenger+GT": "15",
+            "port_emission_score": "2",
+            "imo": 9293404,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 242,
+            "name": "MARELLA EXPLORER 2",
+            "mmsi": 249054000,
+            "type": "passenger",
+            "passengers": 1814,
+            "length": "246",
+            "beam": "32",
+            "year_built": 1995,
+            "gross_tonnage": 72458,
+            "engine_power": 29250,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 2,
+            "SC_passengers": 1,
+            "SC_GT": 7,
+            "fuel*engine+passenger+GT": "12",
+            "port_emission_score": "2",
+            "imo": 9072446,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 243,
+            "name": "NORWEGIAN BREAKAWAY",
+            "mmsi": 311050800,
+            "type": "passenger",
+            "passengers": 3903,
+            "length": "300",
+            "beam": "40",
+            "year_built": 2013,
+            "gross_tonnage": 145655,
+            "engine_power": 67200,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 6,
+            "SC_passengers": 3,
+            "SC_GT": 14,
+            "fuel*engine+passenger+GT": "29",
+            "port_emission_score": "4",
+            "imo": 9606912,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 244,
+            "name": "MAJESTIC PRINCESS",
+            "mmsi": 232002990,
+            "type": "passenger",
+            "passengers": 3560,
+            "length": "330",
+            "beam": "38",
+            "year_built": 2017,
+            "gross_tonnage": 144216,
+            "engine_power": 62400,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 6,
+            "SC_passengers": 3,
+            "SC_GT": 14,
+            "fuel*engine+passenger+GT": "29",
+            "port_emission_score": "4",
+            "imo": 9614141,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 247,
+            "name": "EXPLORA I",
+            "mmsi": 256389000,
+            "type": "passenger",
+            "passengers": 3560,
+            "length": "249",
+            "beam": "33",
+            "year_built": 2022,
+            "gross_tonnage": 144216,
+            "engine_power": 38400,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 3,
+            "SC_passengers": 0,
+            "SC_GT": 6,
+            "fuel*engine+passenger+GT": "12",
+            "port_emission_score": "2",
+            "imo": 9869875,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 248,
+            "name": "ALLURE OF THE SEAS",
+            "mmsi": 311020700,
+            "type": "passenger",
+            "passengers": 5484,
+            "length": "362",
+            "beam": "65",
+            "year_built": 2009,
+            "gross_tonnage": 225282,
+            "engine_power": 97020,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 9,
+            "SC_passengers": 5,
+            "SC_GT": 22,
+            "fuel*engine+passenger+GT": "45",
+            "port_emission_score": "5",
+            "imo": 9383948,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 249,
+            "name": "MSC SEASIDE",
+            "mmsi": 248392000,
+            "type": "passenger",
+            "passengers": 5116,
+            "length": "323",
+            "beam": "41",
+            "year_built": 2016,
+            "gross_tonnage": 153516,
+            "engine_power": 62400,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 6,
+            "SC_passengers": 5,
+            "SC_GT": 15,
+            "fuel*engine+passenger+GT": "32",
+            "port_emission_score": "4",
+            "imo": 9383948,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 250,
+            "name": "MEIN SCHIFF 5",
+            "mmsi": 256235000,
+            "type": "passenger",
+            "passengers": 2534,
+            "length": "295",
+            "beam": "36",
+            "year_built": 2016,
+            "gross_tonnage": 98785,
+            "engine_power": 28000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 2,
+            "SC_passengers": 2,
+            "SC_GT": 9,
+            "fuel*engine+passenger+GT": "15",
+            "port_emission_score": "2",
+            "imo": 9753193,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 251,
+            "name": "L'AUSTRAL",
+            "mmsi": 578000700,
+            "type": "passenger",
+            "passengers": 264,
+            "length": "142",
+            "beam": "18",
+            "year_built": 2010,
+            "gross_tonnage": 10700,
+            "engine_power": 28000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 1,
+            "fuel*engine+passenger+GT": "1",
+            "port_emission_score": "0",
+            "imo": 9502518,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 252,
+            "name": "LE BOUGAINVILLE",
+            "mmsi": 578001300,
+            "type": "passenger",
+            "passengers": 184,
+            "length": "131",
+            "beam": "18",
+            "year_built": 2019,
+            "gross_tonnage": 9988,
+            "engine_power": 4000,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9814040,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 253,
+            "name": "SILVER RAY",
+            "mmsi": 311001496,
+            "type": "passenger",
+            "passengers": 728,
+            "length": "244",
+            "beam": "30",
+            "year_built": 2024,
+            "gross_tonnage": 55051,
+            "engine_power": 34588,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 3,
+            "SC_passengers": 0,
+            "SC_GT": 5,
+            "fuel*engine+passenger+GT": "11",
+            "port_emission_score": "1",
+            "imo": 9886225,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 254,
+            "name": "PALMGRACHT",
+            "mmsi": 245964000,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "169",
+            "beam": "25",
+            "year_built": 2009,
+            "gross_tonnage": 17634,
+            "engine_power": 9800,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 1,
+            "fuel*engine+passenger+GT": "1",
+            "port_emission_score": "0",
+            "imo": 9424558,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 255,
+            "name": "BBC OLYMPUS",
+            "mmsi": 305823000,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "126",
+            "beam": "22",
+            "year_built": 2012,
+            "gross_tonnage": 8255,
+            "engine_power": 9800,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9508457,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 256,
+            "name": "MEIN SCHIFF 1",
+            "mmsi": 248513000,
+            "type": "passenger",
+            "passengers": 3132,
+            "length": "316",
+            "beam": "36",
+            "year_built": 2018,
+            "gross_tonnage": 111554,
+            "engine_power": 65260,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 6,
+            "SC_passengers": 3,
+            "SC_GT": 11,
+            "fuel*engine+passenger+GT": "26",
+            "port_emission_score": "3",
+            "imo": 9783564,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 257,
+            "name": "CALEDONIAN SKY",
+            "mmsi": 311061000,
+            "type": "passenger",
+            "passengers": 133,
+            "length": "90",
+            "beam": "15",
+            "year_built": 2020,
+            "gross_tonnage": 4200,
+            "engine_power": 3520,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 8802870,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 258,
+            "name": "TRITO NAVIGATOR",
+            "mmsi": 245237000,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "117",
+            "beam": "16",
+            "year_built": 2013,
+            "gross_tonnage": 5667,
+            "engine_power": 3050,
+            "fuel_type": "marine diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9631357,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 259,
+            "name": "EMERALD SAKARA",
+            "mmsi": 311001261,
+            "type": "passenger",
+            "passengers": 100,
+            "length": "110",
+            "beam": "16",
+            "year_built": 2023,
+            "gross_tonnage": 5175,
+            "engine_power": 2980,
+            "fuel_type": "diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9948827,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 259,
+            "name": "DELTAGRACHT",
+            "mmsi": 244155000,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "157",
+            "beam": "23",
+            "year_built": 2019,
+            "gross_tonnage": 13558,
+            "engine_power": 8400,
+            "fuel_type": "diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 1,
+            "fuel*engine+passenger+GT": "1",
+            "port_emission_score": "0",
+            "imo": 9420801,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 259,
+            "name": "CELEBRITY EQUINOX",
+            "mmsi": 249667000,
+            "type": "passenger",
+            "passengers": 3148,
+            "length": "317",
+            "beam": "27",
+            "year_built": 2019,
+            "gross_tonnage": 121878,
+            "engine_power": 67200,
+            "fuel_type": "diesel",
+            "SC_fuel": "2",
+            "SC_engine": 6,
+            "SC_passengers": 3,
+            "SC_GT": 12,
+            "fuel*engine+passenger+GT": "27",
+            "port_emission_score": "4",
+            "imo": 9372456,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 264,
+            "name": "LE LAPEROUSE",
+            "mmsi": 578000900,
+            "type": "passenger",
+            "passengers": 184,
+            "length": "131",
+            "beam": "18",
+            "year_built": 2018,
+            "gross_tonnage": 9976,
+            "engine_power": 4000,
+            "fuel_type": "diesel",
+            "SC_fuel": "2",
+            "SC_engine": 0,
+            "SC_passengers": 0,
+            "SC_GT": 0,
+            "fuel*engine+passenger+GT": "0",
+            "port_emission_score": "0",
+            "imo": 9814026,
+            "cold_ironing": "false"
+        },
+        {
+            "order": 265,
+            "name": "MSC SPLENDIDA",
+            "mmsi": 357698000,
+            "imo": 9359806,
+            "type": "passenger",
+            "passengers": 3900,
+            "length": "333",
+            "beam": "39",
+            "year_built": 2009,
+            "gross_tonnage": 137936,
+            "engine_power": 40000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 266,
+            "name": "MARELLA DISCOVERY",
+            "mmsi": 249639000,
+            "imo": 9070632,
+            "type": "passenger",
+            "passengers": 1830,
+            "length": "264",
+            "beam": "32",
+            "year_built": 1995,
+            "gross_tonnage": 69130,
+            "engine_power": 40000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "2",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 265,
+            "name": "ANNA",
+            "mmsi": 305961000,
+            "imo": 9631345,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "118",
+            "beam": "15",
+            "year_built": 2018,
+            "gross_tonnage": 5751,
+            "engine_power": 2995,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 266,
+            "name": "EXPLORER OF THE SEAS",
+            "mmsi": 311316000,
+            "imo": 9161728,
+            "type": "passengers",
+            "passengers": 4290,
+            "length": "311",
+            "beam": "49",
+            "year_built": 1999,
+            "gross_tonnage": 138194,
+            "engine_power": 74544,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "4",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 267,
+            "name": "EUROCARGO VALENCIA",
+            "mmsi": 249281000,
+            "imo": 9468918,
+            "type": "passengers",
+            "passengers": 12,
+            "length": "217",
+            "beam": "32",
+            "year_built": 2012,
+            "gross_tonnage": 33816,
+            "engine_power": 20000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 268,
+            "name": "QUEEN VICTORIA",
+            "mmsi": 310624000,
+            "imo": 9320556,
+            "type": "passenger",
+            "passengers": 2014,
+            "length": "297",
+            "beam": "32",
+            "year_built": 2007,
+            "gross_tonnage": 29828,
+            "engine_power": 63360,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 269,
+            "name": "HISTRIA GEMMA",
+            "mmsi": 256515000,
+            "imo": 9436719,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "180",
+            "beam": "32",
+            "year_built": 2019,
+            "gross_tonnage": 25864,
+            "engine_power": 9480,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 271,
+            "name": "VOYAGER OF THE SEAS",
+            "mmsi": 311317000,
+            "imo": 9161716,
+            "type": "cargo",
+            "passengers": 4000,
+            "length": "311",
+            "beam": "39",
+            "year_built": 2019,
+            "gross_tonnage": 138194,
+            "engine_power": 75600,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "4",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 272,
+            "name": "SEVEN SEAS GRANDEUR",
+            "mmsi": 538010706,
+            "imo": 9877444,
+            "type": "passenger",
+            "passengers": 746,
+            "length": "224",
+            "beam": "31",
+            "year_built": 2023,
+            "gross_tonnage": 54000,
+            "engine_power": 43508,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "2",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 273,
+            "name": "NUNALIK",
+            "mmsi": 244020048,
+            "imo": 9466996,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "138",
+            "beam": "21",
+            "year_built": 2011,
+            "gross_tonnage": 9611,
+            "engine_power": 5400,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 274,
+            "name": "NORWEGIAN PEARL",
+            "mmsi": 309653000,
+            "imo": 9342281,
+            "type": "cargo",
+            "passengers": 2344,
+            "length": "294",
+            "beam": "32",
+            "year_built": 2021,
+            "gross_tonnage": 93530,
+            "engine_power": 72080,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 275,
+            "name": "BBC SEINE",
+            "mmsi": 305590000,
+            "imo": 9508380,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "143",
+            "beam": "23",
+            "year_built": 2020,
+            "gross_tonnage": 12974,
+            "engine_power": 7074,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 276,
+            "name": "FWN SUN",
+            "mmsi": 244770393,
+            "imo": 9721669,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "119",
+            "beam": "17",
+            "year_built": 2021,
+            "gross_tonnage": 6749,
+            "engine_power": 2999,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 277,
+            "name": "HISTRIA ATLAS",
+            "mmsi": 636019212,
+            "imo": 9800790,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "180",
+            "beam": "32",
+            "year_built": 2019,
+            "gross_tonnage": 26310,
+            "engine_power": 9480,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 278,
+            "name": "HEBRIDEAN SKY",
+            "mmsi": 311000253,
+            "imo": 8802882,
+            "type": "passenger",
+            "passengers": 102,
+            "length": "88",
+            "beam": "15",
+            "year_built": 1991,
+            "gross_tonnage": 4200,
+            "engine_power": 4839,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 279,
+            "name": "NQ FREESIA",
+            "mmsi": 229424000,
+            "imo": 8802882,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "120",
+            "beam": "22",
+            "year_built": 2018,
+            "gross_tonnage": 8860,
+            "engine_power": 3320,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 280,
+            "name": "DOLFIJNGRACHT",
+            "mmsi": 245033000,
+            "imo": 8802882,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "157",
+            "beam": "23",
+            "year_built": 2019,
+            "gross_tonnage": 13706,
+            "engine_power": 8400,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 281,
+            "name": "CRYSTAL SERENITY",
+            "mmsi": 311536000,
+            "imo": 9243667,
+            "type": "passenger",
+            "passengers": 1140,
+            "length": "250",
+            "beam": "32",
+            "year_built": 2003,
+            "gross_tonnage": 68870,
+            "engine_power": 52200,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "2",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 282,
+            "name": "SUOMIGRACHT",
+            "mmsi": 246100000,
+            "imo": 9288057,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "185",
+            "beam": "26",
+            "year_built": 2004,
+            "gross_tonnage": 18321,
+            "engine_power": 12060,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 283,
+            "name": "EXPLORA II",
+            "mmsi": 256798000,
+            "imo": 9869887,
+            "type": "passenger",
+            "passengers": 1473,
+            "length": "248",
+            "beam": "32",
+            "year_built": 2024,
+            "gross_tonnage": 63621,
+            "engine_power": 52208,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "2",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 284,
+            "name": "VALSESIA",
+            "mmsi": 215063000,
+            "imo": 9385178,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "184",
+            "beam": "27",
+            "year_built": 2008,
+            "gross_tonnage": 23335,
+            "engine_power": 7860,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 285,
+            "name": "HYPATIA DEALEJANDRI",
+            "mmsi": 209462000,
+            "type": "passenger",
+            "passengers": 800,
+            "length": "186",
+            "beam": "25",
+            "year_built": 2019,
+            "gross_tonnage": 28658,
+            "net_tonnage": 9726,
+            "engine_number": 2,
+            "engine_cylinders": 9,
+            "engine_power": 21600,
+            "engine_RPM": 600,
+            "engine_stroke": 480,
+            "deadweight_tonnage": 7718,
+            "propeller": "pitch",
+            "fuel_type": "LNG",
+            "SC_fuel": "0,5",
+            "SC_engine": 2,
+            "SC_passengers": 0,
+            "SC_GT": 2,
+            "fuel*engine+passenger+GT": "3",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 286,
+            "name": "SYLVIA EARLE",
+            "mmsi": 311000867,
+            "imo": 9872327,
+            "type": "passenger",
+            "passengers": 186,
+            "length": "104",
+            "beam": "18",
+            "year_built": 2022,
+            "gross_tonnage": 7900,
+            "engine_power": 4400,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 287,
+            "name": "CRYSTAL SYMPHONY",
+            "mmsi": 309168000,
+            "imo": 9066667,
+            "type": "passenger",
+            "passengers": 975,
+            "length": "238",
+            "beam": "30",
+            "year_built": 1995,
+            "gross_tonnage": 51044,
+            "engine_power": 36330,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 287,
+            "name": "TRENT NAVIGATOR",
+            "mmsi": 246867000,
+            "imo": 9631369,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "118",
+            "beam": "16",
+            "year_built": 2013,
+            "gross_tonnage": 5751,
+            "engine_power": 3840,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 288,
+            "name": "THE WORLD",
+            "mmsi": 311213000,
+            "imo": 9219331,
+            "type": "passenger",
+            "passengers": 1042,
+            "length": "196",
+            "beam": "30",
+            "year_built": 2001,
+            "gross_tonnage": 43188,
+            "engine_power": 11880,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 289,
+            "name": "CELEBRITY ASCENT 06",
+            "mmsi": 982561916,
+            "type": "passenger",
+            "passengers": 10,
+            "length": "18",
+            "beam": "6",
+            "gross_tonnage": 3000,
+            "engine_power": 150,
+            "fuel_type": "diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 290,
+            "name": "BBC DAKOTA",
+            "mmsi": 982561916,
+            "imo": 9388900,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "138",
+            "beam": "21",
+            "year_built": 2008,
+            "gross_tonnage": 9611,
+            "engine_power": 5400,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 291,
+            "name": "FWN SEA",
+            "mmsi": 982561916,
+            "imo": 9721657,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "122",
+            "beam": "17",
+            "year_built": 2015,
+            "gross_tonnage": 6749,
+            "engine_power": 300,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 292,
+            "name": "ELKA DELPHI",
+            "mmsi": 636016725,
+            "imo": 9705902,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "189",
+            "beam": "35",
+            "year_built": 2014,
+            "gross_tonnage": 31905,
+            "engine_power": 10320,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 293,
+            "name": "LUMINARA",
+            "mmsi": 249161000,
+            "imo": 9967598,
+            "type": "passenger",
+            "passengers": 456,
+            "length": "241",
+            "beam": "30",
+            "year_built": 2025,
+            "gross_tonnage": 46750,
+            "engine_power": 19135,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 294,
+            "name": "FURE VESBORG",
+            "mmsi": 265068510,
+            "imo": 9980332,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "150",
+            "beam": "23",
+            "year_built": 2025,
+            "gross_tonnage": 12763,
+            "engine_power": 4500,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 295,
+            "name": "NORWEGIAN SKY",
+            "mmsi": 308865000,
+            "imo": 9128532,
+            "type": "passenger",
+            "passengers": 1944,
+            "length": "258",
+            "beam": "23",
+            "year_built": 1999,
+            "gross_tonnage": 77104,
+            "engine_power": 5070,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 296,
+            "name": "FWN ARCTIC",
+            "mmsi": 244130525,
+            "imo": 9931484,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "144",
+            "beam": "18",
+            "year_built": 2023,
+            "gross_tonnage": 8360,
+            "engine_power": 3300,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 297,
+            "name": "DISNEY FANTASY",
+            "mmsi": 311058700,
+            "imo": 9445590,
+            "type": "passenger",
+            "passengers": 2500,
+            "length": "340",
+            "beam": "37",
+            "year_built": 2012,
+            "gross_tonnage": 129690,
+            "engine_power": 77190,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "4",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 298,
+            "name": "UTE",
+            "mmsi": 304612000,
+            "imo": 9433339,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "116",
+            "beam": "16",
+            "year_built": 2007,
+            "gross_tonnage": 4723,
+            "engine_power": 3000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 299,
+            "name": "CROWN PRINCESS",
+            "mmsi": 310500000,
+            "imo": 9293399,
+            "type": "passenger",
+            "passengers": 3592,
+            "length": "289",
+            "beam": "36",
+            "year_built": 2004,
+            "gross_tonnage": 113561,
+            "engine_power": 67220,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 300,
+            "name": "EUROCARGO CAGLIARI",
+            "mmsi": 247318900,
+            "imo": 9471068,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "201",
+            "beam": "26",
+            "year_built": 2012,
+            "gross_tonnage": 32647,
+            "engine_power": 20070,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 300,
+            "name": "QUEEN ANNE",
+            "mmsi": 304612000,
+            "imo": 9839399,
+            "type": "passenger",
+            "passengers": 2986,
+            "length": "322",
+            "beam": "36",
+            "year_built": 2015,
+            "gross_tonnage": 114188,
+            "engine_power": 50400,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 301,
+            "name": "SONGA EAGLE",
+            "mmsi": 249512000,
+            "imo": 9388704,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "170",
+            "beam": "26",
+            "year_built": 2007,
+            "gross_tonnage": 17822,
+            "engine_power": 7860,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 302,
+            "name": "BRITANNIA",
+            "mmsi": 310858000,
+            "imo": 9614036,
+            "type": "passenger",
+            "passengers": 3647,
+            "length": "330",
+            "beam": "38",
+            "year_built": 2015,
+            "gross_tonnage": 143730,
+            "engine_power": 62400,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "4",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 302,
+            "name": "EUROCARGO ROMA",
+            "mmsi": 247241900,
+            "imo": 9465526,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "201",
+            "beam": "26",
+            "year_built": 2009,
+            "gross_tonnage": 32645,
+            "engine_power": 20070,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1"
+        },
+        {
+            "order": 303,
+            "name": "TRADE NAVIGATOR",
+            "mmsi": 244650331,
+            "imo": 9631371,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "118",
+            "beam": "16",
+            "year_built": 2013,
+            "gross_tonnage": 5667,
+            "engine_power": 3050,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 304,
+            "name": "HARBOUR EXPRESS",
+            "mmsi": 255803000,
+            "imo": 9418822,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "162",
+            "beam": "22",
+            "year_built": 2008,
+            "gross_tonnage": 12745,
+            "engine_power": 6000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 305,
+            "name": "NEVER GIVE UP",
+            "mmsi": 249006000,
+            "imo": 8215780,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "33",
+            "beam": "8",
+            "year_built": 1983,
+            "gross_tonnage": 11750,
+            "engine_power": 1100,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 306,
+            "name": "SILVER WHISPER",
+            "mmsi": 308322000,
+            "imo": 9192179,
+            "type": "passenger",
+            "passengers": 388,
+            "length": "186",
+            "beam": "25",
+            "year_built": 1983,
+            "gross_tonnage": 28258,
+            "engine_power": 15600,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 307,
+            "name": "SUN PRINCESS",
+            "mmsi": 310841000,
+            "imo": 9863118,
+            "type": "passenger",
+            "passengers": 4300,
+            "length": "345",
+            "beam": "50",
+            "year_built": 2021,
+            "gross_tonnage": 177882,
+            "engine_power": 68780,
+            "fuel_type": "LNG",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 308,
+            "name": "CB ADRIATIC",
+            "mmsi": 255806262,
+            "imo": 9851696,
+            "type": "petrol",
+            "passengers": 4300,
+            "length": "183",
+            "beam": "32",
+            "year_built": 2021,
+            "gross_tonnage": 27250,
+            "engine_power": 7610,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 301,
+            "name": "RENAISSANCE",
+            "mmsi": 310805000,
+            "imo": 9851696,
+            "type": "passenger",
+            "passengers": 1629,
+            "length": "219",
+            "beam": "31",
+            "year_built": 1992,
+            "gross_tonnage": 55451,
+            "engine_power": 47000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "2",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 303,
+            "name": "VAUBAN",
+            "mmsi": 249103000,
+            "imo": 9246542,
+            "type": "cargo",
+            "passengers": 0,
+            "length": "37",
+            "beam": "8",
+            "year_built": 2004,
+            "gross_tonnage": 9962,
+            "engine_power": 1000,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 304,
+            "name": "BRILLIANCE OF SEAS",
+            "mmsi": 311361000,
+            "imo": 9195200,
+            "type": "passenger",
+            "passengers": 2543,
+            "length": "292",
+            "beam": "40",
+            "year_built": 1998,
+            "gross_tonnage": 90090,
+            "engine_power": 41000,
+            "fuel_type": "LNG",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 305,
+            "name": "CELEBRITY ECLIPSE",
+            "mmsi": 249666000,
+            "imo": 9404314,
+            "type": "passenger",
+            "passengers": 3129,
+            "length": "317",
+            "beam": "37",
+            "year_built": 2009,
+            "gross_tonnage": 121878,
+            "engine_power": 67200,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "4",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 305,
+            "name": "STELLA MARIA",
+            "mmsi": 636014108,
+            "imo": 9404314,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "174",
+            "beam": "32",
+            "year_built": 2018,
+            "gross_tonnage": 29828,
+            "engine_power": 9480,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 306,
+            "name": "ALLURA",
+            "mmsi": 538011254,
+            "imo": 9876969,
+            "type": "passenger",
+            "passengers": 1200,
+            "length": "242",
+            "beam": "32",
+            "year_built": 2025,
+            "gross_tonnage": 67000,
+            "engine_power": 20800,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 307,
+            "name": "VISTA",
+            "mmsi": 538009952,
+            "imo": 9876957,
+            "type": "passenger",
+            "passengers": 1200,
+            "length": "242",
+            "beam": "32",
+            "year_built": 2023,
+            "gross_tonnage": 67000,
+            "engine_power": 20800,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 308,
+            "name": "N CALA TUENT",
+            "mmsi": 224003680,
+            "type": "passenger",
+            "passengers": 250,
+            "length": "22",
+            "beam": "6",
+            "year_built": 2000,
+            "gross_tonnage": 150,
+            "engine_power": 1280,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "0",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 310,
+            "name": "ARCADIA",
+            "mmsi": 310459000,
+            "imo": 9226906,
+            "type": "passenger",
+            "passengers": 2399,
+            "length": "285",
+            "beam": "33",
+            "year_built": 2005,
+            "gross_tonnage": 84342,
+            "engine_power": 63360,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "3",
+            "cold_ironing": "false"
+        },
+        {
+            "order": 311,
+            "name": "STI FULHAM",
+            "mmsi": 538005400,
+            "imo": 9688374,
+            "type": "petrol",
+            "passengers": 0,
+            "length": "184",
+            "beam": "27",
+            "year_built": 2014,
+            "gross_tonnage": 24230,
+            "engine_power": 10680,
+            "fuel_type": "marine diesel",
+            "port_emission_score": "1",
+            "cold_ironing": "false"
         }
     ]
 }
