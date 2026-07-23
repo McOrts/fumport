@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1334,
+        "ticketMachineId": "FRSKiosk1334",
+        "environment": "LIVE",
+        "port": "Havneby"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.56991032574965,
+          55.08539172949441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1332,
+        "ticketMachineId": "FRSKiosk1332",
+        "environment": "LIVE",
+        "port": "Havneby"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.56991032574965,
+          55.08539172949441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1331,
+        "ticketMachineId": "FRSKiosk1331",
+        "environment": "LIVE",
+        "port": "List"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.438147390895711,
+          55.01656442125942
+        ]
+      }
+    }
+  ]
+}
